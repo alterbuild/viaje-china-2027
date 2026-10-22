@@ -668,6 +668,20 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
   .tl-stats{padding:16px 16px 14px}
   .st-city{grid-template-columns:1fr 1fr}
 }
+
+/* Enlaces directos de reserva */
+.howgo{display:grid;gap:10px;margin:1rem 0 1.2rem}
+.gogrp{display:grid;gap:10px;margin-bottom:4px}
+.gogrp h4{margin:.9rem 0 0;font:800 .82rem/1.2 var(--f-body);color:var(--muted)}
+.gorow{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) auto;gap:6px 18px;align-items:center;padding:12px 14px;border-radius:20px;background:var(--fill);box-shadow:inset 0 1px 0 var(--edge)}
+.gowhat{min-width:0}
+.gowhat b{display:block;font-size:.95rem}
+.gowhat span{display:block;font-size:.82rem;color:var(--muted)}
+.goprice{font-size:.84rem;font-weight:700;color:var(--ink2)}
+.gorow .hlinks{margin-top:0;justify-content:flex-end}
+.hlinks a.best{background:var(--ink);color:var(--bg)}
+.hlinks a.best:hover{background:var(--ink2);color:var(--bg)}
+@media (max-width:760px){.gorow{grid-template-columns:minmax(0,1fr)}.gorow .hlinks{justify-content:flex-start}}
 /* ---------- Plan B: comparación y presupuesto ---------- */
 .rcols.two{grid-template-columns:repeat(2,1fr)}
 .cmp{padding:22px 20px 18px;margin-top:1.6rem}
@@ -773,8 +787,8 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <hr class="perf">
 
 <div class="fare">
-<div class="big">748 €<small>por persona</small></div>
-<div class="rest">2.991 € los cuatro.<br>Equipaje facturado incluido, confírmalo al reservar.</div>
+<div class="big">758 €<small>por persona</small></div>
+<div class="rest">3.031 € los cuatro, en Trip.com.<br>Equipaje facturado incluido, confírmalo al reservar.</div>
 </div>
 </article>
 </div>
@@ -993,7 +1007,7 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <section id="presupuesto" class="cty" data-city="none">
 <div class="wrap">
 <h2>Cuánto cuesta el plan B</h2>
-<p class="sub">Por persona, sin comidas ni compras, contra el tope de 2.300 €. Con los hoteles recomendados y la cancelación gratuita, el plan B sale unos 93 € por persona más barato que el plan A, sobre todo por el tren que se ahorra.</p>
+<p class="sub">Por persona, sin comidas ni compras, contra el tope de 2.300 €. Con los hoteles recomendados y la cancelación gratuita, el plan B sale unos 59 € por persona más barato que el plan A, sobre todo por el tren que se ahorra.</p>
 <div class="cfg">
 <div class="groups">
 <div class="glass bud">
@@ -1001,19 +1015,19 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <div class="scrollx"><table class="bud-t">
 <thead><tr><th>Concepto</th><th class="n">Plan B</th><th class="n">Plan A</th></tr></thead>
 <tbody>
-<tr><td>Vuelo directo Barcelona a Pekín y Shanghái a Barcelona</td><td class="n">748 €</td><td class="n">748 €</td></tr>
+<tr><td>Vuelo directo Barcelona a Pekín y Shanghái a Barcelona</td><td class="n">758 €</td><td class="n">758 €</td></tr>
 <tr><td>Coche, parking y gasolina (est.)</td><td class="n">53 €</td><td class="n">53 €</td></tr>
-<tr><td>Hoteles recomendados, 8 noches</td><td class="n">522 €</td><td class="n">473 €</td></tr>
+<tr><td>Hoteles recomendados, 8 noches</td><td class="n">522 €</td><td class="n">441 €</td></tr>
 <tr><td>Tren de alta velocidad en 2.ª clase: Pekín a Shanghái (B), con Xi'an por medio (A)</td><td class="n">84 €</td><td class="n">179 €</td></tr>
 <tr><td>Entradas</td><td class="n">103 €</td><td class="n">145 €</td></tr>
 <tr><td>Coche con chófer a la Muralla</td><td class="n">32 €</td><td class="n">32 €</td></tr>
 <tr><td>Traslados y metro (est.)</td><td class="n">70 €</td><td class="n">70 €</td></tr>
 <tr><td>eSIM y VPN</td><td class="n">38 €</td><td class="n">38 €</td></tr>
 <tr><td>Seguro de viaje</td><td class="n">55 €</td><td class="n">55 €</td></tr>
-<tr class="sum"><td>Subtotal</td><td class="n">1.705 €</td><td class="n">1.793 €</td></tr>
-<tr><td>Colchón del 5 %</td><td class="n">85 €</td><td class="n">90 €</td></tr>
-<tr class="sum"><td>Total por persona</td><td class="n">1.790 €</td><td class="n">1.883 €</td></tr>
-<tr><td>Margen frente a 2.300 €</td><td class="n">510 €</td><td class="n">417 €</td></tr>
+<tr class="sum"><td>Subtotal</td><td class="n">1.715 €</td><td class="n">1.771 €</td></tr>
+<tr><td>Colchón del 5 %</td><td class="n">86 €</td><td class="n">89 €</td></tr>
+<tr class="sum"><td>Total por persona</td><td class="n">1.801 €</td><td class="n">1.860 €</td></tr>
+<tr><td>Margen frente a 2.300 €</td><td class="n">499 €</td><td class="n">440 €</td></tr>
 </tbody></table></div>
 </div>
 <div class="glass bud">
@@ -1030,21 +1044,21 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 </div>
 <aside class="sumbox glass" aria-label="Total por persona del plan B">
 <h3>Total por persona</h3>
-<div class="total"><span>1.790</span><span>€</span></div>
+<div class="total"><span>1.801</span><span>€</span></div>
 <p class="sumnote">por persona, con un colchón del 5 %</p>
-<p class="margin ok">Os sobran 510 € de 2.300 €</p>
+<p class="margin ok">Os sobran 499 € de 2.300 €</p>
 <div class="bar" role="img" aria-label="Reparto del total frente al tope de 2.300 euros">
-<i class="s-fl" style="width:34.83%"></i><i class="s-ho" style="width:22.70%"></i><i class="s-tr" style="width:3.65%"></i><i class="s-lo" style="width:8.91%"></i><i class="s-mi" style="width:4.04%"></i><i class="s-bu" style="width:3.70%"></i><i class="s-ma" style="width:22.17%"></i><span class="cap" style="left:100%"></span>
+<i class="s-fl" style="width:35.26%"></i><i class="s-ho" style="width:22.70%"></i><i class="s-tr" style="width:3.65%"></i><i class="s-lo" style="width:8.91%"></i><i class="s-mi" style="width:4.04%"></i><i class="s-bu" style="width:3.74%"></i><i class="s-ma" style="width:21.70%"></i><span class="cap" style="left:100%"></span>
 </div>
 <ul class="rows">
-<li><span><span class="dotc s-fl"></span>Vuelos y coche</span><b>801 €</b></li>
+<li><span><span class="dotc s-fl"></span>Vuelos y coche</span><b>811 €</b></li>
 <li><span><span class="dotc s-ho"></span>Hoteles</span><b>522 €</b></li>
 <li><span><span class="dotc s-tr"></span>Tren</span><b>84 €</b></li>
 <li><span><span class="dotc s-lo"></span>Entradas y traslados</span><b>205 €</b></li>
 <li><span><span class="dotc s-mi"></span>eSIM y seguro</span><b>93 €</b></li>
-<li><span><span class="dotc s-bu"></span>Colchón del 5 %</span><b>85 €</b></li>
+<li><span><span class="dotc s-bu"></span>Colchón del 5 %</span><b>86 €</b></li>
 </ul>
-<div class="four"><span>Los cuatro juntos</span><b>7.160 €</b></div>
+<div class="four"><span>Los cuatro juntos</span><b>7.204 €</b></div>
 <p class="fine">Precios del 21 y 22 de octubre de 2026. est. = estimación. Las comidas y las compras no están incluidas.</p>
 </aside>
 </div>
@@ -1078,9 +1092,9 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <h2 style="margin-top:3rem">Cuándo reservar</h2>
 <p class="sub">Estas fechas se pierden si pasan.</p>
 <div class="dates">
-<div class="dt hot"><div class="cal"><b>Ya</b><span>oct</span></div><div><h3>Vuelo y parking</h3><p>El directo está a 748 € y el parking de larga estancia se reserva online.</p></div></div>
+<div class="dt hot"><div class="cal"><b>Ya</b><span>oct</span></div><div><h3>Vuelo y parking</h3><p>El directo está a 758 € en Trip.com y el parking de larga estancia se reserva online.</p></div></div>
 <div class="dt"><div class="cal"><b>Nov</b><span>y dic</span></div><div><h3>Prórroga del visado</h3><p>Se anuncia en noviembre o diciembre. Los hoteles de China ya se reservan con cancelación gratuita.</p></div></div>
-<div class="dt hot"><div class="cal"><b>14</b><span>mar</span></div><div><h3>Gran Muralla</h3><p>Abre la reserva oficial de Mutianyu para el lunes 29.</p></div></div>
+<div class="dt hot"><div class="cal"><b>27</b><span>feb</span></div><div><h3>Gran Muralla</h3><p>Abre la reserva oficial de Mutianyu para el lunes 29.</p></div></div>
 <div class="dt"><div class="cal"><b>17</b><span>mar</span></div><div><h3>Tren a Shanghái</h3><p>Abren los billetes de Pekín a Shanghái del miércoles 31. Entonces se conoce el horario exacto.</p></div></div>
 <div class="dt hot"><div class="cal"><b>21</b><span>mar</span></div><div><h3>Ciudad Prohibida</h3><p>A las 20:00 de Pekín, 13:00 en Madrid, salen las entradas del domingo 28.</p></div></div>
 <div class="dt"><div class="cal"><b>23</b><span>mar</span></div><div><h3>Torres y templo de los Lamas</h3><p>Reservas en WeChat, unos 7 días antes (por confirmar): torres del martes 30 y templo del miércoles 31.</p></div></div>
@@ -1089,7 +1103,7 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <div class="notes">
 <article class="note glass"><svg class="ic"><use href="#i-shield"/></svg><h3>Visado</h3><p>Los españoles entran sin visado hasta el 31 de diciembre de 2026. China renovó la exención en noviembre de 2024 y de 2025, pero la de 2027 aún no está anunciada. Si el 1 de diciembre sigue sin noticia, pedid el visado (unos 107 €).</p></article>
 <article class="note glass"><svg class="ic"><use href="#i-cal"/></svg><h3>Puente de Qingming</h3><p>El lunes 5 de abril es festivo en China y el puente probable va del 3 al 5. El sábado 3 será el día de más colas y tráfico.</p></article>
-<article class="note glass"><svg class="ic"><use href="#i-ticket"/></svg><h3>Precios</h3><p>Revisados el 22 de octubre de 2026: vuelo, hoteles recomendados, tipo de cambio (¥7,50 por euro) y plazos de las entradas. El vuelo de 748 € no se reembolsa; Kayak lo mostraba a 745 € con Air China y Shenzhen Airlines y a 783 € solo con Air China. Los hoteles se cancelan gratis.</p></article>
+<article class="note glass"><svg class="ic"><use href="#i-ticket"/></svg><h3>Precios</h3><p>Revisados el 22 de octubre de 2026: vuelo, hoteles recomendados, tipo de cambio (¥7,50 por euro) y plazos de las entradas. El vuelo de 758 € (Trip.com) no se reembolsa; en la web de Air China cuesta 815,54 € y Kayak anunciaba 602 €, pero al abrir la oferta el precio real era 815,54 €. El Novotel va por Trip.com y los otros dos hoteles por Booking, todos con cancelación gratuita.</p></article>
 </div>
 </div>
 </section>
@@ -1186,7 +1200,7 @@ var SIGHTS=[
  d:["¥2","Cuenta ≈ 1,5 horas; la puesta de sol es hacia las 18:25"]},
 {id:"mut",v:"bj",zh:["慕田峪长城","Mùtiányù Chángchéng"],n:"Gran Muralla en Mutianyu",k:"hist",ll:[116.5704,40.4319],off:true,day:4,img:"mutianyu",
  t:"El tramo más cómodo de la Muralla: teleférico, tobogán y menos gente que Badaling.",
- d:["Entrada ¥40–45 + teleférico ¥140 ida y vuelta (+ tobogán ¥100): ¥185–285 (25–38 €)","Coche con chófer: ¥800–1.100 por coche, 10 horas; 1 h 40 min de ida","Reserva oficial con pasaporte hasta 15 días antes: desde el 14 de marzo para el lunes 29","Entre 6 y 8 horas en total"]},
+ d:["Entrada ¥40–45 + teleférico ¥140 ida y vuelta (+ tobogán ¥100): ¥185–285 (25–38 €)","Coche con chófer: ¥800–1.100 por coche, 10 horas; 1 h 40 min de ida","Reserva oficial con pasaporte hasta 30 días antes: desde el 27 de febrero para el lunes 29","Entre 6 y 8 horas en total"]},
 {id:"sum",v:"bj",zh:["颐和园","Yíhéyuán"],n:"Palacio de Verano",k:"nat",ll:[116.2647,39.9901],far:true,day:5,lab:"r",img:"summer-palace",
  t:"Jardines, colina y un enorme lago a las afueras. Es la mañana larga del martes, con paseo en barca si apetece.",
  d:["Combo ¥50 (6,7 €) hasta el 31 de marzo (est.)","Pasaporte en el torniquete (est.)","Entre 3 y 4 horas"]},
@@ -1254,7 +1268,7 @@ var SIGHTS=[
 ];
 
 var INTRO={
- vuelo:{t:"Dos vuelos directos de Air China",x:"Entráis por Pekín y salís desde Shanghái, así no hay que volver sobre vuestros pasos.",d:["Ida: CA846, vie 26 mar, 11:30 a 05:30 del sábado, 11 h","Vuelta: CA839, dom 4 abr, 00:40 a 07:55, 13 h 15 min","748 € por persona, 2.991 € los cuatro"],hint:"Arrastra el globo para girarlo."},
+ vuelo:{t:"Dos vuelos directos de Air China",x:"Entráis por Pekín y salís desde Shanghái, así no hay que volver sobre vuestros pasos.",d:["Ida: CA846, vie 26 mar, 11:30 a 05:30 del sábado, 11 h","Vuelta: CA839, dom 4 abr, 00:40 a 07:55, 13 h 15 min","758 € por persona en Trip.com, 3.031 € los cuatro"],hint:"Arrastra el globo para girarlo."},
  esp:{t:"En coche de Castellón al Prat",x:"Unos 300 km por la AP-7. Salís a las 06:00 y aparcáis en el aeropuerto.",d:["≈ 3 horas de conducción","Parking Aena Larga Estancia ≈ 130 € y gasolina ≈ 72 €","Vuelta directa tras aterrizar a las 07:55"],hint:"Arrastra para mover; los botones acercan."},
  china:{t:"Un solo tren de alta velocidad",x:"De Pekín a Shanghái en cuatro horas y media, de centro a centro.",d:["Beijing South a Shanghai Hongqiao: ≈ 15:00 a ≈ 19:40, 4 h 37 min, desde 84 €","Billetes a la venta 15 días antes: el 17 de marzo","Un solo cambio de hotel en todo el viaje"],hint:"Toca una ciudad y entra en su mapa."},
  bj:{t:"Pekín, 5 noches",x:"Palacios, templos, lagos y la Gran Muralla. Toca un punto para ver el detalle.",d:["Hotel: Park Plaza Wangfujing, a 0,8 km del metro Dengshikou","El lunes cierra la Ciudad Prohibida: la Muralla va ese día"],hint:"Arrastra para mover y usa + y − para acercar. Arriba a la izquierda cambias entre satélite y mapa."},
@@ -1283,7 +1297,7 @@ var DAYS=[
 {n:4,place:"Pekín",c:"bj",cn:"xa",city:"bj",title:"Gran Muralla en Mutianyu",
  text:"Coche con chófer, teleférico y tobogán. La Ciudad Prohibida cierra los lunes. Tarde libre.",
  tag:{i:"ticket",t:"Reserva desde el 14 mar"},
- det:["07:15 coche con chófer: ¥800–1.100 por coche y 10 horas (≈ ¥240 por persona). Mutianyu está a 70 km, 1 h 40 min","Entrada ¥40–45, teleférico ¥140 ida y vuelta y tobogán ¥100 opcional; entre 6 y 8 horas en total","Reserva oficial con pasaporte hasta 15 días antes: desde el 14 de marzo para este día","16:10 de vuelta en el hotel: descanso y cena tranquila cerca, sin más planes"]},
+ det:["07:15 coche con chófer: ¥800–1.100 por coche y 10 horas (≈ ¥240 por persona). Mutianyu está a 70 km, 1 h 40 min","Entrada ¥40–45, teleférico ¥140 ida y vuelta y tobogán ¥100 opcional; entre 6 y 8 horas en total","Reserva oficial con pasaporte hasta 30 días antes: desde el 27 de febrero para este día","16:10 de vuelta en el hotel: descanso y cena tranquila cerca, sin más planes"]},
 {n:5,place:"Pekín",c:"bj",cn:"bj",city:"bj",title:"Palacio de Verano, torres y lagos",
  text:"La mañana larga es del Palacio de Verano; la tarde, las torres, el barrio de los lagos y la cena en un hutong.",
  tag:{i:"ticket",t:"Torres: reserva en WeChat unos 7 días antes"},
@@ -1313,7 +1327,7 @@ var HOTELS={
 bj:{name:"Pekín",nights:5,extraNight:false,dates:"26 a 31 de marzo",tid:1,ci:"2027-03-26",co:"2027-03-31",
  sum:"Cinco noches seguidas desde el 26 para tener la habitación lista al aterrizar a las 05:30. Un solo hotel, sin cambiar de maletas.",
  list:[
- {t:"rec",n:"Park Plaza Beijing Wangfujing",st:"4★",area:"Dongcheng, cerca de Wangfujing",b:[9.0,1426],tr:[9.4,3175],nt:134,ntT:143,tot:1336,
+ {t:"rec",n:"Park Plaza Beijing Wangfujing",st:"4★",area:"Dongcheng, cerca de Wangfujing",b:[9.0,1426],tr:[9.4,3175],nt:134,ntT:150,tot:1336,
   f:["Cancelación gratuita hasta las 14:00 del día de llegada","Metro Dengshikou (L5) a 0,8 km; Wangfujing a 0,9 km","Ciudad Prohibida a 2,7 km, no a pie","Desayuno: +18 € por persona (con desayuno, 161 € la habitación y noche)"],
   m:["Es el único de los seis con 9,0 o más en Booking y en Trip.com","Marca Radisson, con personal que habla inglés según reseñas de extranjeros","Pega: tarifa base sin desayuno","Precio comprobado en Booking el 22 de octubre para el 26 al 31 de marzo: 668 € por habitación"],
   bu:"https://www.booking.com/hotel/cn/park-plaza-beijing-wangfujing.html",ti:425031},
@@ -1369,25 +1383,25 @@ sh:{name:"Shanghái",nights:3,extraNight:false,dates:"31 de marzo a 3 de abril",
 };
 
 var HOWTO=[
-{id:"vuelo",n:"Vuelo",lead:"Compra los dos trayectos en un mismo billete de varias ciudades, directamente con Air China.",
- facts:[["Dónde","airchina.es o la app de Air China","https://www.airchina.es/"],["Cuándo","Cuanto antes: la tarifa de 748 € puede subir",""],["Qué necesitas","Pasaportes en vigor y los nombres tal como figuran en ellos",""],["Cuánto","748 € por persona (2.991 € los cuatro); flexible desde 852 €",""]],
- steps:["Entra en airchina.es y elige «Varias ciudades».","Tramo 1: Barcelona a Pekín el 26 de marzo (CA846, 11:30). Tramo 2: Shanghái a Barcelona el 4 de abril (CA839, 00:40). Cuatro adultos, clase turista.","Compara con Kayak o Google Flights. El 22 de octubre, los mismos vuelos salían a 745 € por persona en Kayak (Air China y Shenzhen Airlines) y a 783 € solo con Air China. La tarifa de la aerolínea fue de 748 € el 21 de octubre y las agencias (Gotogate, Mytrip, Trip.com), de 744 a 787 €. Con la aerolínea es más fácil cambiar o reclamar.","Elige tarifa: la de 748 € no permite cambios; la flexible parte de 852 €. Confirma las piezas y los kilos de equipaje facturado (las guías indican una maleta de 23 kg en turista Europa–China).","Escribe los nombres tal como salen en el pasaporte y paga con tarjeta. Guarda el localizador y los billetes electrónicos de los cuatro.","Si prefieres esperar a que se confirme la exención de visado, activa una alerta de precio."],
- tips:["El check-in online abre 36 horas antes y cierra 2 horas antes, según una guía del aeropuerto; confírmalo en tu billete y hazlo antes de salir de casa.","Los mostradores de la T1 cierran 60 minutos antes del despegue y la puerta de embarque, 10 minutos antes.","Los horarios pueden cambiar con la temporada de verano, que empieza el 28 de marzo."]},
+{id:"vuelo",n:"Vuelo",lead:"Compra los dos trayectos en un mismo billete de varias ciudades. Hoy sale más barato en Trip.com que en la web de Air China.",
+ facts:[["Dónde","Trip.com (el más barato hoy) o airchina.es","https://www.airchina.es/"],["Cuándo","Cuanto antes: el 21 de octubre Air China cobraba 748 € y el 22, 815,54 €",""],["Qué necesitas","Pasaportes en vigor y los nombres tal como figuran en ellos",""],["Cuánto","758 € por persona en Trip.com (3.031 € los cuatro); en Air China, 815,54 € (3.262 €)",""]],
+ steps:["Abre el botón de Trip.com de arriba: ya lleva los dos tramos, las fechas y los cuatro adultos. Si prefieres la aerolínea, usa el botón de Air China (pasa directo al pago) o entra en airchina.es y elige «Varias ciudades».","Comprueba que son Barcelona a Pekín el 26 de marzo (CA846, 11:30) y Shanghái a Barcelona el 4 de abril (CA839, 00:40), directos y de Air China. Cuatro adultos, clase turista.","El 22 de octubre por la noche, esos mismos vuelos costaban por persona: 758 € en Trip.com, de 813 a 834 € en Gotogate, Mytrip, Expedia y Booking, y 815,54 € en la web de Air China. Kayak anunciaba 602 € para la oferta de la aerolínea, pero al abrirla el precio real era 815,54 €: fíate solo del precio de la última página. La opción más barata de Trip.com, 744 €, vuelve con escala en Pekín y tarda 3 h 30 min más.","Elige tarifa: la básica no permite cambios; con cambio de billete gratis, las agencias parten de 931 € (Gotogate, vía Kayak, 22 de octubre). Confirma las piezas y los kilos de equipaje facturado: Air China indica una pieza y las guías, una maleta de 23 kg en turista Europa–China.","Escribe los nombres tal como salen en el pasaporte y paga con tarjeta. Guarda el localizador y los billetes electrónicos de los cuatro.","Si prefieres esperar a que se confirme la exención de visado, activa una alerta de precio."],
+ tips:["El check-in online abre 36 horas antes y cierra 2 horas antes, según una guía del aeropuerto; confírmalo en tu billete y hazlo antes de salir de casa.","Los mostradores de la T1 cierran 60 minutos antes del despegue y la puerta de embarque, 10 minutos antes.","Los horarios pueden cambiar con la temporada de verano, que empieza el 28 de marzo.","Si compras en Trip.com, los cambios y las reclamaciones pasan por Trip.com y no por la aerolínea; con Air China pagas 231 € más por los cuatro."]},
 {id:"parking",n:"Parking",lead:"Reserva plaza online antes de salir; con reserva se entra sin coger ticket.",
  facts:[["Dónde","parking.aena.es o la app de Aena","https://parking.aena.es/"],["Cuándo","Con semanas de margen; como mínimo 3 horas antes de entrar",""],["Qué necesitas","La matrícula del coche y una tarjeta de pago",""],["Cuánto","≈ 130 € por 10 días (est.); reservando, entre un 5 y un 25 % menos",""]],
  steps:["Entra en parking.aena.es o en la app de Aena y elige el aeropuerto Josep Tarradellas Barcelona-El Prat.","Elige «Larga Estancia T1»: Air China sale de la T1 y el acceso es solo con reserva y vuelo desde esa terminal.","Pon la entrada el 26 de marzo hacia las 09:00 y la salida el 4 de abril hacia las 10:00. Hay dos horas de cortesía al salir.","Escribe la matrícula y paga online. Guarda el justificante: con reserva pasas la barrera sin coger ticket.","El día del viaje, coge la lanzadera gratuita hasta la terminal; pasa cada 20 minutos aproximadamente."],
  tips:["Alternativa más barata: parkings privados con lanzadera (Parking4U, 40 €, y Parking Jet BCN, 52 €, por 8 días en un comparador). Lee las reseñas recientes de la lanzadera.","Parking General T1 o T2, a pie de terminal: ≈ 185 € por 10 días (est.).","La AP-7 no cobra hoy a turismos, pero la Generalitat estudia recuperar peajes. La C-32 costera cuesta 8,42 €."]},
 {id:"hoteles",n:"Hoteles",lead:"Reserva ya con cancelación gratuita y revisa los precios cada mes.",
  facts:[["Dónde","Booking.com y Trip.com (enlaces en cada hotel)","https://www.booking.com/"],["Cuándo","Ya: la cancelación gratuita cubre los cambios",""],["Qué necesitas","Tarjeta de pago; algunos hoteles piden una fianza de ¥300–500 por habitación",""],["Cuánto","2.088 € los cuatro en la opción recomendada, 522 € por persona",""]],
- steps:["Abre el hotel desde su enlace en la sección de hoteles y pon las fechas: Pekín del 26 al 31 de marzo y Shanghái del 31 de marzo al 3 de abril.","Pide dos habitaciones, con dos adultos en cada una. Filtra por cancelación gratuita y, en Booking, por «sin pago por adelantado».","Compara Booking con Trip.com: en China suele salir más barato en Trip.com. Trip.com mezcla promociones que pueden pedir cuenta o app.","Reserva y anota el plazo de cancelación gratuita de cada hotel; está en su ficha.","Escribe a cada hotel: hora de llegada (Pekín a las 05:30 y Shanghái hacia las 20:30), que aceptan pasaporte extranjero y, en Shanghái, consigna y late check-out el 3 de abril.","Lleva efectivo o tarjeta para la fianza reembolsable de cada habitación."],
+ steps:["Abre el hotel desde su botón de arriba, que ya lleva las fechas, los cuatro adultos y las dos habitaciones: Pekín del 26 al 31 de marzo y Shanghái del 31 de marzo al 3 de abril.","Pide dos habitaciones, con dos adultos en cada una. Filtra por cancelación gratuita y, en Booking, por «sin pago por adelantado».","Compara Booking con Trip.com hotel a hotel. El 22 de octubre ganó Booking en los dos: el Park Plaza de Pekín (5 noches) costaba 1.336 € frente a 1.502 € en Trip.com, y el Hyland de Shanghái (3 noches), 752 € frente a 784 €. Trip.com mezcla promociones que pueden pedir cuenta o app.","Reserva y anota el plazo de cancelación gratuita de cada hotel; está en su ficha.","Escribe a cada hotel: hora de llegada (Pekín a las 05:30 y Shanghái hacia las 20:30), que aceptan pasaporte extranjero y, en Shanghái, consigna y late check-out el 3 de abril.","Lleva efectivo o tarjeta para la fianza reembolsable de cada habitación."],
  tips:["Pide cama doble o twin al reservar: en el Atour de Pekín la twin cuesta 59 € más por tres noches.","No hay recargo visible en Shanghái el 2 de abril, pero el calendario del puente de Qingming aún no está publicado."]},
 {id:"trenes",n:"Tren",lead:"Un solo trayecto: Pekín a Shanghái. Dos opciones: Trip.com, la más fácil, o la app oficial 12306, que es gratis.",
  facts:[["Dónde","Trip.com o la app 12306","https://www.12306.cn/index/"],["Cuándo","La venta abre 15 días antes: el 17 de marzo para el miércoles 31",""],["Qué necesitas","Pasaportes originales y los nombres como figuran en ellos",""],["Cuánto","≈ 84 € por persona en 2.ª clase (¥626); Trip.com cobra ≈ ¥25–30 por billete",""]],
  steps:["Trip.com: ve a Trenes, elige Beijing South a Shanghai Hongqiao el 31 de marzo y un tren G hacia las 15:00 en 2.ª clase.","Añade a los cuatro viajeros con los datos del pasaporte y paga con tarjeta extranjera. Trip.com admite pedidos antes de abrir la venta, sin garantía de plaza.","12306: instala la app (hay versión en inglés), regístrate y verifica el pasaporte con 1–3 días de margen. Compra el día que abre la venta, a la hora que indique cada estación.","Hay un G cada 20 o 30 minutos. Los horarios actuales incluyen el G5 (09:00 a 13:37), el G23 (11:00 a 15:37) y el G21 (17:00 a 21:18, el más rápido, 4 h 18 min). Elige uno entre el mediodía y las 16:00 y no apures.","No hay billete en papel: entra con el pasaporte original por el acceso manual o con el QR de la app, y llega 45–60 minutos antes."],
  tips:["Reembolso gratuito con más de 8 días de antelación; después se pierde entre un 5 y un 20 %.","El horario del 31 de marzo aún no está publicado: lo confirmarás con la venta, el 17 de marzo."]},
 {id:"entradas",n:"Entradas",lead:"Casi todo se reserva online con pasaporte y varios cupos se agotan: pon alarmas.",
- facts:[["Dónde","Webs oficiales o mini-programas de WeChat; Trip.com para la Torre de Shanghái",""],["Cuándo","El 14 y el 21 de marzo, y los días previos",""],["Qué necesitas","El pasaporte de cada visitante",""],["Cuánto","≈ ¥770 por persona (103 €) en total",""]],
- steps:["14 de marzo: reserva Mutianyu en su web oficial con pasaporte, para el lunes 29. Se abre 15 días antes.","21 de marzo a las 20:00 de Pekín (13:00 en Madrid): entradas de la Ciudad Prohibida del domingo 28, en la web oficial del museo (dpm.org.cn) o en su mini-programa de WeChat. Se agotan en minutos.","Del 21 al 27 de marzo: plaza de Tiananmen (WeChat, de 1 a 7 días antes), Torres del Tambor y de la Campana (WeChat «北京钟鼓楼», para el martes 30) y Templo de los Lamas (mini-programa, para el miércoles 31). Todos por confirmar.","Torre de Shanghái: franja horaria en Trip.com para el viernes 2, hacia las 17:15.","Museo de Shanghái, Jardín Yu, Templo de Jing'an y Power Station of Art se pagan o se entra sin reserva en días normales; el sábado 3 puede ser festivo y pedir reserva."],
+ facts:[["Dónde","Webs oficiales o mini-programas de WeChat; Trip.com para la Torre de Shanghái",""],["Cuándo","El 27 de febrero, el 21 de marzo y los días previos",""],["Qué necesitas","El pasaporte de cada visitante",""],["Cuánto","≈ ¥770 por persona (103 €) en total",""]],
+ steps:["27 de febrero: reserva Mutianyu en su web oficial con pasaporte, para el lunes 29. La web vende hasta 30 días antes y admite una entrada por pasaporte y día.","21 de marzo a las 20:00 de Pekín (13:00 en Madrid): entradas de la Ciudad Prohibida del domingo 28, en la web oficial del museo (bookingticket.dpm.org.cn, en español) o en su mini-programa de WeChat. Se agotan en minutos.","Del 21 al 27 de marzo: plaza de Tiananmen (WeChat, de 1 a 7 días antes), Torres del Tambor y de la Campana (WeChat «北京钟鼓楼», para el martes 30) y Templo de los Lamas (mini-programa, para el miércoles 31). Todos por confirmar.","Torre de Shanghái: franja horaria en Trip.com para el viernes 2, hacia las 17:15.","Museo de Shanghái, Jardín Yu, Templo de Jing'an y Power Station of Art se pagan o se entra sin reserva en días normales; el sábado 3 puede ser festivo y pedir reserva."],
  tips:["Si no queda cupo, Trip.com o Klook venden las mismas entradas con comisión.","Muchas reservas piden el pasaporte de cada visitante: ten las fotos en el móvil."]},
 {id:"extras",n:"Móvil y seguro",lead:"Cuatro cosas que se resuelven desde casa en febrero y marzo.",
  facts:[["eSIM","Airalo ilimitada de 10 días, 32,50 €, u Holafly, 37,50 US$, con VPN","https://www.airalo.com/china-esim"],["Pagos","Alipay o WeChat Pay con Visa o Mastercard",""],["Llegada","Tarjeta digital NIA, gratuita, en s.nia.gov.cn","https://s.nia.gov.cn/"],["Seguro","Desde ≈ 38 € por persona, con cobertura de 150.000 € a 1 M€",""]],
@@ -1477,6 +1491,194 @@ var CREDITS=[
 }
 ];
 var IMGCRED={"forbidden-city":0,"temple-of-heaven":1,"summer-palace":2,"mutianyu":3,"drum-tower":4,"houhai":5,"hutong":6,"lama-temple":7,"bund-skyline":8,"yu-garden":9,"wukang":10,"jingan-temple":11,"shanghai-tower":12};
+/* ---------- Enlaces directos de reserva (precios del 22-oct-2026) ---------- */
+var GO=[
+{
+"when": "Ya",
+"tab": "vuelo",
+"what": "Vuelo de ida y vuelta, 4 adultos",
+"note": "BCN a PEK el 26 mar (CA846) y PVG a BCN el 4 abr (CA839), directos",
+"price": "Trip.com 3.031 € · Air China 3.262 €",
+"links": [
+{
+"t": "Trip.com",
+"u": "https://es.trip.com/flights/showfarefirst?multdcity0=bcn&multacity0=bjs&multdcityid0=707&multacityid0=1&aairport0=pek&multddate0=2027-03-26&multdcity1=sha&multacity1=bcn&multdcityid1=2&multacityid1=707&multddate1=2027-04-04&triptype=mt&class=y&lowpricesource=searchform&quantity=4&searchboxarg=t&nonstoponly=off&locale=es-ES&curr=EUR",
+"best": true
+},
+{
+"t": "Air China",
+"u": "https://www.airchina.es/CAOnline/dyn/air/booking/deepLinkToFare?SITE=B000CA00&PAGE=FARE&LANGUAGE=ES&COUNTRY_SITE=ES&TRIP_TYPE=M&FARE_COMMAND_ID=1&B_LOCATION_1=BCN&E_LOCATION_1=PEK&B_DATE_1=202703260000&B_LOCATION_2=PVG&E_LOCATION_2=BCN&B_DATE_2=202704040000&FLIGHT_NUMBER_1_1=846&AIRLINE_1_1=CA&FLIGHT_NUMBER_2_1=839&AIRLINE_2_1=CA&CABIN=E&TRAVELLER_TYPE_1=ADT&TRAVELLER_TYPE_2=ADT&TRAVELLER_TYPE_3=ADT&TRAVELLER_TYPE_4=ADT&IS_PRIMARY_TRAVELLER_1=Y"
+},
+{
+"t": "Kayak",
+"u": "https://www.kayak.es/flights/BCN-PEK/2027-03-26/PVG-BCN/2027-04-04/4adults?sort=price_a&fs=stops=0"
+}
+]
+},
+{
+"when": "Ya",
+"tab": "hoteles",
+"what": "Pekín: Park Plaza Wangfujing",
+"note": "26 a 31 mar, 5 noches, 2 habitaciones",
+"price": "Booking 1.336 € · Trip.com 1.502 €",
+"links": [
+{
+"t": "Booking",
+"u": "https://www.booking.com/hotel/cn/park-plaza-beijing-wangfujing.es.html?checkin=2027-03-26&checkout=2027-03-31&group_adults=4&no_rooms=2&group_children=0&selected_currency=EUR",
+"best": true
+},
+{
+"t": "Trip.com",
+"u": "https://es.trip.com/hotels/detail/?hotelId=425031&cityId=1&checkIn=2027-03-26&checkOut=2027-03-31&adult=4&children=0&crn=2&curr=EUR&locale=es-ES"
+}
+]
+},
+{
+"when": "Ya",
+"tab": "hoteles",
+"what": "Shanghái: Radisson Collection Hyland",
+"note": "31 mar a 3 abr, 3 noches, 2 habitaciones",
+"price": "Booking 752 € · Trip.com 784 €",
+"links": [
+{
+"t": "Booking",
+"u": "https://www.booking.com/hotel/cn/hyland.es.html?checkin=2027-03-31&checkout=2027-04-03&group_adults=4&no_rooms=2&group_children=0&selected_currency=EUR",
+"best": true
+},
+{
+"t": "Trip.com",
+"u": "https://es.trip.com/hotels/detail/?hotelId=375477&cityId=2&checkIn=2027-03-31&checkOut=2027-04-03&adult=4&children=0&crn=2&curr=EUR&locale=es-ES"
+}
+]
+},
+{
+"when": "Con semanas de margen",
+"tab": "parking",
+"what": "Parking en el aeropuerto",
+"note": "Larga Estancia T1, del 26 de marzo al 4 de abril",
+"price": "≈ 130 € (est.)",
+"links": [
+{
+"t": "Aena Parking",
+"u": "https://parking.aena.es/",
+"best": true
+}
+]
+},
+{
+"when": "Con semanas de margen",
+"tab": "extras",
+"what": "Seguro de viaje",
+"note": "Contrátalo antes de pagar nada que no se reembolse",
+"price": "desde ≈ 38 € por persona",
+"links": [
+{
+"t": "Heymondo",
+"u": "https://heymondo.es/"
+},
+{
+"t": "IATI",
+"u": "https://www.iatiseguros.com/"
+},
+{
+"t": "Intermundial",
+"u": "https://www.intermundial.es/"
+}
+]
+},
+{
+"when": "Con semanas de margen",
+"tab": "extras",
+"what": "eSIM para el móvil",
+"note": "Se compra y se escanea en casa; se activa al aterrizar",
+"price": "≈ 32,50 € (Airalo, 10 días)",
+"links": [
+{
+"t": "Airalo",
+"u": "https://www.airalo.com/china-esim",
+"best": true
+},
+{
+"t": "Holafly",
+"u": "https://esim.holafly.com/esim-china/"
+}
+]
+},
+{
+"when": "27 de febrero",
+"tab": "entradas",
+"what": "Gran Muralla en Mutianyu",
+"note": "Para el lunes 29 de marzo; la web vende hasta 30 días antes y una entrada por pasaporte y día",
+"price": "entrada ¥40–45, teleférico ¥140",
+"links": [
+{
+"t": "Web oficial",
+"u": "https://www.mutianyugreatwall.com/",
+"best": true
+}
+]
+},
+{
+"when": "17 de marzo",
+"tab": "trenes",
+"what": "Tren de Pekín a Shanghái",
+"note": "31 de marzo, hacia las 15:00; la venta abre el 17 de marzo",
+"price": "≈ 84 € por persona",
+"links": [
+{
+"t": "Trip.com",
+"u": "https://es.trip.com/trains/",
+"best": true
+},
+{
+"t": "12306",
+"u": "https://www.12306.cn/index/"
+}
+]
+},
+{
+"when": "21 de marzo, 20:00 en Pekín (13:00 en Madrid)",
+"tab": "entradas",
+"what": "Ciudad Prohibida",
+"note": "Para el domingo 28 de marzo; se agotan en minutos",
+"price": "",
+"links": [
+{
+"t": "Reserva oficial",
+"u": "https://bookingticket.dpm.org.cn/",
+"best": true
+}
+]
+},
+{
+"when": "Del 21 al 27 de marzo",
+"tab": "entradas",
+"what": "Torre de Shanghái, planta 118",
+"note": "Franja horaria para el viernes 2 de abril",
+"price": "¥180 (≈ 24 €)",
+"links": [
+{
+"t": "Trip.com",
+"u": "https://es.trip.com/things-to-do/detail/110126767/",
+"best": true
+}
+]
+},
+{
+"when": "Antes de salir",
+"tab": "extras",
+"what": "Tarjeta de llegada NIA",
+"note": "Rellénala online con el pasaporte, los vuelos y el primer hotel",
+"price": "gratis",
+"links": [
+{
+"t": "Tarjeta NIA",
+"u": "https://s.nia.gov.cn/",
+"best": true
+}
+]
+}
+];
 /* ---------- Imagen de satélite de cada ciudad: archivo y límites en grados [oeste, sur, este, norte] ---------- */
 var SAT={
  bj:{f:"img/sat-bj.jpg",b:[116.219988,39.829961,116.520052,40.040035]},
@@ -2495,13 +2697,15 @@ function schedCompute(S){
       +'<p class="ck">Las horas son reales, con el cambio de huso horario entre España y China. Visitar incluye entradas y paseos de cada lugar; comer y descansar, comidas, siestas y tiempo libre; viajar, vuelos, trenes, coches, traslados y esperas.</p>';
     el.innerHTML=h;
   }
-  var BUDGET={a:"1.883",b:"1.790"};
+  var BUDGET={a:"1.860",b:"1.801"};
   draw();
   var w0=el.clientWidth,t=null;
   window.addEventListener("resize",function(){clearTimeout(t);t=setTimeout(function(){if(Math.abs(el.clientWidth-w0)>12){w0=el.clientWidth;draw();}},150);});
 })();
 /* ---------- Hoteles ---------- */
 function esc2(s){return esc(s);}
+function bkUrl(h,c){return h.bu.replace(/\.html$/,".es.html")+"?checkin="+c.ci+"&checkout="+c.co+"&group_adults=4&no_rooms=2&group_children=0&selected_currency=EUR";}
+function trUrl(h,c){return "https://es.trip.com/hotels/detail/?hotelId="+h.ti+"&cityId="+c.tid+"&checkIn="+c.ci+"&checkOut="+c.co+"&adult=4&children=0&crn=2&curr=EUR&locale=es-ES";}
 function scorePill(label,sc){
   if(!sc||!sc[0]){return "";}
   return '<span class="sc">'+label+' <b>'+sc[0].toFixed(1).replace(".",",")+'</b>'+(sc[1]?' <i>('+fmt(sc[1])+')</i>':'')+'</span>';
@@ -2511,18 +2715,20 @@ function hotelCard(c,h){
   var T=tiers[h.t],n=c.nights;
   var night=h.nt!=null?(fmt(h.nt)+" €"):(h.ntT!=null?(fmt(h.ntT)+" €"):"—");
   var nightSmall="";
-  if(h.nt!=null&&h.ntT!=null&&h.ntT!==h.nt){nightSmall=' <small>Trip.com '+fmt(h.ntT)+' €</small>';}
+  var alt=h.pref==="T"?"Booking":"Trip.com";
+  var cheaper=h.pref==="T"?"T":((h.nt!=null&&h.ntT!=null)?(h.ntT<h.nt?"T":(h.nt<h.ntT?"B":"")):"");
+  if(h.nt!=null&&h.ntT!=null&&h.ntT!==h.nt){nightSmall=' <small>'+alt+' '+fmt(h.ntT)+' €</small>';}
   if(h.nt==null&&h.ntT!=null){nightSmall=' <small>en Trip.com</small>';}
-  var tot=fmt(h.tot)+" €"+(h.totT?' <small>Trip.com '+fmt(h.totT)+' €</small>':'');
-  var per=fmt(h.tot/4)+" €"+(h.totT?' <small>Trip.com '+fmt(h.totT/4)+' €</small>':'');
+  var tot=fmt(h.tot)+" €"+(h.totT?' <small>'+alt+' '+fmt(h.totT)+' €</small>':'');
+  var per=fmt(h.tot/4)+" €"+(h.totT?' <small>'+alt+' '+fmt(h.totT/4)+' €</small>':'');
   var facts=h.f.slice();
   if(c.extraNight&&h.xn){
     var t4=h.tot+2*h.xn;
     facts.push("Con la noche del 26 (+"+fmt(h.xn)+" € por habitación): "+fmt(t4)+" € las dos habitaciones, "+fmt(t4/4)+" € por persona");
   }
   var links="";
-  if(h.bu){links+='<a href="'+h.bu+'?checkin='+c.ci+'&amp;checkout='+c.co+'&amp;group_adults=2&amp;no_rooms=1&amp;selected_currency=EUR">Ver en Booking</a>';}
-  if(h.ti){links+='<a href="https://www.trip.com/hotels/detail/?cityId='+c.tid+'&amp;hotelId='+h.ti+'&amp;checkIn='+c.ci+'&amp;checkOut='+c.co+'&amp;adult=2&amp;crn=1&amp;curr=EUR">Ver en Trip.com</a>';}
+  if(h.bu){links+='<a'+(cheaper==="B"?' class="best"':'')+' href="'+esc(bkUrl(h,c))+'" target="_blank" rel="noopener">Ver en Booking</a>';}
+  if(h.ti){links+='<a'+(cheaper==="T"?' class="best"':'')+' href="'+esc(trUrl(h,c))+'" target="_blank" rel="noopener">Ver en Trip.com</a>';}
   return '<article class="hcard'+(h.t==="rec"?" rec":"")+'">'
     +'<div class="htop"><span class="htier '+T[1]+'">'+T[0]+'</span><span class="hst">'+esc(h.st)+'</span></div>'
     +'<h4>'+esc(h.n)+'</h4><p class="area">'+esc(h.area)+'</p>'
@@ -2568,23 +2774,41 @@ function renderHotels(key){
 /* ---------- Cómo reservar ---------- */
 (function(){
   var tabs=$("howTabs"),panel=$("howPanel");
-  HOWTO.forEach(function(h,i){
+  var ALL=[{id:"ya",n:"Todo de un vistazo",lead:"Todos los enlaces, por orden de fecha. El botón oscuro es la opción más barata el 22 de octubre; ya llevan las fechas y los cuatro viajeros puestos.",rows:true}].concat(HOWTO);
+  ALL.forEach(function(h,i){
     var b=mk("button",null,esc(h.n)); b.type="button"; b.setAttribute("role","tab"); b.setAttribute("data-id",h.id);
     b.setAttribute("aria-selected",i===0?"true":"false"); tabs.appendChild(b);
   });
+  function goRow(r){
+    var links=r.links.map(function(l){return '<a'+(l.best?' class="best"':'')+' href="'+esc(l.u)+'" target="_blank" rel="noopener">'+esc(l.t)+'</a>';}).join("");
+    return '<div class="gorow"><div class="gowhat"><b>'+esc(r.what)+'</b><span>'+esc(r.note)+'</span></div>'
+      +'<div class="goprice">'+esc(r.price||"")+'</div><div class="hlinks">'+links+'</div></div>';
+  }
   function show(id){
-    var h=HOWTO.filter(function(x){return x.id===id;})[0];
-    var facts=h.facts.map(function(f){
-      var v=f[2]?'<a href="'+f[2]+'">'+esc(f[1])+'</a>':esc(f[1]);
-      return '<div><dt>'+esc(f[0])+'</dt><dd>'+v+'</dd></div>';
-    }).join("");
-    panel.innerHTML='<h3>'+esc(h.n)+'</h3><p class="sub" style="margin-top:0">'+esc(h.lead)+'</p>'
-      +'<div class="howgrid"><ol class="howsteps">'+h.steps.map(li).join("")+'</ol><dl class="howfacts">'+facts+'</dl></div>'
-      +'<ul class="howtips">'+h.tips.map(li).join("")+'</ul>';
+    var h=ALL.filter(function(x){return x.id===id;})[0];
+    if(h.rows){
+      var last=null,html="";
+      GO.forEach(function(r){
+        if(r.when!==last){if(last!==null){html+='</div>';} html+='<div class="gogrp"><h4>'+esc(r.when)+'</h4>'; last=r.when;}
+        html+=goRow(r);
+      });
+      html+='</div>';
+      panel.innerHTML='<h3>'+esc(h.n)+'</h3><p class="sub" style="margin-top:0">'+esc(h.lead)+'</p><div class="howgo">'+html+'</div>';
+    }else{
+      var facts=h.facts.map(function(f){
+        var v=f[2]?'<a href="'+f[2]+'">'+esc(f[1])+'</a>':esc(f[1]);
+        return '<div><dt>'+esc(f[0])+'</dt><dd>'+v+'</dd></div>';
+      }).join("");
+      var rows=GO.filter(function(r){return r.tab===id;});
+      panel.innerHTML='<h3>'+esc(h.n)+'</h3><p class="sub" style="margin-top:0">'+esc(h.lead)+'</p>'
+        +(rows.length?'<div class="howgo">'+rows.map(goRow).join("")+'</div>':'')
+        +'<div class="howgrid"><ol class="howsteps">'+h.steps.map(li).join("")+'</ol><dl class="howfacts">'+facts+'</dl></div>'
+        +'<ul class="howtips">'+h.tips.map(li).join("")+'</ul>';
+    }
     tabs.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-selected",b.getAttribute("data-id")===id?"true":"false");});
   }
   tabs.addEventListener("click",function(e){var b=e.target.closest("button[data-id]"); if(b){show(b.getAttribute("data-id"));}});
-  show(HOWTO[0].id);
+  show(ALL[0].id);
 })();
 
 /* ---------- Créditos ---------- */
