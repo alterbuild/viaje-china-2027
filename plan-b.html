@@ -682,6 +682,45 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 .hlinks a.best{background:var(--ink);color:var(--bg)}
 .hlinks a.best:hover{background:var(--ink2);color:var(--bg)}
 @media (max-width:760px){.gorow{grid-template-columns:minmax(0,1fr)}.gorow .hlinks{justify-content:flex-start}}
+
+/* ---------- Mapa: capa de hoteles ---------- */
+.layersw{top:58px}
+.kd.k-hotel.t-rec,.mapsvg .k-hotel.t-rec .dotk{background:var(--jade);fill:var(--jade)}
+.kd.k-hotel.t-alt,.mapsvg .k-hotel.t-alt .dotk{background:var(--slate);fill:var(--slate)}
+.kd.k-hotel.t-eco,.mapsvg .k-hotel.t-eco .dotk{background:var(--xa);fill:var(--xa)}
+.kd.k-hotel.t-lux,.mapsvg .k-hotel.t-lux .dotk{background:var(--sh);fill:var(--sh)}
+.pt.k-hotel.t-eco .gl{stroke:var(--on-drop)}
+.pt.ghost{--ms:.58}
+.pt.ghost .mk{opacity:.85}
+.pt.ghost .gl{display:none}
+.pt.ghost.near{--ms:.8}
+.pt.ghost .lbl{font-size:11px;font-weight:600;opacity:.92}
+.pt.ghost.near .lbl,.pt.ghost:hover .lbl,.pt.ghost.sel .lbl{font-weight:750;opacity:1}
+.pt.ghost.hide .lbl{opacity:0}
+.pt.ghost.hide:hover .lbl{opacity:1}
+.g-ring{pointer-events:none}
+.g-ring .ringc{fill:none;stroke:var(--ink);stroke-width:1.6px;stroke-dasharray:7 6;vector-effect:non-scaling-stroke}
+.g-ring .ringc.r2{fill:rgba(255,255,255,.07)}
+.sat .g-ring .ringc{stroke:#fff}
+.g-ring .ringt{font:700 11px var(--f-body);fill:var(--ink);paint-order:stroke;stroke:var(--halo);stroke-width:3.5px;stroke-linejoin:round}
+.sat .g-ring .ringt{fill:#fff;stroke:rgba(4,12,18,.9)}
+.sightlist button small{font-weight:600;color:var(--muted);font-size:.78rem}
+.sightcard .prc{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sightcard .prc .pn{grid-column:1/-1}
+.sightcard .prc .pn dd{font-size:1.5rem}
+.sightcard .scs{margin-top:.7rem}
+.sightcard .nearh{font:700 .95rem var(--f-body);margin:1rem 0 0;color:var(--ink)}
+.sightcard .nearh+ul{margin-top:.4rem}
+.sightcard ul.hsum{list-style:none;padding-left:0}
+.sightcard ul.hsum li{display:flex;gap:.6rem;align-items:flex-start;margin:.6rem 0}
+.sightcard details{margin-top:.8rem;font-size:.88rem;color:var(--ink2)}
+.sightcard summary{cursor:pointer;font-weight:700;color:var(--ink)}
+.hcard .prc .pn dd{font-size:1.35rem}
+.hlinks button.maplink{appearance:none;border:0;display:inline-flex;align-items:center;padding:.4rem .85rem;border-radius:999px;background:var(--fill-on);box-shadow:inset 0 1px 0 var(--edge);font:700 .82rem var(--f-body);color:var(--ink);cursor:pointer}
+.hlinks button.maplink:hover{background:var(--ink);color:var(--bg)}
+.sightcard ul.hsum .hn{font-weight:700;color:var(--ink)}
+.sightcard ul.hsum .kd{margin-top:.35rem}
+.prc dd small.b{display:block;margin-top:.15rem}
 /* ---------- Plan B: comparación y presupuesto ---------- */
 .rcols.two{grid-template-columns:repeat(2,1fr)}
 .cmp{padding:22px 20px 18px;margin-top:1.6rem}
@@ -894,7 +933,7 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <li>Palacio de Verano, torres y lagos, martes 30</li>
 <li>Templo de los Lamas y de Confucio, miércoles 31</li>
 </ul>
-<p class="hotel"><svg class="ic"><use href="#i-bed"/></svg><span><b>Park Plaza Wangfujing</b>, 4★, 134 € por habitación y noche</span></p>
+<p class="hotel"><svg class="ic"><use href="#i-bed"/></svg><span><b>Park Plaza Wangfujing</b>, 4★, 67 € por persona y noche</span></p>
 </article>
 <article class="city sh">
 <figure class="ph"><img src="img/bund-skyline.jpg" alt="El skyline de Pudong visto desde el Bund de Shanghái" width="1280" height="570" loading="lazy"><small>Pudong desde el Bund</small></figure>
@@ -904,7 +943,7 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <li>Concesión Francesa y Torre de Shanghái, viernes 2</li>
 <li>West Bund y salida al aeropuerto, sábado 3</li>
 </ul>
-<p class="hotel"><svg class="ic"><use href="#i-bed"/></svg><span><b>Radisson Collection Hyland</b>, 4★, 125 € por habitación y noche</span></p>
+<p class="hotel"><svg class="ic"><use href="#i-bed"/></svg><span><b>Radisson Collection Hyland</b>, 4★, 62,50 € por persona y noche</span></p>
 </article>
 </div>
 </div>
@@ -957,7 +996,7 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <section id="mapa" class="cty" data-city="none">
 <div class="wrap">
 <h2>Mapa del viaje</h2>
-<p class="sub">Toca un punto para ver qué hay, cuánto cuesta y cómo reservarlo. En el globo, arrastra para girarlo.</p>
+<p class="sub">Toca un punto para ver qué hay, cuánto cuesta y cómo reservarlo. En el globo, arrastra para girarlo. En cada ciudad, el interruptor «Hoteles» pone todas las opciones de alojamiento en el mapa, con lo que hay cerca de cada una.</p>
 <div class="mapwrap">
 <div class="mapcol">
 <div class="seg glass" id="mapTabs" role="tablist" aria-label="Vistas del mapa"></div>
@@ -965,6 +1004,7 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <div class="mapbox glass" id="mapbox">
 <div id="map" role="group" aria-label="Mapa interactivo del viaje"></div>
 <div class="basesw" id="basesw" role="group" aria-label="Tipo de mapa" hidden><button type="button" data-b="sat" aria-pressed="true">Satélite</button><button type="button" data-b="map" aria-pressed="false">Mapa</button></div>
+<div class="basesw layersw" id="layersw" role="group" aria-label="Qué mostrar en el mapa" hidden><button type="button" data-l="sights" aria-pressed="true">Qué ver</button><button type="button" data-l="hotels" aria-pressed="false">Hoteles</button></div>
 <p class="mapattr" id="mapattr" hidden></p>
 <div class="mapctl" id="mapctl"><button type="button" id="zin" aria-label="Acercar">+</button><button type="button" id="zout" aria-label="Alejar">−</button><button type="button" id="zreset" aria-label="Volver a la vista inicial">↺</button></div>
 </div>
@@ -981,7 +1021,7 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <section id="hoteles" class="cty" data-city="none">
 <div class="wrap">
 <h2>Hoteles, uno por uno</h2>
-<p class="sub">Precios por habitación y noche para dos adultos, con impuestos, sin desayuno y con cancelación gratuita, consultados en Booking.com y Trip.com el 21 de octubre de 2026; el Park Plaza y el Hyland, otra vez en Booking el 22 de octubre para las fechas de este plan. Dos habitaciones para los cuatro.</p>
+<p class="sub">Precios por persona y noche (la mitad de una habitación doble con dos adultos), con impuestos, sin desayuno y con cancelación gratuita, consultados en Booking.com y Trip.com el 21 de octubre de 2026; el Park Plaza y el Hyland, otra vez en Booking el 22 de octubre para las fechas de este plan. Dos habitaciones para los cuatro.</p>
 <div class="seg glass" id="hotelTabs" role="tablist" aria-label="Ciudad"></div>
 <div class="hdesk" id="hotelPanel"></div>
 
@@ -1178,10 +1218,10 @@ var SIGHTS=[
 /* China */
 {id:"cbj",v:"china",zh:["北京","Běijīng"],n:"Pekín",k:"cbj",ll:[116.4074,39.9042],day:2,lab:"t",goto:"bj",
  t:"Cinco noches: del 26 al 31 de marzo. Palacios, templos, lagos y la Gran Muralla, sin cambiar de hotel.",
- d:["Hotel: Park Plaza Wangfujing, 4★, 134 € por habitación y noche","Tren a Shanghái el miércoles 31 hacia las 15:00: 4 h 37 min"]},
+ d:["Hotel: Park Plaza Wangfujing, 4★, 67 € por persona y noche","Tren a Shanghái el miércoles 31 hacia las 15:00: 4 h 37 min"]},
 {id:"csh",v:"china",zh:["上海","Shànghǎi"],n:"Shanghái",k:"csh",ll:[121.4737,31.2304],day:6,lab:"b",goto:"sh",
  t:"Tres noches: del 31 de marzo al 3 de abril. Casco antiguo, Concesión Francesa, museos y rascacielos.",
- d:["Hotel: Radisson Collection Hyland, 4★, 125 € por habitación y noche","Vuelo de vuelta a las 00:40 del domingo 4"]},
+ d:["Hotel: Radisson Collection Hyland, 4★, 62,50 € por persona y noche","Vuelo de vuelta a las 00:40 del domingo 4"]},
 /* Pekín */
 {id:"toh",v:"bj",zh:["天坛公园","Tiāntán Gōngyuán"],n:"Templo del Cielo",k:"hist",ll:[116.4029,39.8799],day:2,lab:"r",img:"temple-of-heaven",
  t:"Un parque llano con el templo circular más famoso de China. Visita tranquila para el día de la llegada.",
@@ -1218,7 +1258,7 @@ var SIGHTS=[
  d:["Templo de los Lamas ¥25 (3,3 €), con franja horaria en el mini-programa; de 09:00 a 16:30 (por confirmar)","Templo de Confucio y Guozijian ¥30 (4 €); de 09:00 a 17:00, cierra los lunes","El hutong Wudaoying queda entre los dos: sitio para comer","Entre 3 y 3,5 horas con la comida"]},
 {id:"hbj",v:"bj",zh:["王府井丽景酒店","Wángfǔjǐng Lìjǐng Jiǔdiàn"],n:"Park Plaza Wangfujing",k:"hotel",ll:[116.4127,39.9153],day:1,lab:"r",
  t:"Vuestro hotel en Pekín durante cinco noches: 4★ en Dongcheng, con la habitación lista desde la noche del 26.",
- d:["134 € por habitación y noche, sin desayuno","Metro Dengshikou (L5) a 0,8 km y Wangfujing a 0,9 km","Cancelación gratuita hasta el día de llegada"]},
+ d:["67 € por persona y noche (134 € la habitación), sin desayuno","Metro Dengshikou (L5) a 130 m en línea recta","Cancelación gratuita hasta el día de llegada"]},
 {id:"bjs",v:"bj",zh:["北京南站","Běijīng Nánzhàn"],n:"Estación Beijing South",k:"trans",ic:"train",ll:[116.3728,39.8637],far:true,day:6,lab:"r",
  t:"De aquí sale el tren a Shanghái el miércoles 31 hacia las 15:00.",
  d:["Beijing South a Shanghai Hongqiao: 4 h 37 min (el más rápido, 4 h 18 min)","2.ª clase ≈ ¥626 (84 €); billetes desde el 17 de marzo","Entrad con el pasaporte original y 45–60 minutos de margen"]},
@@ -1258,7 +1298,7 @@ var SIGHTS=[
  d:["Paseo gratuito; museos de pago (consulta cada uno)","Metro L11, estación Yunjin Road, o taxi","Entre 2 y 3 horas"]},
 {id:"hsh",v:"sh",zh:["上海丽笙精选海仑宾馆","Shànghǎi Lìshēng Jīngxuǎn Hǎilún Bīnguǎn"],n:"Radisson Collection Hyland",k:"hotel",ll:[121.4763,31.2375],day:6,lab:"l",
  t:"Vuestro hotel en Shanghái: 4★ en Nanjing East Road, tres noches.",
- d:["125 € por habitación y noche, sin desayuno","Metro L2/L10 a 200–450 m; el Bund, a 1 km","Consigna gratuita y check-out a las 12:00"]},
+ d:["62,50 € por persona y noche (125 € la habitación), sin desayuno","Metro East Nanjing Road (L2/L10) a 340 m; el Bund, a 1,1 km","Consigna gratuita y check-out a las 12:00"]},
 {id:"hq",v:"sh",zh:["虹桥火车站","Hóngqiáo Huǒchēzhàn"],n:"Estación Hongqiao",k:"trans",ic:"train",ll:[121.3203,31.1943],off:true,day:6,
  t:"Aquí llega el tren de Pekín el miércoles 31, hacia las 19:40.",
  d:["Metro L2 o L10 hasta East Nanjing Road","Avisa al hotel de la llegada (≈ 20:30)"]},
@@ -1328,55 +1368,55 @@ bj:{name:"Pekín",nights:5,extraNight:false,dates:"26 a 31 de marzo",tid:1,ci:"2
  sum:"Cinco noches seguidas desde el 26 para tener la habitación lista al aterrizar a las 05:30. Un solo hotel, sin cambiar de maletas.",
  list:[
  {t:"rec",n:"Park Plaza Beijing Wangfujing",st:"4★",area:"Dongcheng, cerca de Wangfujing",b:[9.0,1426],tr:[9.4,3175],nt:134,ntT:150,tot:1336,
-  f:["Cancelación gratuita hasta las 14:00 del día de llegada","Metro Dengshikou (L5) a 0,8 km; Wangfujing a 0,9 km","Ciudad Prohibida a 2,7 km, no a pie","Desayuno: +18 € por persona (con desayuno, 161 € la habitación y noche)"],
-  m:["Es el único de los seis con 9,0 o más en Booking y en Trip.com","Marca Radisson, con personal que habla inglés según reseñas de extranjeros","Pega: tarifa base sin desayuno","Precio comprobado en Booking el 22 de octubre para el 26 al 31 de marzo: 668 € por habitación"],
+  f:["Cancelación gratuita hasta las 14:00 del día de llegada","Desayuno: +18 € por persona (con desayuno, 161 € la habitación y noche)"],
+  m:["Es el único de los seis con 9,0 o más en Booking y en Trip.com","Marca Radisson, con personal que habla inglés según reseñas de extranjeros","Pega: tarifa base sin desayuno","Precio comprobado en Booking el 22 de octubre para el 26 al 31 de marzo: 668 € por habitación (66,80 € por persona y noche)"],
   bu:"https://www.booking.com/hotel/cn/park-plaza-beijing-wangfujing.html",ti:425031},
  {t:"alt",n:"Atour Tiananmen-Wangfujing",st:"4★",area:"Wangfujing, calle peatonal",b:[8.2,127],tr:[9.4,4480],nt:131,ntT:125,tot:1310,
-  f:["Cancelación gratuita hasta las 18:00 del día de llegada","Metro Dengshikou (L5) a 150 m","Ciudad Prohibida a 1,6 km","Desayuno: +6 € por persona"],
+  f:["Cancelación gratuita hasta las 18:00 del día de llegada","Desayuno: +6 € por persona"],
   m:["Pegas: casi sin inglés en las reseñas y menos de 8,5 en Booking (pasa en Trip.com)","Cama twin: +59 € por tres noches (est. +98 € por cinco)","Total calculado con el precio por noche del plan A (est.)"],
   bu:"https://www.booking.com/hotel/cn/atour-beijing-tiananmen-wangfujing-pedestrian.html",ti:80949097},
  {t:"alt",n:"Holiday Inn Express Downtown",st:"4★",area:"Chaoyangmen",b:[8.8,840],tr:[9.6,2271],nt:105,ntT:118,tot:1050,
-  f:["Cancelación gratuita hasta el 13 de marzo (plazo corto)","Metro Chaoyangmen (L2/L6) a 0,4 km","Ciudad Prohibida a 3,5 km","Desayuno incluido en los 105 €"],
+  f:["Cancelación gratuita hasta el 13 de marzo (plazo corto)","Desayuno incluido en los 105 €"],
   m:["Pegas: lejos de las visitas y habitación compacta","Cama twin: +10 €","Total calculado con el precio por noche del plan A (est.)"],
   bu:"https://www.booking.com/hotel/cn/holiday-inn-express-beijing-downtown-an-ihg.html",ti:112903238},
  {t:"eco",n:"Inner Mongolia Grand",st:"4★",area:"Cerca de Wangfujing",b:[9.2,1041],tr:[9.4,0],nt:79,ntT:null,tot:790,
-  f:["Cancelación gratuita hasta el 26 de marzo","Metro Beijing Station (L2) a 0,45 km"],
-  m:["La opción económica: 395 € por habitación en las cinco noches","Total calculado con el precio por noche del plan A (est.)"],
+  f:["Cancelación gratuita hasta el 26 de marzo"],
+  m:["La opción económica: 39,50 € por persona y noche","Total calculado con el precio por noche del plan A (est.)"],
   bu:"https://www.booking.com/hotel/cn/inner-mongolia-grand-wangfujing.html",ti:419804},
  {t:"lux",n:"Sunworld Dynasty Wangfujing",st:"5★",area:"Wangfujing",b:[9.1,3951],tr:[9.4,0],nt:139,ntT:null,tot:1390,
-  f:["Tarifa reembolsable hasta el 25 de marzo","Metro Dengshikou a 0,3 km","Ciudad Prohibida a 2,1 km"],
-  m:["Solo 5 € más por habitación y noche que el Park Plaza","Total calculado con el precio por noche del plan A (est.)"],
+  f:["Tarifa reembolsable hasta el 25 de marzo"],
+  m:["Solo 2,50 € más por persona y noche que el Park Plaza","Total calculado con el precio por noche del plan A (est.)"],
   bu:"https://www.booking.com/hotel/cn/sunworld-dynasty-beijing.html",ti:419461},
  {t:"lux",n:"New World Beijing",st:"5★",area:"Chongwenmen",b:[9.2,1459],tr:null,nt:144,ntT:null,tot:1440,
-  f:["Metro Chongwenmen (L2/L5) a 50 m"],
-  m:["Total calculado: 144 € por habitación y noche, dos habitaciones, cinco noches (est.)"],
+  f:[],
+  m:["Total calculado: 72 € por persona y noche (144 € la habitación), dos habitaciones, cinco noches (est.)"],
   bu:"https://www.booking.com/hotel/cn/beijing-new-world-hotel.html",ti:0}
  ]},
 sh:{name:"Shanghái",nights:3,extraNight:false,dates:"31 de marzo a 3 de abril",tid:2,ci:"2027-03-31",co:"2027-04-03",
  sum:"Nanjing East Road y la Plaza del Pueblo, con metro a cinco minutos. Tres noches y el último día entero, con consigna.",
  list:[
  {t:"rec",n:"Radisson Collection Hyland",st:"4★",area:"Nanjing East Road",b:[8.8,4408],tr:[9.2,5703],nt:125,ntT:132,tot:752,
-  f:["Cancelación gratuita hasta las 18:00 del 31 de marzo","Metro L2/L10 East Nanjing Road a 200–450 m; calle peatonal de Nanjing a 0,5 km; Bund a 1 km","Recepción 24 horas, consigna gratuita y check-out a las 12:00","Desayuno: +24 € por persona"],
-  m:["Pegas: fianza de ¥500 y check-in solo de 14:00 a 18:00: avisa de la llegada hacia las 20:30","Late check-out sujeto a disponibilidad y con cargo; una noche más el 3 de abril cuesta unos 126 € por habitación","Precio comprobado en Booking el 22 de octubre para el 31 de marzo al 3 de abril: 376 € por habitación"],
+  f:["Cancelación gratuita hasta las 18:00 del 31 de marzo","Recepción 24 horas, consigna gratuita y check-out a las 12:00","Desayuno: +24 € por persona"],
+  m:["Pegas: fianza de ¥500 y check-in solo de 14:00 a 18:00: avisa de la llegada hacia las 20:30","Late check-out sujeto a disponibilidad y con cargo; una noche más el 3 de abril cuesta unos 63 € por persona","Precio comprobado en Booking el 22 de octubre para el 31 de marzo al 3 de abril: 376 € por habitación (62,67 € por persona y noche)"],
   bu:"https://www.booking.com/hotel/cn/hyland.html",ti:375477},
  {t:"alt",n:"Atour People's Square Metro",st:"4–5★",area:"Plaza del Pueblo",b:[9.0,1885],tr:null,nt:127,ntT:null,tot:762,
-  f:["Cancelación gratuita hasta las 18:00 del día de llegada","Metro L1/L2/L8 People's Square a 0,3 km","Desayuno incluido en los 127 €"],
+  f:["Cancelación gratuita hasta las 18:00 del día de llegada","Desayuno incluido en los 127 €"],
   m:["Pega: cadena china, con inglés probablemente limitado (est.)","Sin datos en Trip.com","Total calculado con el precio por noche del plan A (est.)"],
   bu:"https://www.booking.com/hotel/cn/shang-hai-ren-min-yan-chang-huang-he-da-lou-ya-duo-jiu-dian.html",ti:0},
  {t:"alt",n:"SSAW Boutique Bund",st:"4★",area:"Yuyuan y el Bund",b:[8.6,4233],tr:[9.6,1569],nt:144,ntT:112,tot:864,
-  f:["Cancelación gratuita hasta el 30 de marzo","Metro Yuyuan (L10) a 0,4 km; Plaza del Pueblo a 1,1 km","Desayuno: +17 € por persona"],
+  f:["Cancelación gratuita hasta el 30 de marzo","Desayuno: +17 € por persona"],
   m:["Pega: menos céntrico","Los 112 € de Trip.com incluyen una promoción de primera estancia","Total calculado con el precio por noche del plan A (est.)"],
   bu:"https://www.booking.com/hotel/cn/zhong-xing-jun-ting.html",ti:375479},
  {t:"eco",n:"Metropolo Nanjing Road",st:"4★",area:"East Nanjing Road",b:null,tr:[9.6,6770],nt:null,ntT:93,tot:558,
-  f:["Cancelación gratuita hasta las 12:00 del día anterior (por confirmar)","Metro East Nanjing Road (L2/L10) a 110 m","Consigna gratuita"],
-  m:["La opción económica: 279 € por habitación en las tres noches","Solo se vende por Trip.com","Total calculado con el precio por noche del plan A (est.)"],
+  f:["Cancelación gratuita hasta las 12:00 del día anterior (por confirmar)","Consigna gratuita"],
+  m:["La opción económica: 46,50 € por persona y noche","Solo se vende por Trip.com","Total calculado con el precio por noche del plan A (est.)"],
   bu:"",ti:756484},
  {t:"lux",n:"Radisson Blu Shanghai New World",st:"5★",area:"Plaza del Pueblo",b:[9.1,9979],tr:null,nt:185,ntT:null,tot:1110,
-  f:["Cancelación gratuita hasta el día anterior (por confirmar)","Plaza del Pueblo a 0,35–0,55 km"],
+  f:["Cancelación gratuita hasta el día anterior (por confirmar)"],
   m:["Dos habitaciones por 1.110 € en las tres noches (est.)"],
   bu:"https://www.booking.com/hotel/cn/radisson-new-world-shanghai.html",ti:0},
  {t:"lux",n:"Crowne Plaza Nanjing Road",st:"5★",area:"Nanjing Road",b:[8.6,0],tr:null,nt:168,ntT:null,tot:1008,
-  f:["168 € por habitación y noche"],
+  f:["84 € por persona y noche"],
   m:["Total calculado: dos habitaciones, tres noches (est.)"],
   bu:"",ti:0}
  ]}
@@ -1679,6 +1719,53 @@ var GO=[
 ]
 }
 ];
+/* ---------- Datos: posición y entorno de cada hotel (ver build_hgeo.py) ---------- */
+var HGEO={"bj":{"Park Plaza Beijing Wangfujing":{"ll":[116.41334,39.91557],"a":"No.97, Jinbao Street, Dongcheng","src":"Booking","m":[["Dengshikou (L5)",130],["Jinyu Hutong (L8)",720],["Dongsi",870]],"e":["Dadong Roast Duck Restaurant (大董烤鸭)","Starbucks"],"o":["Museo Chino de Mujeres y Niños","Antigua residencia de Lao She","Museo Nacional de Arte de China","Antiquarium del Museo del Palacio"]},"Atour Tiananmen-Wangfujing":{"ll":[116.40447,39.91328],"a":"No. 241 Caichang Hutong, Wangfujing Street, Dongcheng","src":"Booking","m":[["Jinyu Hutong (L8)",160],["Dengshikou (L5)",670],["Wangfujing (L1/L8)",710]],"e":["Donglaishun Muslim Restaurant (东来顺涮羊肉)","Drunk","Yuanqi Shousi (元气寿司 APM)"],"o":["Antigua residencia de Lao She","Puerta del Mediodía","Templo Imperial de los Antepasados","Museo Nacional de Arte de China"]},"Holiday Inn Express Downtown":{"ll":[116.41815,39.92031],"a":"No. 18 Lishi Hutong, Dongcheng","src":"Booking","m":[["Dongsi",740],["Dengshikou (L5)",770],["Chaoyangmen (L2/L6)",890]],"e":["Paomo Guan (泡馍馆)","Starbucks","Phoenix Cafe"],"o":["Museo Chino de Mujeres y Niños","Antigua residencia de Lao She","Museo Nacional de Arte de China","Antiguo Observatorio de Pekín"]},"Inner Mongolia Grand":{"ll":[116.4125,39.90435],"a":"No.2, Chong Wen Inner Street, Dongcheng","src":"Booking","m":[["Dongdan",280],["Chongwenmen (L2/L5)",510],["Wangfujing (L1/L8)",680]],"e":["Starbucks","Coffee Bene","Pacific Coffee"],"o":["Parque de las ruinas de la Muralla de la Dinastía Ming de Pekín","Museo Chino de Mujeres y Niños","Antiguo Observatorio de Pekín","Museo de cera Madame Tussauds Pekín"]},"Sunworld Dynasty Wangfujing":{"ll":[116.40599,39.91682],"a":"50 Wang Fujing Avenue, Dongcheng","src":"Booking","m":[["Jinyu Hutong (L8)",250],["Dengshikou (L5)",520],["National Art Museum",770]],"e":["Cafe Bene","Donglaishun Muslim Restaurant (东来顺涮羊肉)","Drunk"],"o":["Antigua residencia de Lao She","Museo Nacional de Arte de China","Antiquarium del Museo del Palacio","Puerta del Mediodía"]},"New World Beijing":{"ll":[116.40632,39.89745],"a":"No.8 Qinian Street, Dongcheng","src":"Booking","m":[["Chongwenmen (L2/L5)",540],["Qiaowan",770],["Ciqikou",840]],"e":["Starbucks","Maxim's de Paris (马克西姆西餐厅)","Bianyifang Roast Duck (便宜坊烤鸭店)"],"o":["Museo de cera Madame Tussauds Pekín","Sitio arqueológico de la Academia Hanlin de Pekín","Puerta de Zhengyang","Parque de las ruinas de la Muralla de la Dinastía Ming de Pekín"]}},"xa":{"Novotel Xi'an The Bell Tower":{"ll":[108.94549,34.26206],"a":"No 16 Anban Street, Xincheng, Xi'an","src":"Booking","m":[["Bell Tower",110],["Zhonglou (L2/L6)",330],["Guangji Street",1000]],"e":["The secret (bar)","PUB","RJ. Coffee"],"o":["Torre de la Campana","Torre del Tambor","Plaza Nanmen","Antigua muralla de la puerta sur de Yan'an"]},"Hilton Garden Inn Bell Tower":{"ll":[108.93833,34.25733],"a":"15 Fenxiang Road, Beilin, Xi'an","src":"Booking","m":[["Guangji Street",530],["Bell Tower",750],["Zhonglou (L2/L6)",760]],"e":["Jacky's Bar","Phoenix Treebar","Hero Coffee"],"o":["Plaza Nanmen","Torre del Tambor","Torre de la Campana","Antigua muralla de la puerta sur de Yan'an"]},"Holiday Inn Express Bell Tower":{"ll":[108.94185,34.25866],"a":"No.70, Nandajie, Beilin, Xi'an","src":"Booking","m":[["Bell Tower",400],["Zhonglou (L2/L6)",520],["Guangji Street",700]],"e":["La Pluie d'Été (café)","Yuguotianqing (café)","Music Bar"],"o":["Torre de la Campana","Torre del Tambor","Antigua muralla de la puerta sur de Yan'an","Plaza Nanmen"]},"Four Points by Sheraton Bell Tower":{"ll":[108.93567,34.26182],"a":"No.79 Xida Street, Lianhu, Xi'an","src":"Booking","m":[["Guangji Street",130],["Zhonglou (L2/L6)",620],["Bell Tower",860]],"e":["Starbucks","Pacific Coffee","Starbucks Coffee"],"o":["Torre del Tambor","Torre de la Campana","Plaza Nanmen","Antigua muralla de la puerta sur de Yan'an"]},"Sofitel Xi'an on Renmin Square":{"ll":[108.9554,34.2669],"a":"No. 319, Dongxin Street, Xincheng, Xi'an","src":"Booking","m":[["Wulukou",560],["Dachaishi (L4/L6)",710],["Bell Tower",1150]],"e":["Costa Coffee","Starbucks"],"o":["Muralla de Xi'an","Parque de la Revolución","Torre de la Campana","Plaza Nanmen"]}},"sh":{"Radisson Collection Hyland":{"ll":[121.47606,31.23772],"a":"No.505 East Nanjing Road, Huangpu, Shanghái","src":"Booking","m":[["East Nanjing Road (L2/L10)",340],["Tiantong Road",910],["Dashijie",960]],"e":["Food Fusion (融合马来西亚餐厅)","Lao Sheng Chang (老盛昌苏州汤包馆)","One More Cup (café)"],"o":["Centro de Exposiciones de Planificación Urbana de Shanghái","Plaza del Pueblo","Museo de Shanghái","Museo de cera Madame Tussauds Shanghái"]},"Atour People's Square Metro":{"ll":[121.46578,31.23801],"a":"No. 199, West Beijing Road, Huangpu, Shanghái","src":"Booking","m":[["Xinzha Road",350],["Qufu Road",700],["Shanghai Natural History Museum",750]],"e":["Nayuki (café)","jamaicablue (café)","Starbucks"],"o":["Museo de cera Madame Tussauds Shanghái","Museo de Historia Natural de Shanghái","Museo de Shanghái","Plaza del Pueblo"]},"SSAW Boutique Bund":{"ll":[121.48004,31.22943],"a":"No. 839 Ren Min Road, Huangpu, Shanghái","src":"Booking","m":[["Yuyuan Garden (L10)",270],["Dashijie",490],["Laoximen",970]],"e":["Starbucks","JZ Latino lounge","JZ Latino rooftop bar"],"o":["Jardín Yu","Plaza del Pueblo","Museo de Shanghái","Centro de Exposiciones de Planificación Urbana de Shanghái"]},"Metropolo Nanjing Road":{"ll":[121.47779,31.23935],"a":"No. 200 Shanxi South Road, Huangpu, Shanghái","src":"Trip.com","m":[["East Nanjing Road (L2/L10)",140],["Tiantong Road",710],["Yuyuan Garden (L10)",1150]],"e":[],"o":[]},"Radisson Blu Shanghai New World":{"ll":[121.46834,31.23631],"a":"88 Nanjing West Road, Huangpu, Shanghái","src":"Booking","m":[["Xinzha Road",650],["Qufu Road",890],["Shanghai Natural History Museum",1000]],"e":["Cavern Bar","Zhen Lao Dafang (真老大房)","yolo (café)"],"o":["Museo de cera Madame Tussauds Shanghái","Plaza del Pueblo","Museo de Shanghái","Museo de Historia Natural de Shanghái"]},"Crowne Plaza Nanjing Road":{"ll":[121.47236,31.23673],"a":"700 Jiujiang Road, Huangpu, Shanghái","src":"OpenStreetMap","m":[["East Nanjing Road (L2/L10)",710],["Dashijie",880],["Xinzha Road",930]],"e":[],"o":[]}}};
+/* ---------- Hoteles: precio por persona y noche, distancias y puntos del mapa ---------- */
+var TIERN={rec:"Recomendado",alt:"Alternativa",eco:"Económico",lux:"Más lujo"};
+/* 133 → "133 €"; 66,5 → "66,50 €" */
+function fmtE(x){var r=Math.round(x*100)/100;return (r%1===0?String(r):r.toFixed(2).replace(".",","))+" €";}
+function fmtDist(m){
+  m=Math.round(m);
+  if(m<1000){return (m<100?m:Math.round(m/10)*10)+" m";}
+  return (Math.round(m/100)/10).toFixed(1).replace(".",",")+" km";
+}
+/* a pie: 5 km/h y un 25 % más de recorrido que la línea recta */
+function walkMin(m){return Math.max(1,Math.round(m*1.25/83));}
+function geoDist(a,b){
+  var r=Math.PI/180,p1=a[1]*r,p2=b[1]*r,h=Math.pow(Math.sin((p2-p1)/2),2)+Math.cos(p1)*Math.cos(p2)*Math.pow(Math.sin((b[0]-a[0])*r/2),2);
+  return 2*6371000*Math.asin(Math.sqrt(h));
+}
+/* Habitación doble y noche; por persona es la mitad (dos adultos por habitación). nt es el precio elegido y ntT, el de la otra web */
+function hprice(h,c){
+  var room=h.nt!=null?h.nt:h.ntT,alt=null;
+  if(h.nt!=null&&h.ntT!=null&&h.ntT!==h.nt){alt={n:h.pref==="T"?"Booking":"Trip.com",room:h.ntT};}
+  return {room:room,pn:room/2,alt:alt,only:(h.nt==null&&h.ntT!=null)};
+}
+var HX={};
+/* un punto de mapa por hotel con posición conocida */
+function hotelPts(vid){
+  if(HX[vid]){return HX[vid];}
+  var c=HOTELS[vid],g=typeof HGEO!=="undefined"?HGEO[vid]:null,out=[];
+  if(c&&g){
+    c.list.forEach(function(h,i){
+      var q=g[h.n]; if(!q){return;}
+      out.push({id:"hx-"+vid+"-"+i,v:vid,k:"hotel",hotel:h,city:c,geo:q,n:h.n,ll:q.ll,tier:h.t,lab:"r",zk:1.7});
+    });
+  }
+  HX[vid]=out; return out;
+}
+
+/* Google Maps dibuja China en GCJ-02 (desplazado unos 500 m respecto al GPS): para sus enlaces hay que convertir */
+function toGoogle(ll){
+  var x=ll[0],y=ll[1];
+  if(!(x>73.66&&x<135.05&&y>18&&y<53.55)){return ll;}
+  var pi=Math.PI,A=6378245.0,EE=0.00669342162296594,u=x-105,w=y-35;
+  var dl=-100+2*u+3*w+0.2*w*w+0.1*u*w+0.2*Math.sqrt(Math.abs(u))+((20*Math.sin(6*u*pi)+20*Math.sin(2*u*pi))*2/3)+((20*Math.sin(w*pi)+40*Math.sin(w/3*pi))*2/3)+((160*Math.sin(w/12*pi)+320*Math.sin(w*pi/30))*2/3);
+  var dn=300+u+2*w+0.1*u*u+0.1*u*w+0.1*Math.sqrt(Math.abs(u))+((20*Math.sin(6*u*pi)+20*Math.sin(2*u*pi))*2/3)+((20*Math.sin(u*pi)+40*Math.sin(u/3*pi))*2/3)+((150*Math.sin(u/12*pi)+300*Math.sin(u/30*pi))*2/3);
+  var rl=y/180*pi,m=1-EE*Math.sin(rl)*Math.sin(rl),sm=Math.sqrt(m);
+  return [x+dn*180/(A/sm*Math.cos(rl)*pi),y+dl*180/((A*(1-EE))/(m*sm)*pi)];
+}
 /* ---------- Imagen de satélite de cada ciudad: archivo y límites en grados [oeste, sur, este, norte] ---------- */
 var SAT={
  bj:{f:"img/sat-bj.jpg",b:[116.219988,39.829961,116.520052,40.040035]},
@@ -1955,7 +2042,11 @@ var MAPDATA=null;
 try{MAPDATA=JSON.parse($("mapdata").textContent);}catch(err){MAPDATA=null;}
 var cardEl=$("sightcard");
 
-function byId(id){for(var i=0;i<SIGHTS.length;i++){if(SIGHTS[i].id===id){return SIGHTS[i];}}return null;}
+function byId(id){
+  for(var i=0;i<SIGHTS.length;i++){if(SIGHTS[i].id===id){return SIGHTS[i];}}
+  for(var vid in HX){for(var j=0;j<HX[vid].length;j++){if(HX[vid][j].id===id){return HX[vid][j];}}}
+  return null;
+}
 function sightsOf(v){return SIGHTS.filter(function(s){return s.v===v;});}
 function dayText(n){return "Día "+n+", "+DAYLAB[n].toLowerCase();}
 function li(x){return "<li>"+esc(x)+"</li>";}
@@ -1977,12 +2068,12 @@ function loadVec(id,cb){
   fetch("data/"+id+".json").then(function(r){if(!r.ok){throw new Error("http "+r.status);}return r.json();}).then(done,function(){done(null);});
 }
 function gmapsUrl(s){
-  var z=s.v==="china"?11:(s.ic==="plane"?14:(s.id==="mut"?15:17));
-  return "https://www.google.com/maps/@?api=1&map_action=map&center="+s.ll[1]+"%2C"+s.ll[0]+"&zoom="+z+"&basemap=satellite";
+  var z=s.v==="china"?11:(s.ic==="plane"?14:(s.id==="mut"?15:17)),p=toGoogle(s.ll);
+  return "https://www.google.com/maps/@?api=1&map_action=map&center="+p[1].toFixed(6)+"%2C"+p[0].toFixed(6)+"&zoom="+z+"&basemap=satellite";
 }
 
 function initMap(d3){
-  var box=$("map"),listEl=$("sightlist"),tabsEl=$("mapTabs"),hintEl=$("maphint"),baseEl=$("basesw"),attrEl=$("mapattr");
+  var box=$("map"),listEl=$("sightlist"),tabsEl=$("mapTabs"),hintEl=$("maphint"),baseEl=$("basesw"),attrEl=$("mapattr"),layerEl=$("layersw");
   var ALLV=[
     {id:"vuelo",name:"Vuelos",type:"globe"},
     {id:"esp",name:"Castellón",type:"flat",data:"iberia",bbox:[-1.2,39.6,3.2,41.9],proj:"merc"},
@@ -1992,15 +2083,96 @@ function initMap(d3){
     {id:"sh",name:"Shanghái",type:"flat",data:"sh",city:true}
   ];
   var VIEWS=ALLV.filter(function(v){return MAPVIEWS.indexOf(v.id)>=0;});
-  var state={view:"vuelo",sel:null,rot:[-60,-40,0],gk:1,base:"sat"};
-  var svg=null,proj=null,gBase=null,gVec=null,gFeat=null,gPts=null,gCap=null,zoomB=null,tr=d3.zoomIdentity,W=0,H=0,mks=null,caps=[],capEls=[],capOrder=[],globe=null,mkOcc=[],mkTaken=[],dens=1;
+  var state={view:"vuelo",sel:null,rot:[-60,-40,0],gk:1,base:"sat",layer:"sights",h:null};
+  var svg=null,proj=null,gBase=null,gVec=null,gFeat=null,gPts=null,gCap=null,gRing=null,zoomB=null,tr=d3.zoomIdentity,W=0,H=0,mks=null,caps=[],capEls=[],capOrder=[],globe=null,mkOcc=[],mkTaken=[],dens=1;
 
   function curView(){for(var i=0;i<VIEWS.length;i++){if(VIEWS[i].id===state.view){return VIEWS[i];}}return VIEWS[0];}
+
+  /* ----- capa «Hoteles»: todas las opciones de hotel de la ciudad, con los sitios del plan atenuados alrededor ----- */
+  var HINT_H="Toca un hotel para ver qué hay cerca. Los círculos marcan 500 m y 1 km desde el hotel.";
+  function layerOn(v){return state.layer==="hotels"&&!!v.city&&hotelPts(v.id).length>0;}
+  function itemsOf(v){
+    if(!layerOn(v)){return sightsOf(v.id);}
+    var hs=hotelPts(v.id),gh=[];
+    sightsOf(v.id).forEach(function(s){
+      if(s.k==="hotel"||s.off||s.far){return;}
+      if(hs.some(function(h){return geoDist(h.ll,s.ll)<=3000;})){var c={ghost:true};for(var k in s){c[k]=s[k];}gh.push(c);}
+    });
+    return hs.concat(gh);
+  }
+  function markNear(){
+    if(!mks){return;}
+    mks.classed("near",function(d){return !!(state.h&&d.ghost&&geoDist(state.h.ll,d.ll)<=2500);});
+  }
+  function labelOf(d){
+    if(state.h&&d.ghost){var m=geoDist(state.h.ll,d.ll); if(m<=2500){return d.n+" · "+fmtDist(m);}}
+    return d.n;
+  }
+  /* círculos de 500 m y 1 km alrededor del hotel elegido; se redibujan en cada zoom */
+  function drawRings(){
+    if(!gRing){return;}
+    gRing.selectAll("*").remove();
+    var h=state.h; if(!h||!proj||curView().type==="globe"){return;}
+    var q=tr.apply(proj(h.ll)),sc=proj.scale()*tr.k/(6371000*Math.cos(h.ll[1]*Math.PI/180));
+    [[1000,"1 km, ≈ 15 min a pie","r2"],[500,"500 m, ≈ 8 min a pie","r1"]].forEach(function(o){
+      var r=o[0]*sc;
+      gRing.append("circle").attr("class","ringc "+o[2]).attr("cx",q[0]).attr("cy",q[1]).attr("r",r);
+      gRing.append("text").attr("class","ringt").attr("x",q[0]).attr("y",q[1]-r-5).attr("text-anchor","middle").text(o[1]);
+    });
+  }
+  function hotelPlan(s){
+    var out=[];
+    sightsOf(s.v).forEach(function(x){
+      if(x.k==="hotel"||x.k==="trans"||x.off||x.far){return;}
+      var d=geoDist(s.ll,x.ll); if(d<=5000){out.push({s:x,d:d});}
+    });
+    out.sort(function(a,b){return a.d-b.d;});
+    return out.slice(0,5);
+  }
+  function hotelsIntro(v){
+    var pts=hotelPts(v.id),c=HOTELS[v.id],seen={};
+    var leg=pts.filter(function(p){if(seen[p.tier]){return false;}seen[p.tier]=1;return true;})
+      .map(function(p){return '<span class="tg"><span class="kd k-hotel t-'+p.tier+'"></span>'+TIERN[p.tier]+'</span>';}).join("");
+    var rows=pts.map(function(p){
+      var P=hprice(p.hotel,p.city),m=p.geo.m[0];
+      return '<li><span class="kd k-hotel t-'+p.tier+'"></span><span><span class="hn">'+esc(p.n)+'</span><br>'+fmtE(P.pn)+' por persona y noche'+(m?' · '+esc(m[0])+' a '+fmtDist(m[1]):'')+'</span></li>';
+    }).join("");
+    return '<div class="bd"><div class="tags">'+leg+'</div><h3>Hoteles en '+esc(c.name)+'</h3>'
+      +'<p>Las '+pts.length+' opciones sobre el mapa. Precio por persona y noche, con dos adultos por habitación; distancias en línea recta.</p>'
+      +'<ul class="hsum">'+rows+'</ul></div>';
+  }
+  function hotelCardHtml(s){
+    var h=s.hotel,c=s.city,g=s.geo,P=hprice(h,c),n=c.nights,items=[],i;
+    var tags='<div class="tags"><span class="tg"><span class="kd k-hotel t-'+h.t+'"></span>'+TIERN[h.t]+'</span><span class="tg">'+esc(h.st)+'</span><span class="tg">'+esc(c.name)+'</span></div>';
+    var pn=fmtE(P.pn)+(P.alt?' <small>'+P.alt.n+' '+fmtE(P.alt.room/2)+'</small>':(P.only?' <small>en Trip.com</small>':''));
+    var prc='<dl class="prc"><div><dt>Por persona y noche</dt><dd>'+pn+'</dd></div><div><dt>Habitación y noche</dt><dd>'+fmtE(P.room)+'</dd></div>'
+      +'<div><dt>'+n+' noches, los cuatro</dt><dd>'+fmt(h.tot)+' €<small class="b">'+fmt(h.tot/4)+' € cada uno</small></dd></div></dl>';
+    if(g.m.length){items.push("Metro: "+g.m.slice(0,2).map(function(x){return x[0]+" a "+fmtDist(x[1])+" ("+walkMin(x[1])+" min a pie)";}).join("; "));}
+    var pl=hotelPlan(s);
+    if(pl.length){items.push("De vuestro plan: "+pl.map(function(x){return x.s.n+" a "+fmtDist(x.d);}).join("; "));}
+    if(g.e.length){items.push("Para comer y tomar algo, según Booking: "+g.e.join("; "));}
+    if(g.o.length){items.push("Más cerca, según Booking: "+g.o.join("; "));}
+    var links="";
+    if(h.bu){links+='<a class="back mlink" href="'+esc(bkUrl(h,c))+'" target="_blank" rel="noopener">Ver en Booking</a> ';}
+    if(h.ti){links+='<a class="back mlink" href="'+esc(trUrl(h,c))+'" target="_blank" rel="noopener">Ver en Trip.com</a> ';}
+    links+='<a class="back mlink" href="'+gmapsUrl(s)+'" target="_blank" rel="noopener">Ver en satélite (Google Maps)</a> ';
+    return '<div class="bd">'+tags+'<h3>'+esc(h.n)+'</h3><p>'+esc(h.area)+'. '+esc(g.a)+'.</p>'
+      +'<div class="scs">'+scorePill("Booking",h.b)+scorePill("Trip.com",h.tr)+'</div>'+prc
+      +'<ul class="facts">'+h.f.map(li).join("")+'</ul>'
+      +'<h4 class="nearh">Qué hay cerca</h4><ul>'+items.map(li).join("")+'</ul>'
+      +'<p class="ck">Distancias en línea recta desde la posición del hotel (a pie, algo más). Posición: '+esc(g.src)+', con unos 50 m de margen.</p>'
+      +(h.m&&h.m.length?'<details><summary>Pegas y notas</summary><ul>'+h.m.map(li).join("")+'</ul></details>':'')
+      +'<div class="macts">'+links+'<button type="button" class="back" data-act="back">Volver a los hoteles</button></div></div>';
+  }
 
   /* ----- tarjeta de información ----- */
   function showCard(){
     var v=curView(),s=state.sel?byId(state.sel):null,html="";
-    if(!s){
+    if(!s&&layerOn(v)){
+      html=hotelsIntro(v);
+    }else if(s&&s.hotel){
+      html=hotelCardHtml(s);
+    }else if(!s){
       var I=INTRO[v.id];
       html='<div class="bd"><div class="tags"><span class="tg">'+esc(v.name)+'</span></div><h3>'+esc(I.t)+'</h3><p>'+esc(I.x)+'</p><ul>'+I.d.map(li).join("")+'</ul></div>';
     }else{
@@ -2027,8 +2199,9 @@ function initMap(d3){
   /* ----- lista de lugares ----- */
   function renderList(){
     listEl.innerHTML="";
-    sightsOf(state.view).forEach(function(s){
-      var b=mk("button",null,'<span class="kd k-'+s.k+'"></span>'+esc(s.n)); b.type="button";
+    itemsOf(curView()).forEach(function(s){
+      if(s.ghost){return;}
+      var b=mk("button",null,s.hotel?'<span class="kd k-hotel t-'+s.tier+'"></span>'+esc(s.n)+' <small>'+fmtE(hprice(s.hotel,s.city).pn)+'</small>':'<span class="kd k-'+s.k+'"></span>'+esc(s.n)); b.type="button";
       b.setAttribute("aria-pressed",state.sel===s.id?"true":"false"); b.setAttribute("data-id",s.id);
       listEl.appendChild(b);
     });
@@ -2050,6 +2223,8 @@ function initMap(d3){
   function select(id,fly){
     state.sel=(id&&state.sel===id)?null:id;
     var s=state.sel?byId(state.sel):null;
+    if(!s){state.h=null;}else if(s.hotel){state.h=s;}
+    markNear(); drawRings();
     if(mks){mks.classed("sel",function(d){return d.id===state.sel;});}
     if(gFeat){gFeat.selectAll("path.f").classed("sel",function(d){return !!s&&d.properties.n===s.n;});}
     showCard();
@@ -2065,11 +2240,23 @@ function initMap(d3){
   });
   tabsEl.addEventListener("click",function(e){var b=e.target.closest("button[data-v]"); if(b){setView(b.getAttribute("data-v"));}});
   function setView(id){
-    state.view=id; state.sel=null; tr=d3.zoomIdentity;
+    state.view=id; state.sel=null; state.h=null; tr=d3.zoomIdentity;
+    if(!curView().city){state.layer="sights";}
     tabsEl.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-selected",b.getAttribute("data-v")===id?"true":"false");});
-    hintEl.textContent=INTRO[id].hint;
-    render(true); renderList(); showCard(); syncBase();
+    hintEl.textContent=layerOn(curView())?HINT_H:INTRO[id].hint;
+    syncLayer(); render(true); renderList(); showCard(); syncBase();
   }
+  function syncLayer(){
+    var v=curView();
+    layerEl.hidden=!(v.city&&hotelPts(v.id).length);
+    layerEl.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-l")===state.layer?"true":"false");});
+  }
+  layerEl.addEventListener("click",function(e){
+    var b=e.target.closest("button[data-l]"); if(!b||b.getAttribute("data-l")===state.layer){return;}
+    state.layer=b.getAttribute("data-l"); state.sel=null; state.h=null; tr=d3.zoomIdentity;
+    hintEl.textContent=layerOn(curView())?HINT_H:INTRO[state.view].hint;
+    syncLayer(); render(true); renderList(); showCard();
+  });
 
   /* ----- satélite o mapa ----- */
   function syncBase(){
@@ -2092,7 +2279,7 @@ function initMap(d3){
   /* ----- marcadores ----- */
   function makeMarkers(parent,items){
     var g=parent.selectAll("g.pt").data(items,function(d){return d.id;}).enter().append("g")
-      .attr("class",function(d){return "pt k-"+d.k;}).attr("tabindex",0).attr("role","button").attr("aria-label",function(d){return d.n;})
+      .attr("class",function(d){return "pt k-"+d.k+(d.tier?" t-"+d.tier:"")+(d.ghost?" ghost":"");}).attr("tabindex",0).attr("role","button").attr("aria-label",function(d){return d.n;})
       .on("click",function(ev,d){ev.stopPropagation();select(d.id,false);})
       .on("keydown",function(ev,d){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();select(d.id,false);}});
     g.append("title").text(function(d){return d.n;});
@@ -2116,6 +2303,7 @@ function initMap(d3){
   function place(){
     if(!mks){return;}
     var isGlobe=(curView().type==="globe");
+    if(!isGlobe){drawRings();}
     var c=[W/2,H/2],cl=isGlobe?null:proj.invert(c);
     mks.each(function(d){
       var g=d3.select(this),p=proj(d.ll);
@@ -2132,7 +2320,7 @@ function initMap(d3){
       if(!out){
         g.attr("transform","translate("+q[0]+","+q[1]+")").classed("off",false);
         g.select("path.arr").attr("d",null);
-        labelAt(g,d,d.lab||"r",d.n);
+        labelAt(g,d,d.lab||"r",labelOf(d));
       }else{
         var vx=q[0]-c[0],vy=q[1]-c[1],k=Math.min((W/2-m)/Math.max(Math.abs(vx),1e-6),(H/2-m)/Math.max(Math.abs(vy),1e-6));
         var ex=c[0]+vx*k,ey=c[1]+vy*k,len=Math.hypot(vx,vy)||1,ux=vx/len,uy=vy/len;
@@ -2243,7 +2431,7 @@ function initMap(d3){
         var pref=n.d.lab||"r",tries=[pref].concat(["r","l","t","b"].filter(function(p){return p!==pref;})),k,pick=null;
         for(k=0;k<tries.length&&!pick;k++){var rr=rectAt(n,w,tries[k]); if(!clashes(rr,n)){pick=tries[k]; r=rr;}}
         if(!pick){pick=pref; r=rectAt(n,w,pref); bad=!sel;}
-        labelAt(g,n.d,pick,n.d.n);
+        labelAt(g,n.d,pick,labelOf(n.d));
       }
       g.classed("hide",bad);
       if(!bad){taken.push(r);}
@@ -2270,6 +2458,7 @@ function initMap(d3){
     return {type:"LineString",coordinates:pts};
   }
   function drawGlobe(first){
+    gRing=null;
     ROUTES.flights.forEach(function(f){if(!f.line){f.line=arcLine(f);}});
     var R=Math.min(W,H)/2-16,cx=W/2,cy=H/2;
     proj=d3.geoOrthographic().scale(R*state.gk).translate([cx,cy]).clipAngle(90).rotate(state.rot);
@@ -2365,10 +2554,10 @@ function initMap(d3){
   }
 
   function drawFlat(v,first){
-    var pad=v.city?42:30,items=sightsOf(v.id),data=MAPDATA[v.data],fit=[];
+    var pad=v.city?42:30,items=itemsOf(v),data=MAPDATA[v.data],fit=[];
     if(v.city){
       items.forEach(function(s){if(!s.off&&!s.far){fit.push(s.ll);}});
-      data.features.forEach(function(f){if(f.properties.k==="wall"){fit=fit.concat(featCoords(f));}});
+      if(!layerOn(v)){data.features.forEach(function(f){if(f.properties.k==="wall"){fit=fit.concat(featCoords(f));}});}
     }else{fit=sample(v.bbox);}
     proj=(v.proj==="conic")?d3.geoConicEqualArea().parallels([25,47]).rotate([-105,0]).center([0,36]):d3.geoMercator();
     proj.fitExtent([[pad,pad],[W-pad,H-pad]],{type:"MultiPoint",coordinates:fit});
@@ -2415,6 +2604,7 @@ function initMap(d3){
     }
     if(v.id==="esp"){addRoute(ROUTES.car,routeColor("bj"),"AP-7, ≈ 300 km y 3 h",7);}
     if(v.id==="china"){ROUTES.china.forEach(function(r){addRoute(r.p,routeColor(r.c),r.t,r.m);});}
+    gRing=svg.append("g").attr("class","g-ring");
     gCap=svg.append("g");
     rebuildCaps();
     gPts=svg.append("g");
@@ -2447,10 +2637,11 @@ function initMap(d3){
     var sg=defs.append("radialGradient").attr("id","gSpec").attr("cx","50%").attr("cy","50%").attr("r","50%");
     sg.append("stop").attr("offset","0").attr("stop-color","#fff").attr("stop-opacity",0.32); sg.append("stop").attr("offset","1").attr("stop-color","#fff").attr("stop-opacity",0);
     defs.append("filter").attr("id","glow").attr("x","-20%").attr("y","-20%").attr("width","140%").attr("height","140%").append("feGaussianBlur").attr("stdDeviation",4);
-    mks=null;
+    mks=null; gRing=null;
     if(v.type==="globe"){drawGlobe(first);}else{drawFlat(v,first);}
     if(keep&&zoomB&&v.type!=="globe"){svg.call(zoomB.transform,keep);}
     if(state.sel&&mks){mks.classed("sel",function(d){return d.id===state.sel;});}
+    markNear(); drawRings();
   }
 
   /* ----- botones de zoom ----- */
@@ -2475,6 +2666,15 @@ function initMap(d3){
       lastW=w; clearTimeout(rt); rt=setTimeout(function(){render(false);},120);
     }).observe(box);
   }
+  /* lo usan los botones «Ver en el mapa» de las fichas de hotel */
+  window.MAPAPI={showHotel:function(vid,name){
+    var p=null;
+    hotelPts(vid).forEach(function(x){if(x.n===name){p=x;}});
+    if(!p||!VIEWS.some(function(v){return v.id===vid;})){return false;}
+    state.layer="hotels"; setView(vid); select(p.id,true);
+    var sec=$("mapa"); if(sec){sec.scrollIntoView({behavior:rm?"auto":"smooth",block:"start"});}
+    return true;
+  }};
   setView("vuelo");
   lastW=Math.round(box.getBoundingClientRect().width);
 }
@@ -2710,30 +2910,29 @@ function scorePill(label,sc){
   if(!sc||!sc[0]){return "";}
   return '<span class="sc">'+label+' <b>'+sc[0].toFixed(1).replace(".",",")+'</b>'+(sc[1]?' <i>('+fmt(sc[1])+')</i>':'')+'</span>';
 }
-function hotelCard(c,h){
+function hotelCard(c,h,key){
   var tiers={rec:["Recomendado","t-rec"],alt:["Alternativa",""],eco:["Económico","t-eco"],lux:["Más lujo","t-lux"]};
   var T=tiers[h.t],n=c.nights;
-  var night=h.nt!=null?(fmt(h.nt)+" €"):(h.ntT!=null?(fmt(h.ntT)+" €"):"—");
-  var nightSmall="";
+  var P=hprice(h,c);
   var alt=h.pref==="T"?"Booking":"Trip.com";
   var cheaper=h.pref==="T"?"T":((h.nt!=null&&h.ntT!=null)?(h.ntT<h.nt?"T":(h.nt<h.ntT?"B":"")):"");
-  if(h.nt!=null&&h.ntT!=null&&h.ntT!==h.nt){nightSmall=' <small>'+alt+' '+fmt(h.ntT)+' €</small>';}
-  if(h.nt==null&&h.ntT!=null){nightSmall=' <small>en Trip.com</small>';}
-  var tot=fmt(h.tot)+" €"+(h.totT?' <small>'+alt+' '+fmt(h.totT)+' €</small>':'');
-  var per=fmt(h.tot/4)+" €"+(h.totT?' <small>'+alt+' '+fmt(h.totT/4)+' €</small>':'');
+  var perNight=fmtE(P.pn)+(P.alt?' <small>'+alt+' '+fmtE(P.alt.room/2)+'</small>':(P.only?' <small>en Trip.com</small>':''));
+  var room=fmtE(P.room);
+  var tot=fmt(h.tot)+" €"+(h.totT?' <small>'+alt+' '+fmt(h.totT)+' €</small>':'')+'<small class="b">'+fmt(h.tot/4)+' € cada uno</small>';
   var facts=h.f.slice();
   if(c.extraNight&&h.xn){
     var t4=h.tot+2*h.xn;
-    facts.push("Con la noche del 26 (+"+fmt(h.xn)+" € por habitación): "+fmt(t4)+" € las dos habitaciones, "+fmt(t4/4)+" € por persona");
+    facts.push("Con la noche del 26 (+"+fmtE(h.xn/2)+" por persona): "+fmt(t4)+" € los cuatro, "+fmt(t4/4)+" € por persona");
   }
   var links="";
   if(h.bu){links+='<a'+(cheaper==="B"?' class="best"':'')+' href="'+esc(bkUrl(h,c))+'" target="_blank" rel="noopener">Ver en Booking</a>';}
   if(h.ti){links+='<a'+(cheaper==="T"?' class="best"':'')+' href="'+esc(trUrl(h,c))+'" target="_blank" rel="noopener">Ver en Trip.com</a>';}
+  if(typeof HGEO!=="undefined"&&HGEO[key]&&HGEO[key][h.n]){links+='<button type="button" class="maplink" data-vid="'+key+'" data-n="'+esc(h.n)+'">Ver en el mapa</button>';}
   return '<article class="hcard'+(h.t==="rec"?" rec":"")+'">'
     +'<div class="htop"><span class="htier '+T[1]+'">'+T[0]+'</span><span class="hst">'+esc(h.st)+'</span></div>'
     +'<h4>'+esc(h.n)+'</h4><p class="area">'+esc(h.area)+'</p>'
     +'<div class="scs">'+scorePill("Booking",h.b)+scorePill("Trip.com",h.tr)+'</div>'
-    +'<dl class="prc"><div><dt>Habitación y noche</dt><dd>'+night+nightSmall+'</dd></div><div><dt>2 hab., '+n+' noches</dt><dd>'+tot+'</dd></div><div><dt>Por persona</dt><dd>'+per+'</dd></div></dl>'
+    +'<dl class="prc"><div class="pn"><dt>Por persona y noche</dt><dd>'+perNight+'</dd></div><div><dt>Habitación y noche</dt><dd>'+room+'</dd></div><div><dt>'+n+' noches, los cuatro</dt><dd>'+tot+'</dd></div></dl>'
     +'<ul class="facts">'+facts.map(li).join("")+'</ul>'
     +(h.m&&h.m.length?'<details><summary>Pegas y notas</summary><ul>'+h.m.map(li).join("")+'</ul></details>':'')
     +(links?'<div class="hlinks">'+links+'</div>':'')
@@ -2742,9 +2941,13 @@ function hotelCard(c,h){
 function renderHotels(key){
   var c=HOTELS[key];
   $("hotelPanel").innerHTML='<div class="hsum"><b>'+esc(c.name)+'</b><span>'+esc(c.dates)+'. '+esc(c.sum)+'</span></div>'
-    +'<div class="hgrid2">'+c.list.map(function(h){return hotelCard(c,h);}).join("")+'</div>';
+    +'<div class="hgrid2">'+c.list.map(function(h){return hotelCard(c,h,key);}).join("")+'</div>';
   $("hotelTabs").querySelectorAll("button").forEach(function(b){b.setAttribute("aria-selected",b.getAttribute("data-k")===key?"true":"false");});
 }
+$("hotelPanel").addEventListener("click",function(e){
+  var b=e.target.closest("button.maplink"); if(!b){return;}
+  if(!(window.MAPAPI&&MAPAPI.showHotel(b.getAttribute("data-vid"),b.getAttribute("data-n")))){b.hidden=true;}
+});
 (function(){
   var tabs=$("hotelTabs");
   Object.keys(HOTELS).forEach(function(k){
