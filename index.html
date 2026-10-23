@@ -721,6 +721,138 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 .sightcard ul.hsum .hn{font-weight:700;color:var(--ink)}
 .sightcard ul.hsum .kd{margin-top:.35rem}
 .prc dd small.b{display:block;margin-top:.15rem}
+
+/* ---------- Qué hacer ---------- */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#actTabs{margin-top:1.4rem}
+#actTabs small,.actcats small{font-weight:600;color:var(--muted);margin-left:.15rem}
+.actbar2{margin-top:14px;padding:14px 16px;border-radius:26px;display:grid;gap:12px}
+.actcats{display:flex;flex-wrap:wrap;gap:6px}
+.actcats button,.actflt button{appearance:none;display:inline-flex;align-items:center;gap:.3rem;padding:.38rem .8rem;border-radius:999px;border:1px solid var(--edge-lo);background:var(--fill);box-shadow:inset 0 1px 0 var(--edge);font:650 .82rem var(--f-body);color:var(--ink2);cursor:pointer;transition:background .25s}
+.actcats button:hover,.actflt button:hover{background:var(--fill-on);color:var(--ink)}
+.actcats button[aria-pressed="true"],.actflt button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:transparent}
+.actcats button[aria-pressed="true"] small{color:inherit;opacity:.7}
+.actcats button:focus-visible,.actflt button:focus-visible{outline:3px solid var(--sh);outline-offset:2px}
+.actctl{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.actsearch input,.actsort select{appearance:none;border:1px solid var(--edge-lo);background:var(--fill-on);color:var(--ink);font:600 .86rem var(--f-body);padding:.45rem .85rem;border-radius:999px;min-width:0}
+.actsearch input{width:min(100%,230px)}
+.actsort{display:inline-flex;align-items:center;gap:.5rem;font-size:.8rem;color:var(--muted);margin-left:auto}
+.actsort select{padding-right:1.6rem;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 14px) 52%,calc(100% - 9px) 52%;background-size:5px 5px;background-repeat:no-repeat}
+.actflt{display:flex;flex-wrap:wrap;gap:6px}
+.actcount{margin:14px 4px 10px;color:var(--muted);font-size:.86rem}
+.actgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,310px),1fr));gap:16px;align-items:start}
+.actempty{padding:22px;text-align:center;grid-column:1/-1;color:var(--ink2)}
+.acard{padding:16px 16px 14px;border-radius:26px;background:var(--glass);border:1px solid var(--edge-lo);box-shadow:inset 0 1px 0 var(--edge),0 18px 36px -26px var(--shade);display:flex;flex-direction:column;gap:9px;min-width:0}
+.acard.on{box-shadow:inset 0 1px 0 var(--edge),0 0 0 2px var(--jade),0 18px 36px -26px var(--shade)}
+.atop{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.av{display:inline-block;padding:.16rem .6rem;border-radius:999px;font-size:.72rem;font-weight:800;background:var(--fill);color:var(--ink2)}
+.av.v3{background:var(--bj-wash);color:var(--bj-t)}
+.av.v2{background:var(--jade-wash);color:var(--jade-t)}
+.av.v1{background:var(--sh-wash);color:var(--sh-t)}
+.acat{font-size:.76rem;color:var(--muted);font-weight:650}
+.afav{appearance:none;margin-left:auto;width:36px;height:36px;border-radius:50%;border:1px solid var(--edge-lo);background:var(--fill);color:var(--ink2);display:grid;place-items:center;cursor:pointer;transition:background .2s,color .2s,transform .2s}
+.afav:hover{background:var(--fill-on)}
+.afav:focus-visible{outline:3px solid var(--sh);outline-offset:2px}
+.afav .ic{width:20px;height:20px}
+.afav[aria-pressed="true"]{color:#fff;background:var(--bj);border-color:transparent}
+.afav[aria-pressed="true"] .ic{fill:currentColor}
+.acard h4{font:700 1.08rem/1.25 var(--f-body);margin:0}
+.azh{font:600 .98rem var(--f-han);color:var(--ink2);margin-top:-.4rem}
+.aarea{color:var(--muted);font-size:.84rem;margin-top:-.3rem}
+.aplan{align-self:flex-start;padding:.15rem .6rem;border-radius:999px;background:var(--jade-wash);color:var(--jade-t);font-size:.76rem;font-weight:700}
+.afacts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0;padding:10px 0;border-block:1px solid var(--hair)}
+.afacts dt{font-size:.68rem;color:var(--muted);line-height:1.25}
+.afacts dd{margin:.2rem 0 0;font:750 .95rem/1.2 var(--f-body);font-variant-numeric:tabular-nums}
+.afacts dd.r2{color:var(--bj-t)} .afacts dd.r1{color:var(--xa-t)} .afacts dd.r0{color:var(--jade-t)}
+.adesc{font-size:.9rem;color:var(--ink2)}
+.apeople{border-left:3px solid var(--sh);padding:.15rem 0 .15rem .75rem;display:grid;gap:.2rem}
+.apeople h5{margin:0;font:750 .72rem var(--f-body);color:var(--muted);letter-spacing:.02em}
+.apeople p{font-size:.86rem;color:var(--ink2)}
+.ata{font-size:.78rem;color:var(--ink2)}
+.ata b{font-weight:800;color:var(--ink)}
+.ata.none{color:var(--muted)}
+.atip{font-size:.86rem;color:var(--ink2)}
+.atip b{color:var(--ink)}
+.acard details{font-size:.86rem;color:var(--ink2)}
+.acard summary{cursor:pointer;font-weight:700;color:var(--ink)}
+.adl{margin:.5rem 0 0;display:grid;gap:.45rem}
+.adl dt{font-size:.7rem;color:var(--muted)}
+.adl dd{margin:0}
+.alinks{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;padding-top:4px}
+.alinks a,.alinks button.amap{display:inline-flex;align-items:center;padding:.38rem .8rem;border-radius:999px;background:var(--fill-on);box-shadow:inset 0 1px 0 var(--edge);font:700 .8rem var(--f-body);color:var(--ink);text-decoration:none;border:0;cursor:pointer;appearance:none}
+.alinks a:hover,.alinks button.amap:hover{background:var(--ink);color:var(--bg)}
+.alinks a.best{background:var(--ink);color:var(--bg)}
+.actsum{position:sticky;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);z-index:20;margin-top:20px;padding:12px 16px;border-radius:24px}
+.sumempty{font-size:.88rem;color:var(--ink2)}
+.sumrow{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;font-size:.9rem}
+.sumrow b{font-weight:800}
+.sumbtns{display:flex;gap:6px;margin-left:auto}
+.sumbtns button,.sumlist button{appearance:none;border:1px solid var(--edge-lo);background:var(--fill-on);color:var(--ink);padding:.32rem .75rem;border-radius:999px;font:700 .78rem var(--f-body);cursor:pointer}
+.sumbtns button:hover,.sumlist button:hover{background:var(--ink);color:var(--bg)}
+.actsum h5{margin:.9rem 0 .2rem;font:800 .8rem var(--f-body);color:var(--muted)}
+.sumlist{list-style:none;margin:0;padding:0;display:grid;gap:4px;max-height:260px;overflow:auto}
+.sumlist li{display:flex;gap:10px;justify-content:space-between;align-items:center;font-size:.86rem}
+.sumlist small{color:var(--muted)}
+
+/* ---------- Móvil y seguro ---------- */
+#cxTabs{margin-top:1.4rem}
+.cxlead{margin-bottom:16px;max-width:76ch}
+.cxpick{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:26px;box-shadow:inset 0 1px 0 var(--edge),0 0 0 2px var(--jade),0 22px 50px -22px var(--shade)}
+.cxpick .ic{width:26px;height:26px;color:var(--jade-t);margin-top:.15rem}
+.cxpick h3{margin:0 0 .25rem}
+.cxpick p{color:var(--ink2);font-size:.95rem;max-width:80ch}
+.cxgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px;margin-top:16px;align-items:start}
+.cxcard{padding:18px;border-radius:26px;background:var(--glass);border:1px solid var(--edge-lo);box-shadow:inset 0 1px 0 var(--edge),0 18px 36px -26px var(--shade);display:flex;flex-direction:column;gap:11px;min-width:0}
+.cxtop{display:flex;gap:8px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.cxtop h4{font:700 1.15rem var(--f-body);margin:0}
+.cxbadge{padding:.16rem .65rem;border-radius:999px;background:var(--jade-wash);color:var(--jade-t);font-size:.74rem;font-weight:800}
+.cxfacts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0;padding:10px 0;border-block:1px solid var(--hair)}
+.cxfacts .w{grid-column:1/-1}
+.cxfacts dt{font-size:.7rem;color:var(--muted);line-height:1.25}
+.cxfacts dd{margin:.15rem 0 0;font:700 .92rem/1.25 var(--f-body)}
+.cxfacts dd.big{font-size:1.25rem}
+.cxother{font-size:.8rem;color:var(--muted)}
+.cxpc{list-style:none;margin:0;padding:0;display:grid;gap:5px;font-size:.86rem;color:var(--ink2)}
+.cxpc li{padding-left:1.4rem;position:relative}
+.cxpc li::before{position:absolute;left:0;top:0;width:1.1rem;height:1.1rem;display:grid;place-items:center;border-radius:50%;font-weight:900;font-size:.8rem;line-height:1}
+.cxpc .pro::before{content:"+";background:var(--jade-wash);color:var(--jade-t)}
+.cxpc .con::before{content:"−";background:var(--bj-wash);color:var(--bj-t)}
+.cxsay{margin:0;border-left:3px solid var(--sh);padding:.1rem 0 .1rem .8rem;display:grid;gap:.25rem}
+.cxsay b{font:750 .72rem var(--f-body);color:var(--muted)}
+.cxsay p{font-size:.86rem;color:var(--ink2)}
+.cxsay small{font-size:.74rem;color:var(--muted)}
+.cxlinks{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.cxlinks a{display:inline-flex;padding:.4rem .9rem;border-radius:999px;background:var(--fill-on);box-shadow:inset 0 1px 0 var(--edge);font-size:.82rem;font-weight:700;color:var(--ink);text-decoration:none}
+.cxlinks a.best{background:var(--ink);color:var(--bg)}
+.cxcols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px;margin-top:16px}
+.cxbox{padding:18px 20px;border-radius:26px}
+.cxbox h3{margin:0 0 .5rem}
+.cxbox ul,.cxbox ol{margin:0;padding-left:1.15rem;display:grid;gap:.45rem;font-size:.9rem;color:var(--ink2)}
+.cxbox p{font-size:.9rem;color:var(--ink2)}
+@media (max-width:560px){.actsort{margin-left:0}.afacts{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.sumbtns{margin-left:0}}
+
+/* ---------- Mapa: capa de actividades ---------- */
+.kd.k-act.vd3,.mapsvg .k-act.vd3 .dotk{background:var(--bj);fill:var(--bj)}
+.kd.k-act.vd2,.mapsvg .k-act.vd2 .dotk{background:var(--jade);fill:var(--jade)}
+.kd.k-act.vd1,.mapsvg .k-act.vd1 .dotk{background:var(--sh);fill:var(--sh)}
+.kd.k-act.vd0,.mapsvg .k-act.vd0 .dotk{background:var(--slate);fill:var(--slate)}
+.pt.k-act.vd1 .gl,.pt.k-act.vd0 .gl{stroke:#fff}
+.pt.k-act.mine .ring{opacity:1;stroke:var(--jade);stroke-width:3}
+.sat .pt.k-act.mine .ring{stroke:#5BE3B9}
+.layersw button{white-space:nowrap}
+.acard.flash{animation:aflash 1.6s ease}
+@keyframes aflash{0%,60%{box-shadow:inset 0 1px 0 var(--edge),0 0 0 3px var(--sh),0 0 30px var(--sh-glow)}100%{box-shadow:inset 0 1px 0 var(--edge),0 18px 36px -26px var(--shade)}}
+@media (prefers-reduced-motion:reduce){.acard.flash{animation:none;box-shadow:inset 0 1px 0 var(--edge),0 0 0 3px var(--sh)}}
+.actsum.empty{position:static;padding:10px 16px;background:var(--glass-lo)}
+@media (max-width:700px){
+  .actcats,.actflt{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding:2px 2px 6px;margin-inline:-2px;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 26px),transparent)}
+  .actcats::-webkit-scrollbar,.actflt::-webkit-scrollbar{display:none}
+  .actcats button,.actflt button{flex:none}
+  .actsearch{flex:1 1 100%}.actsearch input{width:100%}
+  .actsort{margin-left:0}
+}
+.actbar2>*,.actctl{min-width:0;max-width:100%}
+@media (max-width:700px){.actflt{flex:1 1 100%;max-width:100%}.actsearch{min-width:0}}
 </style>
 </head>
 <body>
@@ -744,7 +876,7 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 
 <div class="page">
 <nav class="nav glass" aria-label="Secciones">
-<a href="#vuelo">Vuelo</a><a href="#ruta">Ruta</a><a href="#horario">Horario</a><a href="#mapa">Mapa</a><a href="#hoteles">Hoteles</a><a href="#opciones">Opciones</a><a href="#dias">Días</a><a href="#reservar">Reservar</a>
+<a href="#vuelo">Vuelo</a><a href="#ruta">Ruta</a><a href="#horario">Horario</a><a href="#mapa">Mapa</a><a href="#hoteles">Hoteles</a><a href="#actividades">Qué hacer</a><a href="#opciones">Opciones</a><a href="#dias">Días</a><a href="#conexion">Móvil y seguro</a><a href="#reservar">Reservar</a>
 </nav>
 
 <main>
@@ -950,7 +1082,7 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <div class="mapbox glass" id="mapbox">
 <div id="map" role="group" aria-label="Mapa interactivo del viaje"></div>
 <div class="basesw" id="basesw" role="group" aria-label="Tipo de mapa" hidden><button type="button" data-b="sat" aria-pressed="true">Satélite</button><button type="button" data-b="map" aria-pressed="false">Mapa</button></div>
-<div class="basesw layersw" id="layersw" role="group" aria-label="Qué mostrar en el mapa" hidden><button type="button" data-l="sights" aria-pressed="true">Qué ver</button><button type="button" data-l="hotels" aria-pressed="false">Hoteles</button></div>
+<div class="basesw layersw" id="layersw" role="group" aria-label="Qué mostrar en el mapa" hidden><button type="button" data-l="sights" aria-pressed="true">El plan</button><button type="button" data-l="hotels" aria-pressed="false">Hoteles</button><button type="button" data-l="acts" aria-pressed="false">Actividades</button></div>
 <p class="mapattr" id="mapattr" hidden></p>
 <div class="mapctl" id="mapctl"><button type="button" id="zin" aria-label="Acercar">+</button><button type="button" id="zout" aria-label="Alejar">−</button><button type="button" id="zreset" aria-label="Volver a la vista inicial">↺</button></div>
 </div>
@@ -987,6 +1119,26 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 <li>Precios de Shanghái comparados del 1 al 3 de abril y el 9 de abril: sin recargo visible el 2 de abril. El calendario del puente de Qingming aún no está publicado.</li>
 </ul>
 </div>
+</div>
+</section>
+
+<section id="actividades" class="cty" data-city="none">
+<div class="wrap">
+<h2>Qué hacer en Pekín y Shanghái</h2>
+<p class="sub">Más de cien ideas con su precio, horario, tiempo, cómo reservarlas y qué dice la gente. Marca con el corazón las que os gusten y abajo se suman el tiempo y el coste de vuestra lista.</p>
+<div class="seg glass" id="actTabs" role="tablist" aria-label="Ciudad"></div>
+<div class="actbar2 glass">
+<div class="actcats" id="actCats" role="group" aria-label="Categorías"></div>
+<div class="actctl">
+<label class="actsearch"><span class="sr">Buscar actividad</span><input type="search" id="actQ" placeholder="Buscar por nombre o zona" autocomplete="off"></label>
+<div class="actflt" id="actFlt" role="group" aria-label="Filtros"><button type="button" data-f="free" aria-pressed="false">Gratis</button><button type="button" data-f="rain" aria-pressed="false">Si llueve</button><button type="button" data-f="night" aria-pressed="false">De noche</button><button type="button" data-f="noresv" aria-pressed="false">Sin reserva</button><button type="button" data-f="plan" aria-pressed="false">En vuestro plan</button></div>
+<label class="actsort"><span>Ordenar</span><select id="actSort"><option value="top">Lo mejor primero</option><option value="rate">Mejor valoradas</option><option value="price">Más baratas</option><option value="time">Más cortas</option></select></label>
+</div>
+</div>
+<p class="actcount" id="actCount" aria-live="polite"></p>
+<div class="actgrid" id="actGrid"></div>
+<div class="actsum glass" id="actSum" aria-live="polite"></div>
+<p class="ck" id="actNote"></p>
 </div>
 </section>
 
@@ -1084,6 +1236,15 @@ a:focus-visible,.nav a:focus-visible{outline:3px solid var(--sh);outline-offset:
 </ul>
 </div>
 <ol class="days" id="days"></ol>
+</div>
+</section>
+
+<section id="conexion" class="cty" data-city="none">
+<div class="wrap">
+<h2>Móvil y seguro de viaje</h2>
+<p class="sub">Lo que hemos comparado el 23 de octubre de 2026: una eSIM para tener Google y WhatsApp en China sin VPN, y un seguro con pago directo al hospital.</p>
+<div class="seg glass" id="cxTabs" role="tablist" aria-label="Tema"></div>
+<div id="cxPanel"></div>
 </div>
 </section>
 
@@ -1539,8 +1700,8 @@ var HOWTO=[
  steps:["27 de febrero: reserva Mutianyu en su web oficial con pasaporte, para el lunes 29. La web vende hasta 30 días antes y admite una entrada por pasaporte y día.","21 de marzo a las 20:00 de Pekín (13:00 en Madrid): entradas de la Ciudad Prohibida del domingo 28, en la web oficial del museo (bookingticket.dpm.org.cn, en español) o en su mini-programa de WeChat. Se agotan en minutos.","Del 21 al 27 de marzo: Terracota (bmy.com.cn o WeChat, unos 7 días antes), plaza de Tiananmen (WeChat, de 1 a 7 días antes) y Museo de Shaanxi (≈ 5 días antes, a las 17:00 de Pekín). Todos por confirmar.","Torre de Shanghái: franja horaria en Trip.com para el viernes 2, hacia las 17:00.","Jardín Yu, muralla de Xi'an, torres y pagodas se pagan en taquilla."],
  tips:["Si no queda cupo, Trip.com o Klook venden las mismas entradas con comisión.","Muchas reservas piden el pasaporte de cada visitante: ten las fotos en el móvil."]},
 {id:"extras",n:"Móvil y seguro",lead:"Cuatro cosas que se resuelven desde casa en febrero y marzo.",
- facts:[["eSIM","Airalo ilimitada de 10 días, 32,50 €, u Holafly, 37,50 US$, con VPN","https://www.airalo.com/china-esim"],["Pagos","Alipay o WeChat Pay con Visa o Mastercard",""],["Llegada","Tarjeta digital NIA, gratuita, en s.nia.gov.cn","https://s.nia.gov.cn/"],["Seguro","Desde ≈ 38 € por persona, con cobertura de 150.000 € a 1 M€",""]],
- steps:["eSIM: cómprala en la app de Airalo o Holafly y escanea el QR en casa, con wifi. Actívala al aterrizar en Pekín.","Alipay o WeChat Pay: añade tu tarjeta en casa y verifica el pasaporte. Lleva también ¥1.500–2.000 en efectivo.","Tarjeta NIA: rellénala online con la foto del pasaporte, los vuelos y la dirección del primer hotel.","Seguro: contrátalo antes de pagar nada no reembolsable. Compara Heymondo, IATI e Intermundial.","Si la exención de visado no se prorroga, pide el visado L con al menos 30 días de margen (≈ 107 €)."],
+ facts:[["eSIM","Airalo ilimitada de 10 días, 32,50 €; Holafly, 37,50 US$, con VPN incluida. Comparativa en «Móvil y seguro»","https://www.airalo.com/china-esim"],["Pagos","Alipay o WeChat Pay con Visa o Mastercard",""],["Llegada","Tarjeta digital NIA, gratuita, en s.nia.gov.cn","https://s.nia.gov.cn/"],["Seguro","≈ 32–38 € por persona para 10 días, con 300.000 € a 1 M€ de gastos médicos y pago directo. Comparativa en «Móvil y seguro»","./#conexion"]],
+ steps:["eSIM: cómprala en la app de Airalo, Holafly o Saily y escanea el QR en casa, con wifi. Pon el roaming de datos al aterrizar en Pekín.","Alipay o WeChat Pay: añade tu tarjeta en casa y verifica el pasaporte. Lleva también ¥1.500–2.000 en efectivo.","Tarjeta NIA: rellénala online con la foto del pasaporte, los vuelos y la dirección del primer hotel.","Seguro: contrátalo antes de pagar nada no reembolsable. Compara Heymondo, IATI e Intermundial: pide pago directo al hospital y al menos 300.000 € de gastos médicos.","Si la exención de visado no se prorroga, pide el visado L con al menos 30 días de margen (≈ 107 €)."],
  tips:["Lleva una VPN de respaldo y un adaptador universal: enchufes de tipo A, C o I a 220 V.","El metro de Pekín y Shanghái acepta Visa y Mastercard sin contacto, y DiDi funciona con tarjeta extranjera."]}
 ];
 
@@ -1656,7 +1817,7 @@ var GO=[
 "tab": "extras",
 "what": "Seguro de viaje",
 "note": "Contrátalo antes de pagar nada que no se reembolse",
-"price": "desde ≈ 38 € por persona",
+"price": "≈ 32–38 € por persona (10 días)",
 "links": [
 {
 "t": "Heymondo",
@@ -1669,6 +1830,10 @@ var GO=[
 {
 "t": "Intermundial",
 "u": "https://www.intermundial.es/"
+},
+{
+"t": "Comparativa",
+"u": "./#conexion"
 }
 ]
 },
@@ -1687,6 +1852,10 @@ var GO=[
 {
 "t": "Holafly",
 "u": "https://esim.holafly.com/esim-china/"
+},
+{
+"t": "Saily",
+"u": "https://saily.com/es/esim-china/"
 }
 ]
 },
@@ -1826,6 +1995,123 @@ function toGoogle(ll){
   var rl=y/180*pi,m=1-EE*Math.sin(rl)*Math.sin(rl),sm=Math.sqrt(m);
   return [x+dn*180/(A/sm*Math.cos(rl)*pi),y+dl*180/((A*(1-EE))/(m*sm)*pi)];
 }
+
+/* ---------- Actividades: formato común a la sección «Qué hacer» y al mapa ---------- */
+var ACT_VN=["Mejor saltarlo","Si te gusta el tema","Muy recomendable","Imprescindible"];
+var ACT_RN=["No hace falta reservar","Reserva recomendable","Reserva obligatoria"];
+var ACT_ICON={his:"temple",mur:"tower",tem:"temple",par:"leaf",mus:"ticket",bar:"users",vis:"tower",mer:"users",com:"bowl",esp:"ticket",exp:"bowl",exc:"train",oci:"ticket"};
+function actCat(g){for(var i=0;i<ACTCAT.length;i++){if(ACTCAT[i][0]===g){return ACTCAT[i][1];}}return g;}
+function actH(h){return h<1?Math.round(h*60)+" min":String(h).replace(".",",")+" h";}
+function actRange(t){
+  if(t[0]===t[1]){return actH(t[0]);}
+  return (t[0]>=1&&t[1]>=1)?String(t[0]).replace(".",",")+"–"+actH(t[1]):actH(t[0])+"–"+actH(t[1]);
+}
+function actEur(p){var e=p/7.5;return e<2?fmtE(e):"≈ "+Math.round(e)+" €";}
+function actPrice(a){
+  if(a.p===0){return "Gratis";}
+  if(a.p==null){return "Según el tour";}
+  return "¥"+fmt(a.p)+" · "+actEur(a.p);
+}
+var AX={};
+/* un punto de mapa por actividad con posición conocida */
+function actPts(vid){
+  if(AX[vid]){return AX[vid];}
+  var out=[];
+  if(typeof ACT!=="undefined"){
+    ACT.forEach(function(a){
+      if(a.c!==vid||!a.ll){return;}
+      out.push({id:"ax-"+a.i,v:vid,k:"act",act:a,n:a.n,ll:a.ll,ic:ACT_ICON[a.g]||"temple",lab:"r",zk:1.9});
+    });
+  }
+  AX[vid]=out; return out;
+}
+/* ---------- Datos: qué hacer en Pekín y Shanghái (ver build_actividades.py) ---------- */
+var ACTCAT=[["his","Historia y palacios"],["mur","Gran Muralla"],["tem","Templos"],["par","Parques y jardines"],["mus","Museos"],["bar","Barrios y paseos"],["vis","Miradores y río"],["mer","Mercados y compras"],["com","Comer"],["esp","Espectáculos y noche"],["exp","Experiencias"],["exc","Excursiones"],["oci","Ocio y parques"]];
+var ACT=[{"i":"bj-fc","c":"bj","g":"his","n":"Ciudad Prohibida (Museo del Palacio)","zh":"故宫博物院","a":"Dongcheng, junto a la plaza de Tiananmen","m":"Metro L1 Tiananmen Este u Oeste; entras por la Puerta del Mediodía (sur) y sales por la Puerta Norte","p":40,"pe":"¥40 (nov–mar) · ¥60 (abr–oct)","pn":"Galerías del Tesoro y de los Relojes, ¥10 cada una. Mayores de 60, mitad de precio; menores de 6, gratis","pv":1,"t":[3,4.5],"h":"8:30–16:30 en invierno (última entrada hacia las 15:30), hasta las 17:00 en verano. Cierra los lunes","r":2,"rn":"Obligatoria y con pasaporte. Salen 7 días antes a las 20:00 de Pekín (13:00 en Madrid) y se agotan en minutos. Sin taquilla","u":"https://bookingticket.dpm.org.cn/","ut":"Reserva oficial","ta":[4.4,14316],"d":"Palacio imperial de los Ming y los Qing: 980 edificios, el gran eje central y patios sin fin. Es la visita más completa de Pekín.","s":"Casi todos dicen que impresiona y que es enorme, pero que va lleno y cansa. Los que mejor lo pasan entran en cuanto abre y no intentan verlo todo.","k":"Entra a las 8:30 o después de las 14:00 para esquivar los turnos. Llévate agua y no te desvíes del eje central si tienes prisa.","v":3,"f":["madrugar","caminar","fotos"],"ll":[116.39078,39.91743],"pl":"Día 3 (domingo 28)"},{"i":"bj-jingshan","c":"bj","g":"par","n":"Parque Jingshan","zh":"景山公园","a":"Xicheng, justo al norte de la Ciudad Prohibida","m":"Sales de la Ciudad Prohibida por la Puerta Norte y cruzas la calle","p":2,"pe":"¥2","pn":"Los pabellones de la cima, gratis","pv":0,"t":[1,1.5],"h":"6:30–20:00 (última entrada hacia las 19:30)","r":0,"rn":"No hace falta","ta":[4.5,2998],"d":"Colina artificial con el mejor mirador sobre los tejados dorados de la Ciudad Prohibida y el eje de la ciudad.","s":"La vista de los palacios desde el pabellón es lo que más se repite. La subida es corta; en días nublados o con neblina pierde mucho.","k":"Mejor al atardecer, con luz suave. Es la forma natural de cerrar la visita a la Ciudad Prohibida.","v":3,"f":["fotos","gratis"],"ll":[116.3904,39.92446],"pl":"Día 3 (domingo 28)"},{"i":"bj-tiananmen","c":"bj","g":"his","n":"Plaza de Tiananmen y ceremonia de la bandera","zh":"天安门广场","a":"Dongcheng, centro de Pekín","m":"Metro L1 Tiananmen Este u Oeste, o L2 Qianmen","p":0,"pe":"Gratis","pn":"La Puerta de Tiananmen, que da acceso a la Ciudad Prohibida, tiene taquilla aparte (¥15)","pv":0,"t":[0.5,1],"h":"Abierta todo el día; la bandera se iza al amanecer y se arría al anochecer","r":2,"rn":"Reserva en WeChat con el pasaporte entre 1 y 7 días antes; hay controles de seguridad. Para el izado, apunta el día anterior","ta":[4.0,7666],"d":"Una de las plazas más grandes del mundo, con el Mausoleo de Mao, el Gran Salón del Pueblo y el Monumento a los Héroes.","s":"Se valora como un lugar que hay que ver, pero con poco que hacer: es enorme, hay colas de seguridad y se recorre en media hora.","k":"Si madrugas para la bandera, llega 90 minutos antes: se llena. En los controles hay que enseñar el pasaporte.","v":2,"f":["gratis","madrugar"],"ll":[116.39144,39.90272],"pl":"Día 3 (domingo 28)"},{"i":"bj-mausoleo","c":"bj","g":"his","n":"Mausoleo de Mao Zedong","zh":"毛主席纪念堂","a":"Dongcheng, sur de la plaza de Tiananmen","m":"Metro L1 Tiananmen Este o L2 Qianmen","p":0,"pe":"Gratis","pn":"Hay que dejar bolsas y cámaras en consigna, de pago","pv":0,"t":[0.5,1.5],"h":"Mañanas de martes a domingo, a veces cierra sin avisar","r":2,"rn":"Reserva obligatoria en WeChat, con el pasaporte, unos días antes","ta":[3.8,394],"d":"Mausoleo donde reposa el cuerpo de Mao; se pasa en fila, en silencio y en pocos minutos.","s":"Interesa a quien quiera ver la historia reciente de China; la gente comenta las colas, la consigna y que es muy breve.","k":"Solo si te interesa. Se hace en una mañana con la plaza, antes de la Ciudad Prohibida.","v":1,"f":["gratis"],"ll":[116.39154,39.90111]},{"i":"bj-templo-cielo","c":"bj","g":"tem","n":"Templo del Cielo","zh":"天坛公园","a":"Dongcheng sur, parque de 270 hectáreas","m":"Metro L5 Tiantandongmen, a 300 m de la puerta este","p":34,"pe":"¥15 el parque · ¥34 el combinado con los tres edificios (temporada alta); en invierno ≈ ¥10 y ≈ ¥28","pn":"El combinado cubre la Sala de Oración, el Muro del Eco y el Altar Circular","pv":1,"t":[2,3],"h":"Parque 6:00–22:00; edificios de ≈ 8:00 a 17:30","r":2,"rn":"Reserva gratuita con el pasaporte en los canales oficiales (WeChat «天坛» o «畅游公园»); evita los intermediarios con guía obligatoria","u":"https://www.tiantanpark.com/","ut":"Web del parque","ta":[4.5,12325],"d":"Donde los emperadores rezaban por las cosechas: la Sala de Oración de azul y oro y un parque lleno de vecinos haciendo taichí, cantando y jugando a las cartas.","s":"Gusta más de lo que esperan: es tranquilo y se disfruta paseando. Lo elogian por el ambiente de gente local por la mañana.","k":"Ve hacia las 7:30, cuando el parque está lleno de pekineses. Entra por la puerta este (metro) y sal por el sur.","v":3,"f":["madrugar","caminar","fotos"],"ll":[116.40287,39.87991],"pl":"Día 2 (sábado 27)"},{"i":"bj-pverano","c":"bj","g":"par","n":"Palacio de Verano","zh":"颐和园","a":"Haidian, 15 km al noroeste del centro","m":"Metro L4 Beigongmen (puerta norte) o L4/L16 Xiyuan (puerta este)","p":30,"pe":"¥30 la entrada · ¥60 el combinado (jardines, Torre del Incienso Budista y salas), temporada alta; en invierno ≈ ¥20 y ≈ ¥50","pn":"Los barcos del lago, aparte","pv":0,"t":[3,5],"h":"≈ 6:30–18:00 (última entrada hacia las 17:00)","r":2,"rn":"Obligatoria en el mini-programa oficial de WeChat o en canales autorizados; con pasaporte","u":"https://www.summerpalace-china.com/","ut":"Web oficial","ta":[4.5,15152],"d":"Jardín imperial con el lago Kunming, la Colina de la Longevidad y el Gran Corredor, de 728 m y pintado de arriba abajo.","s":"Muchos lo prefieren a la Ciudad Prohibida por el lago y los paseos. Piden más tiempo del que se suele dedicar.","k":"Entra por la puerta este y rodea el lago en sentido contrario a la multitud. Lleva calzado cómodo.","v":3,"f":["caminar","fotos","madrugar"],"ll":[116.26474,39.9901],"pl":"Día 5 (martes 30)"},{"i":"bj-yuanmingyuan","c":"bj","g":"par","n":"Antiguo Palacio de Verano (Yuanmingyuan)","zh":"圆明园","a":"Haidian, junto a las universidades","m":"Metro L4 Yuanmingyuan Park","p":10,"pe":"¥10 el parque · ≈ ¥25 con las ruinas europeas","pn":"En primavera florecen los cerezos y los lotos llegan más tarde","pv":0,"t":[2,3],"h":"≈ 7:00–19:00","r":1,"rn":"Reserva recomendable en WeChat con el pasaporte","ta":[4.2,916],"d":"Ruinas de los palacios europeos que saquearon e incendiaron en 1860, en un parque inmenso de lagos y puentes.","s":"Mucha gente lo ve como una visita tranquila y con carga histórica; otros dicen que hay poco que ver y que hace falta imaginación.","k":"Combínalo con el Palacio de Verano si te sobra la tarde; queda a 20 minutos a pie.","v":1,"f":["caminar"],"ll":[116.30367,39.99829]},{"i":"bj-lama","c":"bj","g":"tem","n":"Templo de los Lamas (Yonghegong)","zh":"雍和宫","a":"Dongcheng norte, junto al barrio Wudaoying","m":"Metro L2 y L5 Yonghegong Lama Temple, salida C","p":25,"pe":"¥25","pn":"Incienso, a menudo regalado en la entrada","pv":0,"t":[1.5,2],"h":"9:00–16:30 (última entrada hacia las 16:00)","r":2,"rn":"Obligatoria en el canal oficial de WeChat «雍和宫游客信众服务»; no hay venta autorizada por terceros","ta":[4.5,4251],"d":"El templo tibetano más importante de Pekín, con un Buda de 18 m tallado en un solo tronco de sándalo.","s":"Es de los sitios donde más extranjeros se ve; gusta por el incienso y la arquitectura, aunque unos patios se parecen entre sí.","k":"Haz primero el templo y luego el Confucio y el hutong Wudaoying; todo queda a pie.","v":3,"f":["fotos"],"ll":[116.411,39.94558]},{"i":"bj-confucio","c":"bj","g":"tem","n":"Templo de Confucio y Guozijian","zh":"孔庙和国子监","a":"Dongcheng norte, junto a Yonghegong","m":"Metro L2 y L5 Yonghegong, a 5 minutos a pie","p":30,"pe":"≈ ¥30","pn":"Incluye el Colegio Imperial (Guozijian)","pv":0,"t":[1,1.5],"h":"≈ 8:30–17:00","r":1,"rn":"Reserva recomendable en WeChat","ta":[4.2,659],"d":"Templo del siglo XIII y la antigua academia imperial, entre cipreses centenarios y estelas con los nombres de los eruditos.","s":"Lo describen como un lugar sereno y poco masificado, muy cerca del templo Lama, que merece la pena visitar juntos.","k":"Muy buen complemento del Yonghegong, si no tienes prisa.","v":2,"f":["fotos"],"ll":[116.40831,39.94512]},{"i":"bj-beihai","c":"bj","g":"par","n":"Parque Beihai","zh":"北海公园","a":"Xicheng, al oeste de la Ciudad Prohibida","m":"Metro L6 Beihai North, o a pie desde Jingshan","p":10,"pe":"≈ ¥5–10 el parque · ≈ ¥15–20 el combinado","pn":"El combinado incluye la isla de la Pagoda Blanca","pv":0,"t":[1.5,2.5],"h":"≈ 6:30–20:00","r":0,"rn":"No hace falta","ta":[4.5,2383],"d":"Lago imperial con la isla de la Pagoda Blanca, barcas y pabellones.","s":"Lo ven como un remanso de calma junto al centro; gusta para pasear o remar un rato.","k":"Si el tiempo acompaña, alquila una barca a remo.","v":2,"f":["caminar","fotos","gratis"],"ll":[116.38246,39.9264]},{"i":"bj-tamb-camp","c":"bj","g":"his","n":"Torres del Tambor y de la Campana","zh":"鼓楼和钟楼","a":"Dongcheng norte, junto al lago Shichahai","m":"Metro L2/L8 Gulou Dajie","p":30,"pe":"≈ ¥30 cada torre","pn":"Hay un combinado de las dos","pv":0,"t":[1,1.5],"h":"9:00–16:30 (hay que subir 69 escalones empinados)","r":0,"rn":"No hace falta","ta":[4.0,930],"d":"Las dos torres del reloj de la antigua Pekín. En la del Tambor hay espectáculos de percusión durante el día.","s":"Dicen que lo mejor es empezar por la Torre del Tambor y ver la actuación de tambores, y que el resto se hace corto.","k":"Haz las dos torres de mañana y baja a pasear por el hutong y Shichahai.","v":1,"f":["caminar"],"ll":[116.38975,39.93932]},{"i":"bj-gongwangfu","c":"bj","g":"his","n":"Palacio del Príncipe Gong","zh":"恭王府","a":"Xicheng, junto a Shichahai","m":"Metro L6 Beihai North o L6 Nanluoguxiang, a 15 minutos","p":40,"pe":"≈ ¥40","pn":"Hay representaciones y té con espectáculo aparte","pv":0,"t":[1.5,2],"h":"≈ 8:30–17:00. Cierra los lunes","r":1,"rn":"Reserva recomendable por la web oficial o por WeChat","ta":[4.3,432],"d":"La mayor mansión principesca de la dinastía Qing, con jardines, rocalla y patios que cambian de ambiente.","s":"Pasa más desapercibida que los grandes palacios y gusta por menos gente y un jardín muy cuidado.","k":"Sirve de descanso tras la Ciudad Prohibida, si tienes media tarde libre.","v":1,"f":["fotos"],"ll":[116.38011,39.93525]},{"i":"bj-observatorio","c":"bj","g":"mus","n":"Antiguo Observatorio de Pekín","zh":"古观象台","a":"Dongcheng, sobre la muralla antigua","m":"Metro L1/L2 Jianguomen, a 5 minutos","p":20,"pe":"≈ ¥10–20","pn":"","pv":0,"t":[0.5,1],"h":"≈ 9:00–17:00. Cierra los lunes","r":1,"rn":"Reserva en WeChat","ta":null,"d":"Instrumentos astronómicos de bronce de los siglos XV–XVII sobre un tramo de la antigua muralla.","s":"Nuestra impresión: pequeño y con poca gente; solo interesa si te gusta la historia de la ciencia.","k":"Visita corta si andas por Jianguomen.","v":1,"f":["gratis"],"ll":[116.42835,39.90618]},{"i":"bj-zhengyangmen","c":"bj","g":"his","n":"Qianmen y calle peatonal Qianmen Dajie","zh":"前门大街","a":"Dongcheng sur, sur de la plaza de Tiananmen","m":"Metro L2 Qianmen","p":0,"pe":"Gratis","pn":"La Torre de la Flecha tiene entrada aparte (≈ ¥10)","pv":0,"t":[1,2],"h":"Todo el día; tiendas hasta las 21:00–22:00","r":0,"rn":"No hace falta","ta":[4.1,451],"d":"Calle peatonal reconstruida con la puerta de Zhengyangmen al fondo y tiendas de siempre como Quanjude o Tongrentang.","s":"Calle muy ambientada para pasear y tomar algo, aunque bastante turística y con precios altos.","k":"Entra por la puerta de Zhengyang y sal por Dashilan hacia el oeste.","v":2,"f":["gratis","caminar","noche"],"ll":[116.39205,39.88792]},{"i":"bj-dashilan","c":"bj","g":"bar","n":"Dashilan y Liulichang","zh":"大栅栏和琉璃厂","a":"Xicheng, al suroeste de Qianmen","m":"Metro L2 Qianmen, y a pie","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1.5,2.5],"h":"Todo el día; la calle Liulichang cierra hacia las 18:00","r":0,"rn":"No hace falta","ta":[4.2,196],"d":"Callejón comercial de siglos con tiendas de seda, té y sombreros, y calle de papelerías y caligrafía a 10 minutos.","s":"Se disfruta paseando, con aire de China antigua y menos gente que otras zonas.","k":"Buen sitio para comprar té, tinta y regalos con regateo suave.","v":1,"f":["gratis","caminar"],"ll":[116.38829,39.89268]},{"i":"bj-wangfujing","c":"bj","g":"bar","n":"Wangfujing y calle de las tiendas","zh":"王府井","a":"Dongcheng, a 400 m del Park Plaza","m":"Metro L1 Wangfujing y L8 Wangfujing","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,1.5],"h":"Todo el día; tiendas hasta las 22:00","r":0,"rn":"No hace falta","ta":[4.0,3859],"d":"La calle comercial más famosa de Pekín, con la iglesia de San José y el APM.","s":"Cumple como paseo, pero una reseña reciente advierte de que la calle de los puestos con insectos ya no existe.","k":"No vayas por los puestos de comida de estilo turístico; prueba mejor los hutongs de al lado.","v":1,"f":["gratis","noche"],"ll":[116.4055,39.9115]},{"i":"bj-stjoseph","c":"bj","g":"tem","n":"Iglesia de San José (Dongtang)","zh":"王府井天主堂","a":"Dongcheng, en Wangfujing","m":"Metro L1 Wangfujing","p":0,"pe":"Gratis","pn":"Misas los domingos; no se visita durante el culto","pv":0,"t":[0.25,0.5],"h":"Casi todo el día; cierra a mediodía en algunos horarios","r":0,"rn":"No hace falta","ta":[4.2,184],"d":"Iglesia católica de 1655 reconstruida, de estilo barroco y encajada entre centros comerciales.","s":"La gente la nombra como un respiro curioso entre tiendas, de visita breve.","k":"Ya que estás en Wangfujing, es un ratito.","v":1,"f":["gratis"],"ll":[116.40594,39.91594]},{"i":"bj-mutianyu","c":"bj","g":"mur","n":"Gran Muralla en Mutianyu","zh":"慕田峪长城","a":"Huairou, a 70 km al norte; 1 h 30 en coche","m":"Coche privado ≈ ¥800–1.100 de ida y vuelta, o autobús turístico desde Pekín","p":45,"pe":"≈ ¥45 la entrada · telesilla ≈ ¥100–140 · tobogán de bajada ≈ ¥100","pn":"La entrada a la muralla no incluye el telesilla ni el tobogán","pv":0,"t":[5,7],"h":"≈ 7:30–17:30, según temporada","r":2,"rn":"La web oficial vende con 30 días de antelación y una entrada por pasaporte y día; reserva el 27 de febrero para el lunes 29","u":"https://www.mutianyugreatwall.com/","ut":"Reserva oficial","ta":[4.8,24567],"d":"El tramo restaurado más amable y fotogénico: torres de vigilancia, pendientes suaves y bosque a los lados.","s":"Es la más recomendada: «una experiencia inolvidable», con telesilla hasta lo alto y menos gente que Badaling.","k":"Sube en telesilla, camina hacia las torres del este y baja en tobogán. Lleva calzado con agarre.","v":3,"f":["madrugar","caminar","fotos"],"pl":"Día 4 (lunes 29)"},{"i":"bj-badaling","c":"bj","g":"mur","n":"Gran Muralla en Badaling","zh":"八达岭长城","a":"Yanqing, 70 km al noroeste","m":"Tren S2 desde Beijing North (≈ ¥20) o autobús turístico; coche ≈ 1 h 30","p":40,"pe":"≈ ¥40","pn":"Telesilla aparte (≈ ¥100)","pv":0,"t":[3,5],"h":"≈ 7:30–16:00","r":1,"rn":"Reserva recomendable en la web oficial o en WeChat","ta":[4.5,11105],"d":"El tramo más famoso y más visitado, muy bien conservado y con pendientes largas.","s":"Gusta como primera muralla por lo accesible, pero lo describen como siempre muy concurrido.","k":"Si solo quieres una muralla, elige Mutianyu: menos gente y mejor entorno.","v":1,"f":["caminar","fotos"]},{"i":"bj-juyongguan","c":"bj","g":"mur","n":"Paso de Juyongguan","zh":"居庸关长城","a":"Changping, a 50 km al noroeste","m":"Autobús 919 desde Deshengmen o taxi","p":40,"pe":"≈ ¥40","pn":"","pv":0,"t":[2,3],"h":"≈ 8:00–17:00","r":0,"rn":"No hace falta","ta":[4.5,2564],"d":"Fortaleza entre dos montañas con doble muralla; es el tramo más cercano a Pekín.","s":"Se valora por la arquitectura militar y porque está más cerca; las escaleras son empinadas.","k":"Alternativa corta si no tienes un día entero para Mutianyu.","v":1,"f":["caminar"]},{"i":"bj-jinshanling","c":"bj","g":"mur","n":"Jinshanling (excursión caminando)","zh":"金山岭长城","a":"Luanping, Hebei; a 125 km, 2 h 30","m":"Coche privado o autobús turístico; no hay transporte público directo","p":65,"pe":"≈ ¥65","pn":"Los grupos pequeños desde ≈ 39–47 € incluyen transporte","pv":0,"t":[6,8],"h":"≈ 8:00–17:00","r":1,"rn":"Reserva el transporte con un operador; la entrada se paga en la puerta","ta":[4.9,320],"d":"Muralla menos restaurada, con paseos de 6 km hasta Simatai Oeste y vistas de las crestas.","s":"El grupo pequeño de senderismo tiene 4,9 sobre 320 opiniones: la gente quiere sitios con menos gente y mejor luz.","k":"Es un día entero; solo compensa si ya has visto Mutianyu y te gusta caminar.","v":2,"f":["caminar","madrugar","fotos"]},{"i":"bj-huanghuacheng","c":"bj","g":"mur","n":"Gran Muralla del Agua de Huanghuacheng","zh":"黄花城水长城","a":"Huairou, a 60 km","m":"Coche privado; hay tours combinados con Mutianyu","p":50,"pe":"≈ ¥50","pn":"Barcas por el embalse, aparte","pv":0,"t":[2,3],"h":"≈ 8:00–17:00","r":0,"rn":"No hace falta","ta":[4.7,1199],"d":"Tramo de muralla que baja hasta un embalse y se sumerge en el agua.","s":"Muy bien valorado por el paisaje y por tener menos gente, aunque algunos tramos están sin restaurar.","k":"Se combina en un día con Mutianyu con un conductor.","v":2,"f":["caminar","fotos"]},{"i":"bj-jiankou","c":"bj","g":"mur","n":"Jiankou (muralla salvaje)","zh":"箭扣长城","a":"Huairou, a 70 km","m":"Con guía local; no hay transporte público","p":null,"pe":"Según el guía","pn":"Está oficialmente cerrado en algunos tramos y es peligroso","pv":0,"t":[6,8],"h":"Amanecer y atardecer","r":1,"rn":"Solo con operador; pregunta si el tramo está abierto","ta":[4.6,960],"d":"Una de las murallas más fotogénicas de China, sin restaurar y con pendientes muy duras.","s":"Los que llegan hasta arriba hablan de unas vistas únicas; lo describen como un día de esfuerzo.","k":"Solo para quien tenga experiencia de montaña; lo normal para este viaje es Mutianyu.","v":0,"f":["caminar","madrugar"]},{"i":"bj-museo-nacional","c":"bj","g":"mus","n":"Museo Nacional de China","zh":"中国国家博物馆","a":"Dongcheng, en el lado este de la plaza de Tiananmen","m":"Metro L1 Tiananmen Este","p":0,"pe":"Gratis","pn":"Las exposiciones temporales pueden tener entrada","pv":1,"t":[2,3],"h":"9:00–17:00 (última entrada hacia las 16:00). Cierra los lunes","r":2,"rn":"Reserva gratuita 7 días antes; las entradas salen cada día a las 17:00 en la web oficial o en WeChat. Lleva el pasaporte en papel","u":"https://www.chnmuseum.cn/","ut":"Reserva oficial","ta":[4.2,962],"d":"Uno de los mayores museos del mundo: de los bronces Shang a la cerámica y la historia moderna de China.","s":"Dicen que es una forma excelente de entender la cultura china; recomiendan elegir una sola planta para no agotarse.","k":"Si llueve o hace frío, es el plan de interior más completo. Elige el recorrido «Antigua China».","v":2,"f":["lluvia","gratis"],"ll":[116.39539,39.90375]},{"i":"bj-capital","c":"bj","g":"mus","n":"Museo de la Capital","zh":"首都博物馆","a":"Xicheng, en la avenida Chang'an","m":"Metro L1 Muxidi","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1.5,2.5],"h":"9:00–17:00. Cierra los lunes","r":2,"rn":"Reserva gratuita en la web oficial o en WeChat","u":"https://www.capitalmuseum.org.cn/","ut":"Web oficial","ta":[4.3,387],"d":"Historia de Pekín, desde sus orígenes a los Qing, en un edificio moderno.","s":"Lo ven como un museo muy moderno y enorme, con pocos extranjeros; las reseñas dicen que se hace pesado sin guía.","k":"Mejor si tienes un día de lluvia o te gusta la historia local.","v":1,"f":["lluvia","gratis"],"ll":[116.33587,39.90502]},{"i":"bj-shijia","c":"bj","g":"mus","n":"Museo del Hutong Shijia","zh":"史家胡同博物馆","a":"Dongcheng, en un hutong cerca de Wangfujing","m":"Metro L5 Dengshikou, a 10 minutos a pie","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.75,1],"h":"≈ 9:30–16:30. Cierra los lunes","r":1,"rn":"Reserva recomendable en WeChat","ta":[4.2,180],"d":"Casa de patio convertida en museo sobre la vida cotidiana en un hutong.","s":"Pequeño y tranquilo; la gente lo aprecia por enseñar cómo se vivía de verdad.","k":"Combínalo con un paseo por el hutong entre Dengshikou y Dongsi.","v":1,"f":["gratis"],"ll":[116.41625,39.91661]},{"i":"bj-nacional-espect","c":"bj","g":"esp","n":"Gran Teatro Nacional («el Huevo»)","zh":"国家大剧院","a":"Xicheng, al oeste de la plaza de Tiananmen","m":"Metro L1 Tiananmen Oeste","p":null,"pe":"Visita al edificio ≈ ¥30–50; conciertos y ópera desde ≈ ¥80","pn":"","pv":0,"t":[1,3],"h":"Visita de día; funciones por la tarde-noche","r":1,"rn":"Entradas en la web oficial; el edificio se visita con reserva","u":"http://en.chncpa.org/","ut":"Web oficial","ta":[4.5,760],"d":"Cúpula de titanio y vidrio rodeada de agua, obra de Paul Andreu, con salas de ópera y conciertos.","s":"La arquitectura es lo que más cita la gente: «te deja sin palabras» por su escala.","k":"Si hay concierto o ópera con un precio razonable, es una noche distinta a un show para turistas.","v":1,"f":["noche","fotos","lluvia"],"ll":[116.38355,39.90335]},{"i":"bj-chaoyang-teatro","c":"bj","g":"esp","n":"Espectáculo de acrobacias en el Teatro Chaoyang","zh":"朝阳剧场","a":"Chaoyang, cerca de Hujialou","m":"Metro L10 Tuanjiehu o taxi","p":270,"pe":"Desde ≈ 36 € (≈ ¥270) en reserva oficial; entradas hasta ≈ ¥680","pn":"Las categorías cambian en visibilidad, no en el espectáculo","pv":0,"t":[1.5,2],"h":"Funciones de tarde, normalmente a las 17:15 y a las 19:15 (confirma el día)","r":1,"rn":"Reserva online; en temporada alta se agotan las mejores butacas","u":"https://www.tripadvisor.es/Search?q=Chaoyang%20Theatre%20Beijing","ut":"TripAdvisor","ta":[4.5,1336],"d":"Una hora de acrobacias chinas, equilibrios y malabares, muy ensayada.","s":"Hay quien esperaba un espectáculo para turistas y se llevó una sorpresa: público local y buenas acrobacias. 5,0 en la reserva oficial con 211 reseñas.","k":"Escoge una función temprana para cenar después. Los primeros asientos no son los mejores.","v":2,"f":["noche","lluvia"],"ll":[116.45646,39.92107]},{"i":"bj-kungfu","c":"bj","g":"esp","n":"The Legend of Kung Fu (Teatro Rojo)","zh":"红剧场","a":"Dongcheng sur, junto a Qianmen","m":"Metro L2 Qianmen o L7 Guang'anmen","p":280,"pe":"Desde ≈ ¥280 hasta ≈ ¥880","pn":"","pv":0,"t":[1.5,1.5],"h":"≈ 19:15 todos los días","r":1,"rn":"Reserva online","ta":null,"d":"Espectáculo de artes marciales con una historia, música y efectos de luz.","s":"Nuestra impresión: es más teatral que las acrobacias; conviene reservar con tiempo.","k":"Reserva ya desde casa si va a caer en fin de semana.","v":1,"f":["noche","lluvia"],"ll":[116.426,39.88433]},{"i":"bj-opera","c":"bj","g":"esp","n":"Ópera de Pekín","zh":"京剧","a":"Xicheng / Dongcheng, según el teatro","m":"Taxi o metro según la sala (Liyuan Theatre, Huguang Guild Hall)","p":180,"pe":"≈ ¥180–580","pn":"Hay funciones cortas de una hora para extranjeros, con subtítulos","pv":0,"t":[1,2],"h":"Funciones de tarde-noche","r":1,"rn":"Reserva online; algunos teatros ofrecen té y pastas","ta":null,"d":"Teatro cantado con maquillajes, máscaras y trajes, en versión corta para visitantes.","s":"Nuestra impresión: es un arte muy estilizado, con voces agudas; mejor una versión corta con subtítulos.","k":"Elige la versión con subtítulos en inglés y no pases de una hora.","v":1,"f":["noche","lluvia"]},{"i":"bj-798","c":"bj","g":"bar","n":"Barrio de arte 798","zh":"798艺术区","a":"Chaoyang noreste, antiguas fábricas de armamento","m":"Taxi o metro L14 Jiangtai y autobús","p":0,"pe":"Gratis el barrio; exposiciones desde ≈ ¥40–100","pn":"","pv":0,"t":[2,3],"h":"≈ 10:00–18:00 las galerías","r":0,"rn":"No hace falta","ta":[4.3,2409],"d":"Fábricas de ladrillo reconvertidas en galerías, tiendas de diseño y cafés.","s":"Barrio con otra estética que los demás de Pekín y bien valorado por los cafés cuidados y las galerías.","k":"Mejor por la tarde de un día entre semana; hay galerías cerradas los lunes.","v":2,"f":["gratis","caminar","fotos"],"ll":[116.49048,39.98281]},{"i":"bj-nanluoguxiang","c":"bj","g":"bar","n":"Nanluoguxiang y hutongs de alrededor","zh":"南锣鼓巷","a":"Dongcheng norte","m":"Metro L6/L8 Nanluoguxiang","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,2],"h":"Todo el día","r":0,"rn":"No hace falta","ta":null,"d":"Hutong peatonal con tiendas, bares y puestos; los callejones paralelos conservan casas de patio.","s":"Nuestra impresión: la calle principal va muy llena; lo bueno está en los callejones paralelos.","k":"Entra por la calle principal, pero sal por los callejones laterales como Mao'er o Fuxiang.","v":2,"f":["gratis","caminar","noche"],"ll":[116.39769,39.93231]},{"i":"bj-wudaoying","c":"bj","g":"bar","n":"Hutong Wudaoying","zh":"五道营胡同","a":"Dongcheng norte, junto a Yonghegong","m":"Metro L2 y L5 Yonghegong","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,1.5],"h":"Todo el día; cafeterías de 10:00 a 22:00","r":0,"rn":"No hace falta","ta":[4.2,115],"d":"Hutong con cafés, tiendas de diseño y restaurantes, mucho más tranquilo que Nanluoguxiang.","s":"Se valora tras el templo Lama para descansar y tomar algo sin agobios.","k":"Para comer sentados, entre el Lama y Confucio.","v":2,"f":["gratis","caminar"],"ll":[116.40636,39.94699]},{"i":"bj-houhai","c":"bj","g":"bar","n":"Shichahai y Houhai","zh":"什刹海","a":"Xicheng, tres lagos rodeados de hutongs","m":"Metro L8 Shichahai","p":0,"pe":"Gratis","pn":"Barcas ≈ ¥60–100 la hora; rickshaws ≈ ¥120–260","pv":0,"t":[1.5,2.5],"h":"24 h; bares por la noche","r":0,"rn":"No hace falta","ta":[4.3,1460],"d":"Lagos con terrazas, bicitaxis, hutongs y vida por la noche.","s":"Gusta la vida junto al lago con calma, aunque la zona de bares va saturada al caer la noche.","k":"Hazlo a última hora de la tarde y baja caminando al Gulou.","v":2,"f":["gratis","noche","caminar"],"ll":[116.37656,39.94076]},{"i":"bj-yandai","c":"bj","g":"bar","n":"Calle Yandai Xiejie","zh":"烟袋斜街","a":"Xicheng, entrada de Houhai","m":"Metro L8 Shichahai","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.5,1],"h":"Todo el día","r":0,"rn":"No hace falta","ta":[4.3,204],"d":"Callejón de pipas, objetos de recuerdo y casas antiguas que conduce al lago.","s":"Atractiva por mantener algo del ambiente de antes tras tanta renovación.","k":"Es un trozo de paseo hacia Houhai.","v":1,"f":["gratis"],"ll":[116.38861,39.93768]},{"i":"bj-sanlitun","c":"bj","g":"bar","n":"Sanlitun y Taikoo Li","zh":"三里屯太古里","a":"Chaoyang, distrito de moda y de las embajadas","m":"Metro L10 Tuanjiehu o L17 Sanlitun","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1.5,3],"h":"Tiendas de 10:00 a 22:00; bares hasta la madrugada","r":0,"rn":"No hace falta","ta":[4.2,256],"d":"Centro comercial al aire libre, cafés y bares; la zona más cosmopolita.","s":"Buena para comer y beber en versión moderna; la calle de bares tiene menos nota (3,8 sobre 360).","k":"Mejor para una cena y un cóctel, no para compras.","v":1,"f":["noche"],"ll":[116.44707,39.93601]},{"i":"bj-guijie","c":"bj","g":"com","n":"Calle de los Fantasmas (Gui Jie)","zh":"簋街","a":"Dongcheng, junto a Dongzhimen","m":"Metro L2/L13 Dongzhimen","p":0,"pe":"Gratis; cenar ≈ ¥100–200 por persona","pn":"","pv":0,"t":[1.5,2.5],"h":"Desde las 17:00 hasta la madrugada","r":0,"rn":"No hace falta; en grupos grandes reserva en el restaurante","ta":[3.8,174],"d":"Kilómetro de restaurantes con farolillos rojos abiertos hasta tarde; famosos los cangrejos picantes y la olla.","s":"Se disfruta de noche con los farolillos y mucho ambiente local; las opiniones pesan la oferta y menos la vista.","k":"Elige un local lleno de gente y pide el cangrejo picante (mala xiaolongxia) si te gusta el picante.","v":2,"f":["noche"],"ll":[116.4232,39.9397]},{"i":"bj-pato","c":"bj","g":"com","n":"Pato laqueado de Pekín","zh":"北京烤鸭","a":"Varias zonas: Qianmen (Quanjude, Bianyifang), Wangfujing, Sanlitun","m":"Según el restaurante","p":150,"pe":"≈ ¥130–300 por persona (≈ 17–40 €); un pato entero, ≈ ¥200–400","pn":"Fuera del presupuesto de comidas","pv":0,"t":[1.5,2],"h":"Almuerzo y cena; los locales buenos tienen cola","r":1,"rn":"Reserva el mismo día o con antelación en los locales famosos","ta":null,"d":"Pato cortado en la mesa con crepes, salsa de ciruela y pepino.","s":"Casi todas las guías lo ponen el primero de Pekín: los grandes locales tradicionales son el plan fácil y los pequeños de hutong salen más baratos.","k":"Pide medio pato para dos si no vais con hambre; reserva con 1–2 días.","v":3,"f":["comer"]},{"i":"bj-hutong-comida","c":"bj","g":"exp","n":"Ruta gastronómica por los hutongs","zh":"胡同美食","a":"Dongcheng o Xicheng, según el operador","m":"Se queda en el hotel o en un punto del centro","p":570,"pe":"≈ 73 € (≈ ¥550) por persona con cervezas","pn":"Incluye las degustaciones y bebidas","pv":0,"t":[3,4],"h":"Tardes","r":2,"rn":"Reserva online con 1–2 semanas","u":"https://www.tripadvisor.es/Search?q=hutong%20food%20beer%20tour%20Beijing","ut":"TripAdvisor","ta":[5.0,1331],"d":"Recorrido a pie por callejones y restaurantes escondidos con cerveza y comida de la zona.","s":"Máxima nota (5,0 sobre 1.331 opiniones) y descrito como una forma de entender la comida y el ambiente del barrio.","k":"Va bien para la primera noche si llegáis con ganas de comer.","v":2,"f":["noche","comer"]},{"i":"bj-hutong-rickshaw","c":"bj","g":"exp","n":"Paseo en rickshaw por los hutongs","zh":"胡同游","a":"Alrededor de Houhai y Nanluoguxiang","m":"Salida desde el Tambor o Houhai","p":150,"pe":"≈ ¥120–260 por persona","pn":"Pacta el precio antes de subir","pv":0,"t":[1,1.5],"h":"De día","r":0,"rn":"Con operador reconocido, reserva online","ta":[4.0,155],"d":"Bici-taxi por callejones con parada en una casa de patio.","s":"Una experiencia «singular», aunque hay quien lo ve turístico y caro; vale con un buen operador.","k":"Mejor andar por tu cuenta y reservar solo si quieres entrar en una casa.","v":1,"f":["fotos"]},{"i":"bj-cocina","c":"bj","g":"exp","n":"Clase de cocina en un hutong","zh":"胡同烹饪学校","a":"Dongcheng","m":"Metro L5 Dengshikou","p":300,"pe":"≈ ¥300 por persona (≈ 40 €)","pn":"Incluye visita al mercado si se pide","pv":0,"t":[3,4],"h":"Mañana a las 10:30","r":2,"rn":"Reserva con antelación en la escuela","ta":null,"d":"Clase práctica de dumplings y platos de Pekín en una casa de patio.","s":"Nuestra impresión: sirve como plan de interior si llueve; la calidad depende de la escuela.","k":"Reserva una vez fijados los días, porque se llena.","v":1,"f":["lluvia","comer"]},{"i":"bj-te","c":"bj","g":"exp","n":"Ceremonia del té","zh":"茶道","a":"Cualquier barrio; Maliandao, Dashilan o Wudaoying","m":"Según el local","p":100,"pe":"≈ ¥80–200 por persona","pn":"Evita las casas de té que te llevan a empujones","pv":0,"t":[1,1.5],"h":"De 10:00 a 21:00","r":1,"rn":"Reserva en el local","ta":null,"d":"Sesión de degustación con explicación y té de varias zonas.","s":"Nuestra impresión: mejor salas conocidas; evita las que presionan para comprar.","k":"Pregunta el precio antes de empezar.","v":1,"f":["lluvia"]},{"i":"bj-panjiayuan","c":"bj","g":"mer","n":"Mercado de antigüedades Panjiayuan","zh":"潘家园旧货市场","a":"Chaoyang sur-este, Panjiayuan","m":"Metro L10 Panjiayuan","p":0,"pe":"Gratis","pn":"Regatea desde el 30 %","pv":0,"t":[1.5,2.5],"h":"≈ 8:30–18:00; los fines de semana hay más puestos","r":0,"rn":"No hace falta","ta":[4.1,451],"d":"Mercado enorme de antigüedades y artesanías, con mucha réplica.","s":"Entretenido para ver la variedad; todos cuentan que el precio inicial es muy alto.","k":"Ve el sábado 27 o el domingo 28, cuando hay más vendedores. Lleva efectivo o Alipay.","v":2,"f":["gratis","caminar"],"ll":[116.45219,39.87392]},{"i":"bj-perlas","c":"bj","g":"mer","n":"Mercado de las Perlas (Hongqiao)","zh":"红桥市场","a":"Dongcheng sur, frente al Templo del Cielo","m":"Metro L5 Tiantandongmen","p":0,"pe":"Gratis","pn":"Puede haber falsificaciones","pv":0,"t":[1,1.5],"h":"≈ 9:00–19:00","r":0,"rn":"No hace falta","ta":[3.8,1170],"d":"Cinco plantas de perlas, bolsos y relojes de imitación.","s":"Quien va a regatear lo disfruta; los demás lo ven agobiante y solo para comprar.","k":"Si no te gusta regatear, sáltatelo.","v":0,"f":["gratis"],"ll":[116.41435,39.88487]},{"i":"bj-olimpico","c":"bj","g":"oci","n":"Parque Olímpico: Nido de Pájaro y Cubo de Agua","zh":"奥林匹克公园","a":"Chaoyang norte","m":"Metro L8 Olympic Sports Center o L15 Olympic Green","p":0,"pe":"Parque gratis; Nido ≈ ¥50, Cubo ≈ ¥30","pn":"","pv":0,"t":[1.5,2.5],"h":"Parque abierto; al caer la noche se iluminan los edificios","r":0,"rn":"No hace falta","ta":[4.1,1410],"d":"Estadios de los Juegos de 2008 y un parque amplio con vistas a la torre y a la zona moderna.","s":"Lo mejor, según la gente, es verlos iluminados por la noche; de día es amplio y vacío.","k":"Solo si te interesa la arquitectura; mejor al anochecer.","v":1,"f":["noche","fotos"],"ll":[116.39413,39.98845]},{"i":"bj-zoo","c":"bj","g":"oci","n":"Zoo de Pekín (pandas)","zh":"北京动物园","a":"Xicheng, al oeste de la ciudad","m":"Metro L4 Beijing Zoo","p":20,"pe":"≈ ¥15 más ≈ ¥5 el Pabellón de los Pandas","pn":"","pv":0,"t":[2,3],"h":"≈ 7:30–17:00","r":0,"rn":"No hace falta","ta":[3.3,2585],"d":"Zoo antiguo con casa de los pandas gigantes.","s":"El zoo tiene nota baja (3,3), aunque «tiene más pandas» y la gente va por ellos.","k":"Solo si os hace ilusión ver pandas; hay que ir muy temprano.","v":0,"f":["lluvia"],"ll":[116.32954,39.94104]},{"i":"bj-universal","c":"bj","g":"oci","n":"Universal Beijing Resort","zh":"北京环球度假区","a":"Tongzhou, al este de la ciudad","m":"Metro L7/L1 Universal Resort","p":600,"pe":"≈ ¥500–750 según el día","pn":"Precio variable por temporada","pv":0,"t":[8,12],"h":"≈ 9:00–20:00","r":2,"rn":"Reserva online con antelación","u":"https://www.universalbeijingresort.com/","ut":"Web oficial","ta":[4.0,85],"d":"Parque temático de películas con una zona de Kung Fu Panda y otra de Transformers.","s":"Poco volumen de reseñas todavía; quien va lo compara con otros parques Universal.","k":"Solo con tiempo de sobra y fuera de este viaje de ciudades.","v":0,"f":["lluvia"]},{"i":"bj-gubei","c":"bj","g":"exc","n":"Gubei Water Town y Simatai","zh":"古北水镇","a":"Miyun, a 120 km","m":"Autobús desde Pekín o coche; hay tours de 1 día","p":140,"pe":"≈ ¥140 el recinto; la muralla, aparte","pn":"De noche está iluminado","pv":0,"t":[6,9],"h":"≈ 9:00–22:00","r":1,"rn":"Reserva online","ta":[4.4,360],"d":"Pueblo recreado junto a la muralla, con zona de hotel y espectáculos.","s":"Opiniones aparte: algunos dicen que superó expectativas, pero es una réplica.","k":"Para otro viaje: es un día entero.","v":0,"f":["noche"]},{"i":"bj-mubus","c":"bj","g":"exc","n":"Tour en español a la Gran Muralla (MuBus)","zh":"慕田峪","a":"Salida desde Pekín","m":"Autobús turístico con guía","p":150,"pe":"Desde ≈ 19–23 € el transporte; entradas y telesilla aparte","pn":"Comprueba qué incluye cada opción","pv":0,"t":[7,8],"h":"Salida a las 8:00–9:00","r":2,"rn":"Reserva online","u":"https://www.tripadvisor.es/Search?q=MuBus%20Mutianyu","ut":"TripAdvisor","ta":[5.0,2664],"d":"Autobús con salida diaria hasta Mutianyu y opción de guía en español.","s":"Nota máxima con casi 2.700 reseñas: lo ven barato y sin complicaciones.","k":"Si no consigues la entrada de la web oficial, es el plan B.","v":1,"f":["madrugar"]},{"i":"bj-pato-bus","c":"bj","g":"exc","n":"Tour en español: Templo del Cielo, Lama y Palacio de Verano","zh":"天坛 雍和宫 颐和园","a":"Recogida en el centro","m":"Autobús con guía","p":150,"pe":"≈ 20–22 € por persona, sin entradas","pn":"","pv":0,"t":[8,9],"h":"Día completo","r":2,"rn":"Reserva online","u":"https://www.tripadvisor.es/Search?q=Templo%20del%20Cielo%20Lama%20Palacio%20de%20Verano%20Tour%20Pekin","ut":"TripAdvisor","ta":[5.0,611],"d":"Tres de los sitios más importantes en un día con guía en español.","s":"Los viajeros con poco tiempo lo valoran con 5,0; la contra es ir con prisa y en grupo.","k":"Alternativa si no quieres organizarte tú mismo.","v":1,"f":[]},{"i":"bj-yuyuantan","c":"bj","g":"par","n":"Parque Yuyuantan (cerezos en flor)","zh":"玉渊潭公园","a":"Haidian, al oeste del centro","m":"Metro L1 Gongzhufen, a 15 minutos a pie","p":10,"pe":"≈ ¥2 el parque · ≈ ¥10 durante la fiesta de los cerezos","pn":"Los cerezos suelen estar en flor entre finales de marzo y mediados de abril","pv":0,"t":[1.5,2.5],"h":"≈ 6:00–21:00","r":1,"rn":"En la época de flor piden reserva en WeChat","ta":[4.2,393],"d":"Parque con lago y puentes de piedra, famoso por sus cerezos en primavera.","s":"La gente cuenta que la flor merece mucho la pena, pero que en fin de semana se llena de pekineses.","k":"Si el viaje cae en plena floración, es una actividad estacional que no tiene Shanghái. Ve entre semana.","v":2,"f":["fotos","caminar"],"ll":[116.31403,39.91581]},{"i":"bj-xiangshan","c":"bj","g":"par","n":"Colinas Perfumadas (Xiangshan)","zh":"香山公园","a":"Haidian, al noroeste","m":"Metro L10 y bus 333 o taxi","p":10,"pe":"≈ ¥10","pn":"Teleférico aparte","pv":0,"t":[3,4],"h":"≈ 6:00–19:00","r":1,"rn":"Reserva en WeChat","ta":[4.1,861],"d":"Parque de montaña con senderos y pabellones; famoso por las hojas rojas en otoño.","s":"Gusta para caminar; la fama la tiene en otoño, y en marzo es sobre todo un paseo de naturaleza.","k":"Para una mañana de naturaleza, no para ver monumentos.","v":1,"f":["caminar"]},{"i":"bj-ming-tumbas","c":"bj","g":"his","n":"Tumbas Ming (Changling)","zh":"十三陵","a":"Changping, a 50 km al noroeste","m":"Autobús 872 desde Deshengmen o tour combinado con Badaling","p":45,"pe":"≈ ¥45 Changling · ≈ ¥60 Dingling","pn":"","pv":0,"t":[2,3],"h":"≈ 8:30–17:30","r":0,"rn":"No hace falta","ta":[3.7,1022],"d":"Mausoleos de 13 emperadores Ming, con una avenida de estatuas de animales.","s":"Nota baja (3,7): lo ven vacío y lejos, aunque la avenida de estatuas se salva.","k":"Si no estás muy centrado en historia, no merece el desplazamiento.","v":0,"f":[]},{"i":"bj-pekin-uni","c":"bj","g":"par","n":"Universidad de Pekín y Tsinghua","zh":"北京大学","a":"Haidian, junto al Antiguo Palacio de Verano","m":"Metro L4 Peking University East Gate","p":0,"pe":"Gratis","pn":"Hay que reservar la entrada","pv":0,"t":[1.5,2],"h":"≈ 8:00–18:00; para visitantes, según la reserva","r":2,"rn":"Reserva en WeChat con pasaporte, con unos días de antelación","ta":[4.4,232],"d":"Campus con lago, pagoda y edificios de estilo tradicional.","s":"Les gusta el paseo por un campus muy bonito con estudiantes, aunque lo ven con poco que hacer.","k":"Si pasas por el Antiguo Palacio de Verano, es un complemento sencillo.","v":1,"f":["gratis","caminar"],"ll":[116.30053,39.99059]},{"i":"bj-muralla-ming","c":"bj","g":"his","n":"Parque de las ruinas de la Muralla Ming","zh":"明城墙遗址公园","a":"Dongcheng, junto a la estación de Pekín","m":"Metro L2 Chongwenmen o Beijing Railway Station","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.5,1],"h":"Todo el día","r":0,"rn":"No hace falta","ta":null,"d":"Tramo de la antigua muralla de la ciudad con un parque lineal en la base.","s":"Booking la cita como lugar cercano en los hoteles de la zona; es un paseo corto.","k":"Es un paseo corto desde el Inner Mongolia Grand o el New World.","v":1,"f":["gratis","caminar"],"ll":[116.42406,39.89972]},{"i":"bj-legaciones","c":"bj","g":"his","n":"Barrio de las Legaciones","zh":"东交民巷","a":"Dongcheng, al este de la plaza de Tiananmen","m":"Metro L2 Qianmen o L1 Tiananmen Este","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.5,1],"h":"Todo el día","r":0,"rn":"No hace falta","ta":null,"d":"Edificios europeos de finales del siglo XIX donde se atrincheraron los diplomáticos en 1900.","s":"Nuestra impresión: paseo corto con edificios europeos de 1900; solo interesa por su historia.","k":"Se hace de camino entre Qianmen y la plaza.","v":1,"f":["gratis","caminar"],"ll":[116.40336,39.90121]},{"i":"bj-zhihua","c":"bj","g":"tem","n":"Templo Zhihua (música antigua)","zh":"智化寺","a":"Dongcheng, en un hutong","m":"Metro L1/L2 Jianguomen","p":20,"pe":"≈ ¥20","pn":"Conciertos de música antigua a las 10:00 y a las 15:00","pv":0,"t":[1,1.5],"h":"9:00–17:00. Cierra los lunes","r":1,"rn":"Reserva en WeChat","ta":null,"d":"Templo de 1443 donde se interpreta música ritual de hace seis siglos.","s":"Nuestra impresión: es un templo poco visitado; lo mejor es el concierto de música antigua.","k":"Cuadra con el concierto de las 15:00.","v":1,"f":["lluvia"],"ll":[116.4261,39.91635]},{"i":"sh-bund","c":"sh","g":"vis","n":"El Bund (Waitan)","zh":"外滩","a":"Huangpu, orilla oeste del río Huangpu","m":"Metro L2/L10 East Nanjing Road, a 10 minutos a pie","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,2],"h":"Siempre abierto; fachadas iluminadas al anochecer","r":0,"rn":"No hace falta","ta":[4.6,19675],"d":"Paseo de 1,5 km con los edificios coloniales de los años 20 y 30 enfrente de los rascacielos de Pudong.","s":"La gente lo pone en primer lugar: de noche, con el skyline iluminado, es «imprescindible». En fin de semana va abarrotado.","k":"Ve dos veces: al atardecer para ver los edificios y a las 20:00 para el skyline. Evita a los que ofrecen «ayuda» para fotos.","v":3,"f":["gratis","noche","fotos","caminar"],"ll":[121.48763,31.23534],"pl":"Días 7 y 8"},{"i":"sh-shtower","c":"sh","g":"vis","n":"Mirador de la Torre de Shanghái","zh":"上海中心大厦观光厅","a":"Pudong, Lujiazui; planta 118, a 546 m","m":"Metro L2 Lujiazui, salida 6","p":180,"pe":"≈ ¥180 (≈ 24 €)","pn":"Hay entradas combinadas más caras con otras zonas","pv":0,"t":[1,1.5],"h":"8:30–22:00 (última entrada hacia las 21:30)","r":2,"rn":"Franja horaria obligatoria en Trip.com; reserva con unos días de margen","u":"https://es.trip.com/things-to-do/detail/110126767/","ut":"Reservar en Trip.com","ta":null,"d":"El mirador más alto de China y el segundo del mundo, con una vista de 360° sobre toda la ciudad.","s":"Una guía de viajes recomienda esta torre si solo eliges un mirador.","k":"Sube hacia las 17:00 para ver la luz del día y el anochecer; en días con neblina se pierde mucho.","v":3,"f":["noche","fotos","lluvia"],"ll":[121.50125,31.23564],"pl":"Día 8 (viernes 2)"},{"i":"sh-swfc","c":"sh","g":"vis","n":"Centro Financiero Mundial (el «abrebotellas»)","zh":"上海环球金融中心","a":"Pudong, Lujiazui","m":"Metro L2 Lujiazui","p":180,"pe":"≈ ¥180–220 según la planta","pn":"","pv":0,"t":[1,1.5],"h":"≈ 8:00–23:00","r":1,"rn":"Reserva online","ta":[4.5,4345],"d":"Rascacielos con una pasarela de cristal en lo alto, con una vista distinta de la Torre de Shanghái.","s":"Muy bien valorado como mirador; los que han subido también cuentan que se pierde con neblina.","k":"Elige solo uno entre este, la Torre de Shanghái y Jin Mao.","v":2,"f":["fotos","lluvia"],"ll":[121.50304,31.23658]},{"i":"sh-jinmao","c":"sh","g":"vis","n":"Torre Jin Mao (planta 88)","zh":"金茂大厦","a":"Pudong, Lujiazui","m":"Metro L2 Lujiazui","p":120,"pe":"≈ ¥120","pn":"","pv":0,"t":[0.75,1],"h":"≈ 8:30–21:30","r":0,"rn":"No hace falta","ta":[4.3,1230],"d":"Rascacielos Art Déco con mirador en la planta 88 y un bar en la 87.","s":"La gente lo describe como más pequeño y barato que los demás, con menos cola.","k":"Si solo quieres un mirador sin colas, es una alternativa.","v":1,"f":["fotos"],"ll":[121.50142,31.23725]},{"i":"sh-perla","c":"sh","g":"vis","n":"Torre Perla de Oriente","zh":"东方明珠广播电视塔","a":"Pudong, Lujiazui","m":"Metro L2 Lujiazui, salida 1","p":160,"pe":"≈ ¥160–220; con museo y crucero hasta ≈ ¥260","pn":"Incluye el Museo de Historia de Shanghái en el basamento","pv":0,"t":[1.5,2],"h":"≈ 8:30–21:30","r":0,"rn":"No hace falta; online suele costar menos","ta":[4.3,6674],"d":"La torre de las bolas rosas que define el skyline, con plataforma de cristal.","s":"Es futurista por fuera; dentro, algunos la ven anticuada junto a los rascacielos nuevos.","k":"Mejor verla desde el Bund que pagar por subir.","v":1,"f":["fotos","lluvia"],"ll":[121.49526,31.24195]},{"i":"sh-huangpu","c":"sh","g":"vis","n":"Crucero por el río Huangpu","zh":"黄浦江游船","a":"Muelles de Shiliupu y Wangjiaotou, junto al Bund","m":"Metro L2/L10 East Nanjing Road y a pie","p":120,"pe":"≈ ¥100–180 (≈ 13–24 €) según el barco y el pase","pn":"Con cena, hasta ≈ ¥400","pv":0,"t":[1,1.5],"h":"De 19:00 a 21:30 las salidas nocturnas","r":1,"rn":"Mejor comprar online con unos días de antelación","ta":[4.4,2131],"d":"Trayecto de 45–50 minutos con los edificios del Bund a un lado y Pudong al otro.","s":"«Hacer un crucero de noche es imprescindible» para ver la belleza del skyline.","k":"Sube a cubierta. Si no te apetece pagar, el ferri público de Dongjiadu cruza por ¥2.","v":2,"f":["noche","fotos"],"ll":[121.49378,31.23059],"pl":"Día 7 (jueves 1), noche"},{"i":"sh-lujiazui","c":"sh","g":"vis","n":"Lujiazui a pie y pasarela circular","zh":"陆家嘴","a":"Pudong, distrito financiero","m":"Metro L2 Lujiazui","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,2],"h":"Siempre","r":0,"rn":"No hace falta","ta":[4.4,1205],"d":"Torres, centros comerciales y la pasarela elevada que rodea la base del centro financiero.","s":"Pasear por Pudong es «una experiencia fantástica» por la escala de los edificios; hay mucho tráfico y hormigón.","k":"Mejor combinarlo con la Torre de Shanghái o el crucero.","v":2,"f":["gratis","fotos","caminar"],"ll":[121.49794,31.24017],"pl":"Día 8 (viernes 2)"},{"i":"sh-peace","c":"sh","g":"vis","n":"Fairmont Peace Hotel y bar de jazz","zh":"和平饭店","a":"Huangpu, en el Bund","m":"Metro L2/L10 East Nanjing Road","p":0,"pe":"Ver el vestíbulo, gratis; el jazz ≈ ¥100–250 con consumición","pn":"","pv":0,"t":[0.5,2],"h":"Jazz desde las 19:00–20:00","r":1,"rn":"Reserva mesa si vas a escuchar jazz","ta":[4.9,2788],"d":"Icono Art Déco de 1929 con vestíbulo restaurado y un bar con banda de jazz de edad avanzada.","s":"4,9 sobre casi 2.800 opiniones: lo valoran por la decoración y por la música en directo.","k":"Si no te quedas al jazz, mira el vestíbulo y sigue.","v":2,"f":["noche"],"ll":[121.48461,31.24113]},{"i":"sh-yu","c":"sh","g":"par","n":"Jardín Yu (Yuyuan)","zh":"豫园","a":"Huangpu, casco antiguo","m":"Metro L10 Yuyuan Garden, salida 1","p":40,"pe":"¥40 (abr–jun y sep–nov) · ¥30 en invierno y en verano","pn":"Es temporada alta desde el 1 de abril","pv":1,"t":[1,1.5],"h":"9:00–16:30 (última entrada hacia las 16:00)","r":1,"rn":"Reserva online recomendada; la taquilla funciona, pero hay cola","u":"https://www.yugarden.com.cn/","ut":"Web oficial","ta":[4.3,10717],"d":"Jardín clásico de la dinastía Ming, con estanques, pabellones y rocallas.","s":"Hay quien dice que «es precioso», pero los fines de semana se llena y cuesta ver los detalles.","k":"Entra pronto o a última hora; no lo hagas en sábado a mediodía.","v":3,"f":["fotos","caminar"],"ll":[121.48798,31.22893],"pl":"Día 8 (viernes 2)"},{"i":"sh-yu-calle","c":"sh","g":"bar","n":"Calle Vieja y bazar Yuyuan","zh":"豫园商城","a":"Huangpu, alrededor del jardín","m":"Metro L10 Yuyuan Garden","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,1.5],"h":"Todo el día; las luces, por la noche","r":0,"rn":"No hace falta","ta":[4.0,2173],"d":"Tiendas de recuerdos y comida con aire antiguo; por la noche, farolillos.","s":"Es muy fotogénico, pero lleno de gente; la comida va a precio de turista.","k":"Para las fotos y poco más; prueba la comida en otro sitio.","v":1,"f":["gratis","noche","fotos"],"ll":[121.48678,31.22851]},{"i":"sh-chenghuang","c":"sh","g":"tem","n":"Templo del Dios de la Ciudad","zh":"城隍庙","a":"Huangpu, casco antiguo","m":"Metro L10 Yuyuan Garden","p":10,"pe":"≈ ¥10","pn":"","pv":0,"t":[0.5,1],"h":"≈ 8:30–16:30","r":0,"rn":"No hace falta","ta":[4.0,836],"d":"Templo taoísta del siglo XV junto al bazar.","s":"Mejor por la noche, cuando está iluminado y menos lleno de grupos.","k":"Visita corta.","v":1,"f":["noche"],"ll":[121.48819,31.22788]},{"i":"sh-ciudadvieja","c":"sh","g":"bar","n":"Ciudad Vieja (Nanshi)","zh":"南市老城厢","a":"Huangpu sur, alrededor de Fangbang Zhong Lu","m":"Metro L10 Yuyuan Garden y paseo","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,2],"h":"Todo el día","r":0,"rn":"No hace falta","ta":[4.3,1186],"d":"Callejones con casas viejas y tiendas de artesanía junto al Yuyuan.","s":"Es donde ven la China antigua, con menos gente que el bazar.","k":"Entra por Fangbang Zhong Lu.","v":2,"f":["gratis","caminar"],"ll":[121.48177,31.22508]},{"i":"sh-jingan","c":"sh","g":"tem","n":"Templo de Jing'an","zh":"静安寺","a":"Jing'an, en pleno centro comercial","m":"Metro L2/L7 Jing'an Temple","p":50,"pe":"≈ ¥50","pn":"","pv":0,"t":[0.75,1],"h":"≈ 7:30–17:00","r":0,"rn":"No hace falta","ta":[4.1,1441],"d":"Templo budista con tejados dorados entre torres de oficinas y un Buda de plata.","s":"Contraste potente con el entorno moderno, pero los precios de entrada sorprenden.","k":"Mejor a la hora dorada o al atardecer.","v":2,"f":["fotos"],"ll":[121.44079,31.22521]},{"i":"sh-jade","c":"sh","g":"tem","n":"Templo del Buda de Jade","zh":"玉佛禅寺","a":"Putuo, norte de Shanghái","m":"Metro L7/L13 Changshou Road y 10 minutos a pie","p":30,"pe":"≈ ¥30 + ¥10 el salón del Buda","pn":"","pv":0,"t":[1,1.5],"h":"≈ 8:00–16:30","r":0,"rn":"No hace falta","ta":[4.2,1640],"d":"Templo con dos budas de jade blanco traídos desde Birmania.","s":"Interesa a quien quiera ver un templo activo; lo valoran más con un guía que lo explique.","k":"Está lejos del Bund; no lo metas en un día apretado.","v":1,"f":[],"ll":[121.43978,31.24369]},{"i":"sh-longhua","c":"sh","g":"tem","n":"Templo Longhua","zh":"龙华寺","a":"Xuhui, al sur","m":"Metro L11/L12 Longhua Zhong Lu","p":10,"pe":"≈ ¥10","pn":"","pv":0,"t":[1,1.5],"h":"≈ 7:00–16:30","r":0,"rn":"No hace falta","ta":[4.4,551],"d":"Templo budista con pagoda de siete pisos, el más antiguo de Shanghái.","s":"Ofrece varios patios internos y jardines, con poco turismo extranjero.","k":"Encaja en el día de West Bund, que está cerca.","v":1,"f":[],"ll":[121.44725,31.17679]},{"i":"sh-museo","c":"sh","g":"mus","n":"Museo de Shanghái","zh":"上海博物馆","a":"Huangpu, en la plaza del Pueblo","m":"Metro L1/L2/L8 People's Square","p":0,"pe":"Gratis","pn":"Las exposiciones especiales tienen entrada","pv":1,"t":[1.5,2.5],"h":"9:00–17:00 (última entrada hacia las 16:00). Cierra los lunes","r":1,"rn":"Desde el 1 de septiembre de 2025 no hay que reservar para ir en solitario; sí en festivos, vacaciones y exposiciones populares. El puente de Qingming podría necesitarla","u":"https://www.shanghaimuseum.net/","ut":"Web oficial","ta":[4.4,4872],"d":"Bronces, cerámica y caligrafía china, en un edificio redondo con base cuadrada.","s":"«Un museo de cultura china en general, no sobre Shanghái». Los bronces y la cerámica son lo mejor.","k":"Cierra los lunes y puede pedir cita en el puente de Qingming (3–5 de abril). Elige la planta de bronces y cerámica.","v":2,"f":["gratis","lluvia"],"ll":[121.471,31.23016]},{"i":"sh-urbanismo","c":"sh","g":"mus","n":"Centro de Exposiciones de Urbanismo","zh":"上海城市规划展示馆","a":"Huangpu, junto a la plaza del Pueblo","m":"Metro L1/L2/L8 People's Square","p":30,"pe":"≈ ¥30","pn":"","pv":0,"t":[1,1.5],"h":"≈ 9:00–17:00. Cierra los lunes","r":0,"rn":"No hace falta","ta":[4.4,1409],"d":"Maqueta gigante de toda la ciudad y exposiciones sobre su transformación.","s":"Ver la maqueta es muy didáctico como primer contacto con la ciudad.","k":"Una hora si llueve o tras el Museo de Shanghái.","v":1,"f":["lluvia"],"ll":[121.47088,31.23337]},{"i":"sh-propaganda","c":"sh","g":"mus","n":"Museo de los Carteles de Propaganda","zh":"上海宣传画年画艺术中心","a":"Changning, planta 7 de un edificio de oficinas (Huamin Empire Plaza)","m":"Metro L2/L11 Jiangsu Road, a 5 minutos","p":25,"pe":"≈ ¥25","pn":"","pv":0,"t":[0.75,1],"h":"≈ 10:00–17:00 (última entrada hacia las 16:30)","r":0,"rn":"No hace falta","ta":[4.5,915],"d":"Colección privada de carteles de la China de Mao, en un edificio de oficinas.","s":"Bien organizado y «excelente para entender la historia social moderna»; cuesta encontrarlo.","k":"Se mudó en 2019 desde Huashan Road: muchos mapas aún marcan la dirección antigua (726 Yan'an West Road, 7.º piso).","v":2,"f":["lluvia"],"ll":[121.42935,31.21735]},{"i":"sh-judios","c":"sh","g":"mus","n":"Museo de los Refugiados Judíos","zh":"上海犹太难民纪念馆","a":"Hongkou, barrio de Tilanqiao","m":"Metro L4/L12 Dalian Road","p":50,"pe":"≈ ¥50","pn":"","pv":0,"t":[1,1.5],"h":"≈ 9:00–17:00","r":0,"rn":"No hace falta","ta":[4.5,737],"d":"Museo en una antigua sinagoga que cuenta la acogida de 20.000 judíos en Shanghái durante la guerra.","s":"«Muy emotivo»: un mural con los nombres de los refugiados y una sinagoga pequeña.","k":"Se combina con el barrio de Hongkou y el 1933.","v":2,"f":["lluvia"],"ll":[121.50482,31.25615]},{"i":"sh-historia-natural","c":"sh","g":"mus","n":"Museo de Historia Natural de Shanghái","zh":"上海自然博物馆","a":"Jing'an, parque de las Esculturas","m":"Metro L13 Natural History Museum","p":30,"pe":"≈ ¥30","pn":"Las exposiciones especiales, aparte","pv":0,"t":[2,3],"h":"≈ 9:00–17:15. Cierra los lunes","r":2,"rn":"Reserva obligatoria en WeChat con el pasaporte","ta":[4.4,417],"d":"Fósiles de dinosaurios y una arquitectura en espiral junto a un parque.","s":"Los que lo reservaron para un día de lluvia dicen que la colección de fósiles es estupenda.","k":"Está a 750 m del Atour People's Square, por si llueve.","v":2,"f":["lluvia"],"ll":[121.4577,31.23687]},{"i":"sh-psa","c":"sh","g":"mus","n":"Power Station of Art","zh":"上海当代艺术博物馆","a":"Huangpu, en la orilla del río, junto a West Bund","m":"Metro L4 Nanpu Bridge o L8 Xiaonanmen","p":0,"pe":"Gratis la entrada; algunas exposiciones, de pago","pn":"","pv":0,"t":[1.5,2],"h":"≈ 11:00–19:00. Cierra los lunes","r":1,"rn":"Reserva gratuita en WeChat para la entrada","u":"https://www.powerstationofart.org/","ut":"Web oficial","ta":null,"d":"Museo de arte contemporáneo en una antigua central eléctrica, con una chimenea que sirve de faro.","s":"Nuestra impresión: buen edificio y exposiciones abiertas; menos visitado que los museos del centro.","k":"Cierra los lunes. Pasa bien una tarde en West Bund.","v":1,"f":["lluvia","gratis"],"ll":[121.4939,31.20306]},{"i":"sh-wb","c":"sh","g":"par","n":"West Bund y Long Museum","zh":"西岸","a":"Xuhui, orilla del río Huangpu","m":"Metro L7/L11 Yunjin Road y paseo","p":0,"pe":"Gratis el paseo; Long Museum ≈ ¥100","pn":"","pv":0,"t":[2,3],"h":"Paseo todo el día; museos de 10:00 a 18:00","r":1,"rn":"Reserva online en los museos","ta":null,"d":"Paseo de 12 km junto al río con galerías, pistas de bici y museos como el Long y el Yuz.","s":"Nuestra impresión: paseo poco turístico, usado sobre todo por vecinos.","k":"Ideal si queda una tarde libre con buen tiempo.","v":1,"f":["gratis","caminar"],"ll":[121.45166,31.18201]},{"i":"sh-concesion-edificio","c":"sh","g":"his","n":"Exposición de Arquitectura Internacional del Bund","zh":"外滩建筑","a":"Huangpu, en el Bund","m":"Metro L2/L10 East Nanjing Road","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,2],"h":"Siempre","r":0,"rn":"No hace falta","ta":[4.6,925],"d":"Los 52 edificios del Bund, de estilo neoclásico, gótico y Art Déco.","s":"Se valora ver con calma cada edificio, que son distintos entre sí.","k":"Camina desde el puente Waibaidu hasta Nanjing Road con la luz de la tarde.","v":2,"f":["gratis","fotos","caminar"]},{"i":"sh-concesion","c":"sh","g":"bar","n":"Antigua Concesión Francesa (Wukang Road, Anfu Road)","zh":"法租界","a":"Xuhui y Jing'an, calles arboladas con plátanos","m":"Metro L1/L10/L12 Shaanxi Nan Lu, L10/L11 Jiaotong University o L10/L11 Shanghai Library","p":0,"pe":"Gratis","pn":"","pv":0,"t":[2,4],"h":"Todo el día; cafés de 8:00 a 22:00","r":0,"rn":"No hace falta","ta":[4.3,3991],"d":"Calles de plátanos con villas europeas, cafés, tiendas de diseño y restaurantes; la zona más agradable para pasear.","s":"«Europa dentro de China»: la gente lo valora como una tarde tranquila y relajada.","k":"Ve a pie entre Wukang Road, Anfu Road y Yongfu Road; haz una parada en un café.","v":3,"f":["gratis","caminar","fotos"],"ll":[121.43458,31.20796],"pl":"Día 9 (sábado 3)"},{"i":"sh-wukang","c":"sh","g":"bar","n":"Edificio Normandie y Wukang Road","zh":"武康路 武康大楼","a":"Xuhui, esquina de Huaihai y Wukang","m":"Metro L10/L11 Jiaotong University","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.5,1],"h":"Siempre","r":0,"rn":"No hace falta","ta":null,"d":"Edificio en forma de proa de barco de 1924, el símbolo de la zona.","s":"Nuestra impresión: es la foto típica de la zona; la acera se llena en fin de semana.","k":"Ve a primera hora y sigue por la calle.","v":2,"f":["gratis","fotos"],"ll":[121.43373,31.20626]},{"i":"sh-tianzifang","c":"sh","g":"bar","n":"Tianzifang","zh":"田子坊","a":"Huangpu sur, antiguas casas shikumen","m":"Metro L9 Dapuqiao","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,1.5],"h":"Todo el día; tiendas de 10:00 a 21:00","r":0,"rn":"No hace falta","ta":[4.2,3035],"d":"Laberinto de callejones de las casas shikumen con tiendas, talleres y cafés.","s":"Lugar «espectacular» según algunos; otros critican la cantidad de recuerdos.","k":"Entra pronto. Compra solo lo que te guste, con regateo suave.","v":2,"f":["gratis","caminar"],"ll":[121.4641,31.21034]},{"i":"sh-xintiandi","c":"sh","g":"bar","n":"Xintiandi","zh":"新天地","a":"Huangpu, casas shikumen reformadas","m":"Metro L1 South Huangpi Road o L10 Xintiandi","p":0,"pe":"Gratis","pn":"El museo de las casas shikumen, ≈ ¥20","pv":0,"t":[1,1.5],"h":"Todo el día; mejor por la noche","r":0,"rn":"No hace falta","ta":[4.1,1725],"d":"Barrio de ocio con las casas shikumen reconvertidas en restaurantes y tiendas.","s":"Es agradable para cenar, pero caro y muy turístico.","k":"Para cenar o tomar algo, no para compras.","v":1,"f":["gratis","noche"],"ll":[121.47044,31.22193]},{"i":"sh-nanjing","c":"sh","g":"bar","n":"Nanjing Road (calle peatonal)","zh":"南京路步行街","a":"Huangpu, de la plaza del Pueblo al Bund","m":"Metro L2/L10 East Nanjing Road","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.75,1.5],"h":"Todo el día; luces de noche","r":0,"rn":"No hace falta","ta":[4.0,4745],"d":"La calle comercial más famosa de China, de las tiendas históricas a los neones.","s":"«Brutal cantidad de tiendas», de día y de noche; también hay quien avisa de vendedores insistentes.","k":"No hagas compras en la calle y rechaza a quien te lleve a un «salón de té».","v":1,"f":["gratis","noche"],"ll":[121.48,31.239]},{"i":"sh-plaza","c":"sh","g":"bar","n":"Plaza del Pueblo y mercado de matrimonios","zh":"人民广场","a":"Huangpu, centro de la ciudad","m":"Metro L1/L2/L8 People's Square","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.5,1],"h":"El mercado, sábados y domingos por la tarde","r":0,"rn":"No hace falta","ta":[3.9,1033],"d":"Plaza y parque con los edificios de gobierno, el Gran Teatro y los anuncios de los padres que buscan pareja a sus hijos.","s":"Más curiosidad que visita; los fines de semana, el rincón de los anuncios es lo más singular.","k":"El sábado 3 por la tarde, justo antes de ir al aeropuerto, podrías verlo si el tiempo lo permite.","v":1,"f":["gratis"],"ll":[121.47099,31.23389]},{"i":"sh-fuxing","c":"sh","g":"par","n":"Parque Fuxing","zh":"复兴公园","a":"Huangpu, en la Concesión Francesa","m":"Metro L10 Xintiandi o L13 Madang Road","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.75,1],"h":"≈ 6:00–18:00","r":0,"rn":"No hace falta","ta":[4.3,570],"d":"Parque de diseño francés con vecinos haciendo taichí y bailando por las mañanas.","s":"La gente lo cuenta como un respiro, y ve el parque de local.","k":"Ve por la mañana.","v":1,"f":["gratis","madrugar"],"ll":[121.46465,31.21866]},{"i":"sh-m50","c":"sh","g":"bar","n":"M50 Creative Park (Moganshan Road)","zh":"莫干山路M50","a":"Putuo, junto al arroyo Suzhou","m":"Metro L13 Shanghai Natural History Museum o L1/L3/L4 Shanghai Railway Station","p":0,"pe":"Gratis; algunas galerías cobran","pn":"","pv":0,"t":[1.5,2],"h":"≈ 10:00–18:00; muchas galerías cierran los lunes","r":0,"rn":"No hace falta","ta":[4.2,404],"d":"Fábricas de algodón convertidas en estudios de artistas y galerías.","s":"Una visita para ver talleres y arte en una antigua fábrica.","k":"Combínalo con el Museo de Historia Natural.","v":1,"f":["gratis"],"ll":[121.44412,31.24943]},{"i":"sh-1933","c":"sh","g":"his","n":"1933 Old Millfun","zh":"1933老场坊","a":"Hongkou, antiguo matadero","m":"Metro L4 Hailun Road","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.75,1],"h":"≈ 10:00–22:00","r":0,"rn":"No hace falta","ta":[4.1,296],"d":"Edificio de hormigón de 1933 con pasarelas y rampas, convertido en galerías y cafés.","s":"Estructura de estilo brutalista, «entre un laberinto y un dibujo»; la gente lo busca para fotos.","k":"Combínalo con el Museo de los Refugiados Judíos.","v":1,"f":["fotos","gratis"],"ll":[121.48716,31.25647]},{"i":"sh-1000trees","c":"sh","g":"bar","n":"1000 Trees","zh":"千树","a":"Putuo, junto al arroyo Suzhou","m":"Metro L1/L3/L4 Shanghai Railway Station o L13 Jiangning Road","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1,1.5],"h":"≈ 10:00–22:00","r":0,"rn":"No hace falta","ta":[4.9,284],"d":"Centro comercial de Thomas Heatherwick con más de mil árboles en las terrazas.","s":"4,9 sobre 284 opiniones: elogiado por las tiendas, los restaurantes y la arquitectura.","k":"Para ver su arquitectura de lejos y pasear.","v":1,"f":["fotos","gratis"],"ll":[121.44089,31.25087]},{"i":"sh-zhujiajiao","c":"sh","g":"exc","n":"Zhujiajiao (pueblo de canales)","zh":"朱家角古镇","a":"Qingpu, a 50 km al oeste","m":"Metro L17 Zhujiajiao, desde Hongqiao ≈ ¥6 y 40 minutos","p":0,"pe":"Entrar es gratis; entrada combinada de tres sitios ≈ ¥30–60; barca ≈ ¥80–300","pn":"Las barcas oficiales cobran por barca, para hasta 6 personas","pv":1,"t":[3,4],"h":"Sitios de pago de 8:30 a 17:00; el pueblo, todo el día","r":0,"rn":"No hace falta","u":"https://zhujiajiao.com/en/","ut":"Web oficial","ta":[4.2,1899],"d":"Pueblo de agua con puentes, canales, casas viejas y mercados.","s":"Le sacan partido quienes van entre semana, porque en fin de semana se llena.","k":"Ve en la mañana de un día laborable. Combina bien con el Museo Judío, no con Qibao.","v":2,"f":["caminar","fotos"]},{"i":"sh-qibao","c":"sh","g":"exc","n":"Pueblo antiguo de Qibao","zh":"七宝古镇","a":"Minhang, al suroeste","m":"Metro L9 Qibao","p":0,"pe":"Gratis","pn":"","pv":0,"t":[1.5,2],"h":"Todo el día","r":0,"rn":"No hace falta","ta":[3.9,395],"d":"Pueblo antiguo junto a un canal, más cercano que Zhujiajiao.","s":"Se ve la China tradicional, con muchas tiendas de comida; la nota es baja.","k":"Si Zhujiajiao se queda lejos, es una visita más corta.","v":0,"f":["gratis"]},{"i":"sh-sastre","c":"sh","g":"mer","n":"Mercado de telas del South Bund (ropa a medida)","zh":"南外滩轻纺面料市场","a":"Huangpu, sur del Bund","m":"Metro L4 Xizang Road South o L8 Xiaonanmen","p":0,"pe":"Trajes a medida desde ≈ ¥600–1.500; cheongsam desde ≈ ¥300","pn":"Muchos talleres tardan de 2 a 5 días","pv":0,"t":[2,3],"h":"≈ 9:00–18:00","r":0,"rn":"No hace falta; pide cita para pruebas","ta":[4.9,3070],"d":"Cientos de tiendas de tela y sastres que hacen ropa a medida.","s":"4,9 sobre 3.070 opiniones: «gran experiencia» con la ropa a medida.","k":"Si quieres un traje, encárgalo el jueves 1 por la mañana y pídelo para el sábado 3.","v":2,"f":["lluvia"],"ll":[121.49519,31.21377]},{"i":"sh-aplaza","c":"sh","g":"mer","n":"A.P. Plaza (mercado de imitaciones)","zh":"亚太商城","a":"Pudong, en la estación Science and Technology Museum","m":"Metro L2 Science & Technology Museum","p":0,"pe":"Gratis","pn":"Regatea y evita las falsificaciones de marca","pv":0,"t":[1,1.5],"h":"≈ 10:00–20:00","r":0,"rn":"No hace falta","ta":[4.1,426],"d":"Mercado subterráneo de ropa y accesorios de marca falsificados.","s":"Hay que armarse de paciencia para regatear; la gente lo ve como una experiencia.","k":"Si te interesa, compra solo cosas sin marca.","v":0,"f":["lluvia"]},{"i":"sh-shaowan","c":"sh","g":"mer","n":"Tienda de dulces tradicionales Shaowansheng","zh":"邵万生","a":"Huangpu, en Nanjing Road Este","m":"Metro L2/L10 East Nanjing Road","p":0,"pe":"Gratis","pn":"","pv":0,"t":[0.25,0.5],"h":"≈ 9:00–21:00","r":0,"rn":"No hace falta","ta":[4.9,196],"d":"Tienda de comida y regalos tradicionales de Shanghái.","s":"«Imperdible» por la cantidad de productos que nunca habías visto.","k":"Ideal para regalos de comida.","v":1,"f":["gratis"]},{"i":"sh-xlb","c":"sh","g":"com","n":"Xiaolongbao y comida shanghainesa","zh":"小笼包","a":"Casco antiguo (Nanxiang), Huanghe Road (Jia Jia Tang Bao) y Xintiandi (Din Tai Fung)","m":"Según el local","p":60,"pe":"≈ ¥40–120 por persona","pn":"Fuera del presupuesto de comidas","pv":0,"t":[0.75,1.5],"h":"Desayuno y almuerzo; algunos locales hacen cola","r":0,"rn":"Din Tai Fung admite reserva; los locales pequeños, no","ta":null,"d":"Los dumplings de sopa de Shanghái, con caldo caliente dentro de una masa fina.","s":"Aparece en casi todas las guías de Shanghái como plato imprescindible; los locales populares tienen cola.","k":"Evita las colas del bazar Yuyuan y busca un local pequeño fuera de la zona turística.","v":3,"f":["comer"]},{"i":"sh-shengjian","c":"sh","g":"com","n":"Sheng jian bao (panecillos fritos)","zh":"生煎包","a":"Calles de toda la ciudad (Yang's, Da Hu Chun)","m":"Según el local","p":25,"pe":"≈ ¥20–40 por persona","pn":"","pv":0,"t":[0.5,0.75],"h":"Desayuno y almuerzo","r":0,"rn":"No hace falta","ta":null,"d":"Panecillos rellenos de cerdo y caldo, fritos por debajo.","s":"Nuestra impresión: locales de barrio con cola; se comen calientes y con cuidado con el caldo.","k":"Un buen desayuno rápido.","v":2,"f":["comer"]},{"i":"sh-cocina-sh","c":"sh","g":"com","n":"Cena en un restaurante shanghainés","zh":"本帮菜","a":"Concesión Francesa y Huangpu (Old Jesse, Fu 1088)","m":"Según el local","p":170,"pe":"≈ ¥100–250 por persona (≈ 13–33 €)","pn":"Fuera del presupuesto de comidas","pv":0,"t":[1.5,2],"h":"Cena de 17:30 a 21:30","r":1,"rn":"Reserva con 1–2 días","ta":null,"d":"Cerdo braseado con salsa de soja, anguila, sopa y verduras con el estilo dulce de la ciudad.","s":"Nuestra impresión: los locales con fama se llenan; reserva con uno o dos días.","k":"Pide cerdo rojo (hong shao rou) y cangrejo de temporada si hay.","v":2,"f":["comer","noche"]},{"i":"sh-azoteas","c":"sh","g":"esp","n":"Cóctel en una azotea del Bund","zh":"外滩酒吧","a":"Huangpu, edificios del Bund (Bar Rouge, Vue, Glamour Bar)","m":"Metro L2/L10 East Nanjing Road","p":120,"pe":"≈ ¥100–180 por cóctel","pn":"Algunos exigen consumo mínimo","pv":0,"t":[1,2],"h":"De 17:00 a la madrugada","r":1,"rn":"Reserva mesa con vistas","ta":null,"d":"Terrazas con el skyline de Pudong enfrente.","s":"Nuestra impresión: la vista se paga con el cóctel; conviene ir antes de que anochezca.","k":"Reserva mesa en terraza al atardecer; es una forma de ver el Bund sin colas.","v":2,"f":["noche","fotos"],"ll":[121.48502,31.24034]},{"i":"sh-era","c":"sh","g":"esp","n":"ERA: Intersección del Tiempo (acrobacias)","zh":"时空之旅","a":"Jing'an, Shanghai Circus World","m":"Metro L1 Shanghai Circus World","p":240,"pe":"≈ ¥180–580","pn":"","pv":0,"t":[1.5,1.5],"h":"≈ 19:30 todos los días","r":1,"rn":"Reserva online","ta":null,"d":"Espectáculo de acrobacias con música y proyecciones, la versión más teatral de Shanghái.","s":"Es el espectáculo de acrobacias más conocido de Shanghái.","k":"Es una noche entera; mejor pensar en el jueves 1 si te cuadra.","v":2,"f":["noche","lluvia"]},{"i":"sh-ferri","c":"sh","g":"exp","n":"Ferri público de Dongjiadu","zh":"东家渡轮渡","a":"Huangpu, orilla del río","m":"Metro L4 Nanpu Bridge y paseo, o taxi","p":2,"pe":"¥2","pn":"","pv":0,"t":[0.5,0.75],"h":"≈ 7:00–19:00","r":0,"rn":"No hace falta","ta":null,"d":"Barco local que cruza el río Huangpu por una fracción del precio de los cruceros.","s":"Una guía de viajes lo recomienda como el cruce más barato, con vistas del skyline.","k":"Vale si no quieres pagar el crucero.","v":1,"f":["fotos"],"ll":[121.50051,31.23216]},{"i":"sh-dumplings","c":"sh","g":"exp","n":"Taller de dumplings y xiaolongbao","zh":"小笼包课程","a":"Huangpu o Xuhui, según la escuela","m":"Según el local","p":350,"pe":"≈ ¥300–500 por persona","pn":"","pv":0,"t":[2,3],"h":"Mañana o tarde, con reserva","r":2,"rn":"Reserva online","ta":null,"d":"Clase práctica para hacer los pliegues y la masa del xiaolongbao.","s":"Nuestra impresión: sirve como plan de interior si llueve; la calidad depende de la escuela.","k":"Reserva solo si no vas a comer xiaolongbao por tu cuenta.","v":1,"f":["lluvia","comer"]},{"i":"sh-tunel","c":"sh","g":"oci","n":"Túnel turístico del Bund","zh":"外滩观光隧道","a":"Huangpu a Pudong, bajo el río","m":"Metro L2 Lujiazui y L2/L10 East Nanjing Road","p":55,"pe":"≈ ¥50–70 la ida","pn":"","pv":0,"t":[0.25,0.5],"h":"≈ 8:00–22:30","r":0,"rn":"No hace falta","ta":null,"d":"Vagones sin conductor con luces y proyecciones bajo el río.","s":"Nuestra impresión: es una atracción de feria de pago; el Bund se ve mejor a pie.","k":"Sáltalo y cruza en ferri.","v":0,"f":[],"ll":[121.48956,31.24068]},{"i":"sh-maglev","c":"sh","g":"oci","n":"Tren Maglev","zh":"磁悬浮列车","a":"Entre Longyang Road (Pudong) y el aeropuerto PVG","m":"Metro L2/L7/L16 Longyang Road","p":50,"pe":"≈ ¥50 ida (≈ ¥40 con billete del mismo día)","pn":"8 minutos hasta el aeropuerto","pv":0,"t":[0.25,0.5],"h":"≈ 6:45–21:40 (último tren)","r":0,"rn":"No hace falta","ta":[4.6,3299],"d":"El tren más rápido del mundo en servicio comercial, a ≈ 300 km/h en trayecto de 8 minutos.","s":"«Memorable experiencia»: «el tren llega a 431 km/h y no se siente». En el trayecto normal va a 300.","k":"El último maglev sale hacia las 21:40. Si salís del hotel hacia las 18:45–19:00, llegáis de sobra para el vuelo de las 00:40.","v":2,"f":["fotos"]},{"i":"sh-disney","c":"sh","g":"oci","n":"Shanghai Disneyland","zh":"上海迪士尼度假区","a":"Pudong, a 35 km del centro","m":"Metro L11 Disney Resort","p":475,"pe":"¥475 entre semana tranquilos · ¥719 en fines de semana y temporada alta · ¥799 en festivos","pn":"Precios dinámicos; con puente de Qingming sube","pv":1,"t":[8,12],"h":"≈ 8:30–21:30","r":2,"rn":"Reserva online con la fecha; se publican con unos 30 días","u":"https://www.shanghaidisneyresort.com/","ut":"Web oficial","ta":[4.0,2431],"d":"Parque con atracciones propias, como la de Piratas o la de Tron, y un castillo enorme.","s":"«Maravilloso», con atracciones que no tienen otros parques; hay colas muy largas en festivos.","k":"Con solo 2 noches en la ciudad, no compensa gastar un día completo.","v":0,"f":["lluvia"]},{"i":"sh-ocean","c":"sh","g":"oci","n":"Acuario Oceánico de Shanghái","zh":"上海海洋水族馆","a":"Pudong, Lujiazui","m":"Metro L2 Lujiazui","p":160,"pe":"≈ ¥160","pn":"","pv":0,"t":[2,3],"h":"≈ 9:00–18:00","r":0,"rn":"No hace falta","ta":[3.9,979],"d":"Acuario con túnel submarino, a unos pasos de la Torre Perla.","s":"A la mitad de la gente le da igual ver peces; el túnel es lo más destacado.","k":"Solo con niños o con lluvia.","v":0,"f":["lluvia"],"ll":[121.49728,31.24265]},{"i":"sh-suzhou","c":"sh","g":"exc","n":"Excursión a Suzhou (jardines clásicos)","zh":"苏州","a":"Jiangsu, a 100 km; 30 minutos en tren","m":"Tren de alta velocidad desde Shanghai Hongqiao a Suzhou, ≈ ¥40, 25–35 min","p":90,"pe":"Jardín del Administrador Humilde ≈ ¥90 en temporada alta; tren ≈ ¥40","pn":"","pv":0,"t":[7,9],"h":"Jardines ≈ 7:30–17:30","r":1,"rn":"Billete de tren en Trip.com o 12306; el jardín, en taquilla o online","ta":null,"d":"La «Venecia de Oriente» con jardines patrimonio de la humanidad y canales.","s":"Las guías de Shanghái la proponen como la excursión clásica para ver jardines.","k":"Solo si os sobra un día entero; con 2 noches en Shanghái, no es lo mejor.","v":1,"f":["caminar","fotos"]},{"i":"sh-hangzhou","c":"sh","g":"exc","n":"Excursión a Hangzhou y el Lago del Oeste","zh":"杭州西湖","a":"Zhejiang, a 170 km; 1 hora en tren","m":"Tren de alta velocidad Hongqiao a Hangzhou East, ≈ ¥75","p":0,"pe":"El lago, gratis; templo Lingyin ≈ ¥75; tren ≈ ¥75","pn":"","pv":0,"t":[8,10],"h":"Todo el día","r":1,"rn":"Billete de tren en Trip.com o 12306","ta":null,"d":"Lago con pagodas, sauces y templos, entre colinas.","s":"Las guías la proponen como excursión larga desde Shanghái; con solo dos noches no suele cuadrar.","k":"Para otro viaje con más días; en dos noches no cuadra.","v":1,"f":["caminar","fotos"]},{"i":"sh-century","c":"sh","g":"par","n":"Parque del Siglo","zh":"世纪公园","a":"Pudong","m":"Metro L2 Century Park","p":10,"pe":"≈ ¥10","pn":"","pv":0,"t":[1.5,2.5],"h":"≈ 7:00–18:00","r":0,"rn":"No hace falta","ta":[4.2,474],"d":"El mayor parque de Pudong, con lago, bicis y zonas de picnic.","s":"Cerca del metro y barato; lo recomiendan para descansar de la ciudad.","k":"Solo si tienes un hueco.","v":1,"f":["caminar"]}];
+/* ---------- Datos: eSIM y seguro de viaje (investigado el 23 de octubre de 2026) ---------- */
+var CONX={
+esim:{
+ lead:"En China no abren Google, WhatsApp, Instagram ni Gmail con una SIM local. Una eSIM de viaje saca vuestro tráfico por una red extranjera y los desbloquea sin VPN, siempre que uséis sus datos y no el wifi del hotel. Hay que instalarla en casa: una eSIM de un operador no chino no se puede instalar ya dentro de China.",
+ pick:{t:"Nuestra elección para los cuatro",x:"Airalo ilimitada de 10 días: 32,50 € por móvil, 130 € en total. Es la ilimitada más barata de las probadas, permite compartir datos y usa China Unicom. Si alguno usa poco el móvil, una de 10 GB (Saily, 23,99 €) sale más barata. Y si queréis algo más sencillo y con VPN incluida, Holafly."},
+ list:[
+  {id:"airalo",n:"Airalo",red:"China Unicom",badge:"La más barata",plan:"Ilimitada 10 días",precio:"32,50 €",otros:"7 días 25 € · 15 días 45,50 € · 30 días 63,50 €",hot:"Permite compartir datos (probado por ChinaForTravelers, nov. 2025)",
+   pros:["La más barata con datos ilimitados","Se puede compartir datos con el portátil u otro móvil","App sencilla y plan que arranca al llegar"],
+   cons:["Soporte lento, según Gizmodo","No recibe SMS de apps chinas","Antes de pagar, mira si la ilimitada tiene un tope diario de velocidad"],
+   gente:"ChinaForTravelers la probó en noviembre de 2025: los sitios bloqueados funcionaron por enrutado en el extranjero. Freaking Nomads la usó para trabajar en remoto. Gizmodo la llama «opción económica» y critica el soporte.",
+   src:[["Airalo","https://www.airalo.com/china-esim"],["ChinaForTravelers","https://chinafortravelers.com/guides/china-esim-vs-vpn/"],["Gizmodo","https://gizmodo.com/best-esim-provider/china"]],buy:["Ver planes de Airalo","https://www.airalo.com/china-esim"]},
+  {id:"holafly",n:"Holafly",red:"China Mobile",badge:"La más cómoda",plan:"Ilimitada 10 días",precio:"37,50 US$ (≈ 34 €)",otros:"7 días 27,50 US$ · 15 días 51,50 US$ · 30 días 76,50 US$",hot:"Solo 1 GB al día para compartir",
+   pros:["Ilimitada de verdad, sin elegir GB","Dice incluir una VPN sin coste","Se activa al aterrizar en Pekín"],
+   cons:["Compartir datos limitado a 1 GB por día","Más cara que Airalo","Casi siempre 4G, con 5G solo a ratos"],
+   gente:"Gizmodo la probó en Pekín: se activó al aterrizar y fue rápida y fiable. ChinaForTravelers (abril de 2026) comprobó que Google Maps, WhatsApp y Gmail funcionaban. Freaking Nomads midió unos 79 Mbps en Shanghái.",
+   src:[["Holafly","https://esim.holafly.com/esim-china/"],["ChinaForTravelers","https://chinafortravelers.com/guides/china-esim-vs-vpn/"],["Gizmodo","https://gizmodo.com/best-esim-provider/china"]],buy:["Ver planes de Holafly","https://esim.holafly.com/esim-china/"]},
+  {id:"saily",n:"Saily",red:"China Unicom y China Telecom",badge:"La mejor en pruebas",plan:"10 GB, 30 días",precio:"23,99 €",otros:"1 GB 3,99 € · 3 GB 9,99 € · 5 GB 13,99 € · 20 GB 35,49 € · ilimitada desde 20,49 € (5 días)",hot:"No se indica en la web: compruébalo antes de comprar",
+   pros:["Plan fijo barato para quien usa poco el móvil","Activación inmediata al llegar y 5G estable en las pruebas","Soporte por chat 24 h y puntos de descuento"],
+   cons:["En ilimitada baja a 1 Mbps tras 5 GB al día, según Gizmodo","Con tantos GB la ilimitada sale cara","Su número opcional es de EE. UU., no de China"],
+   gente:"Gizmodo la puso primera tras dos semanas probándola en Pekín, Shenzhen y Shanghái: WhatsApp, Google y Netflix funcionaron sin VPN y mantuvo 5G cuando otras cayeron. Gizmodo cobra comisión por los enlaces.",
+   src:[["Saily","https://saily.com/es/esim-china/"],["Gizmodo","https://gizmodo.com/best-esim-provider/china"]],buy:["Ver planes de Saily","https://saily.com/es/esim-china/"]},
+  {id:"nomad",n:"Nomad",red:"China Unicom y China Telecom",badge:"Buena con GB",plan:"10 GB o ilimitada 10 días",precio:"≈ 17 US$ (10 GB) · ≈ 33 US$ (ilimitada)",otros:"Desde ≈ 4 US$ el GB; hay planes de 3 a 45 días",hot:"Permite compartir datos (no en todos los móviles)",
+   pros:["Precio intermedio con tramos de GB generosos","Compartir datos sin problemas","Dos redes distintas para cubrir mejor"],
+   cons:["Precios tomados de una prueba de septiembre de 2026: confírmalos en la app","Una comparativa la da como «necesita VPN aparte»","Dentro de China ya no se pueden comprar planes nuevos en la app"],
+   gente:"ChinaForTravelers (septiembre de 2026, con un Xiaomi 13): Google y Facebook cargaron con normalidad y la conexión fue rápida. Nomad asegura que WhatsApp e Instagram funcionan sin VPN, pero otra comparativa la lista con VPN aparte.",
+   src:[["Nomad","https://www.nomadesim.com/blog/best-esim-for-china"],["ChinaForTravelers","https://chinafortravelers.com/guides/china-esim-vs-vpn/"]],buy:["Ver Nomad","https://www.nomadesim.com/"]},
+  {id:"ubigi",n:"Ubigi",red:"China Telecom",badge:"Mejor cobertura",plan:"1 GB 7 días o ilimitada 15 días",precio:"4 US$ (1 GB) · 49 US$ (ilimitada 15 días)",otros:"Hasta 25 GB o ilimitada; planes de 5 a 30 días",hot:"No se indica",
+   pros:["Red de China Telecom, con la mejor cobertura de las probadas","Sin tope de velocidad en ilimitada"],
+   cons:["Casi siempre 4G, con 5G cerca del 30 % del tiempo","Sin llamadas ni SMS","La ilimitada de 15 días es la más cara de la lista"],
+   gente:"Gizmodo la recomienda por la cobertura: velocidad rápida y estable en Pekín y Shanghái, aunque casi siempre en 4G.",
+   src:[["Gizmodo","https://gizmodo.com/best-esim-provider/china"],["Wise","https://wise.com/sg/blog/esim-china"]],buy:["Ver Ubigi","https://www.ubigi.com/"]}
+ ],
+ otras:[
+  {n:"SIM física de China Unicom o China Mobile",x:"Se compra en el aeropuerto con el pasaporte, por unos ¥100–200. Sirve para recibir SMS chinos, pero sus datos pasan por el cortafuegos: Google, WhatsApp e Instagram no abren sin VPN y, según ChinaForTravelers, desde la ofensiva de abril de 2026 una VPN ya no es un recurso fiable. No la recomendamos para un viaje corto."},
+  {n:"Roaming de vuestro operador español",x:"Sí recibe SMS y llamadas con vuestro número, pero suele ser caro en China. Una buena combinación es mantener la SIM de casa para códigos de verificación y usar la eSIM para los datos."}
+ ],
+ pasos:[
+  "Instálala en casa con wifi, unas semanas antes. Si el plan no empieza hasta que llegues a China, déjalo sin activar y pon el roaming de datos al aterrizar.",
+  "En el móvil, elige la eSIM como línea de datos y apaga los datos de la SIM de casa para no pagar roaming.",
+  "No cambies al wifi del hotel o del aeropuerto cuando quieras abrir Google: ese wifi sí está detrás del cortafuegos.",
+  "Lleva Alipay o WeChat Pay con la tarjeta ya enlazada; las apps chinas piden un número de teléfono de China para algunas funciones y las eSIM de viaje no reciben SMS.",
+  "Si uno de los cuatro tiene un móvil sin eSIM, compartid datos desde otro con hotspot: Airalo y Nomad lo permiten; Holafly, solo 1 GB al día."
+ ],
+ nota:"Casi todas las comparativas son de sitios que cobran comisión por los enlaces, incluida la de Gizmodo; por eso cruzamos las pruebas de varios medios y los precios salen de las webs oficiales cuando estaban accesibles (Airalo, Holafly y Saily, el 23 de octubre de 2026). Los demás precios son de terceros y cambian a menudo."
+},
+seg:{
+ lead:"China no pide seguro para entrar, pero la sanidad no es gratuita para extranjeros y los hospitales suelen exigir un depósito antes de tratar. La tarjeta sanitaria europea y la Seguridad Social no valen allí. Con un buen seguro, la aseguradora paga directamente y no adelantáis nada.",
+ pick:{t:"Nuestra elección",x:"Heymondo o IATI, con un mínimo de 300.000 € de gastos médicos y pago directo al hospital. Para 10 días, calculando entre los precios de 7 y de 14 días, salen unos 32–38 € por persona. Contrata cuando lo veas claro: la cancelación gratuita de hoteles y vuelo cubre cambios, y el seguro de cancelación es opcional."},
+ list:[
+  {id:"heymondo",n:"Heymondo",plan:"Plan Tranquilidad (consulta el plan exacto al presupuestar)",p7:"25,97 €",p14:"44,93 €",p10:"≈ 34 €",med:"600.000 € a 1 M€ según la fuente",dir:"Sin adelanto de dinero",badge:"La más repetida",
+   pros:["Chat y videoconsulta médica 24 h desde la app","Repatriación incluida, con acompañante","Trustpilot 4,6 sobre 5"],
+   cons:["La cobertura médica varía entre fuentes: verifícala en el presupuesto","Cancelación como extra, aparte"],
+   gente:"Es la que más veces sale como mejor equilibrio entre precio y coberturas. HelloSafe la valora con un 4,3 y varios blogs de viajes afirman que su asistencia les resolvió incidencias.",
+   src:[["Heymondo","https://heymondo.es/"],["Comiviajeros","https://comiviajeros.com/?p=82467"],["HelloSafe","https://hellosafe.com/es/travel-insurance/heymondo"]],buy:["Pedir presupuesto en Heymondo","https://heymondo.es/"]},
+  {id:"iati",n:"IATI Seguros",plan:"IATI Estándar (o Estrella, con gastos médicos ilimitados)",p7:"24,32 €",p14:"42,82 €",p10:"≈ 32 €",med:"Estándar hasta 1 M€; Estrella, ilimitado",dir:"«0 € de adelanto» en asistencia médica",badge:"La más barata",
+   pros:["Estrella cubre gastos médicos ilimitados en todo el mundo, China incluida","Repatriación sanitaria al 100 %","Asistencia 24 h en español"],
+   cons:["Trustpilot 4,3, algo por debajo de las otras dos","Estrella cuesta más; confirma el precio con tus fechas"],
+   gente:"Selectra le da un 4 sobre 5. IATI recuerda en su web que el seguro no es obligatorio para China pero lo recomienda, y cita al Ministerio de Exteriores sobre las facturas hospitalarias.",
+   src:[["IATI China","https://www.iatiseguros.com/seguro-de-viaje-china/"],["Comiviajeros","https://comiviajeros.com/?p=82467"]],buy:["Pedir presupuesto en IATI","https://www.iatiseguros.com/seguro-de-viaje-china/"]},
+  {id:"intermundial",n:"Intermundial",plan:"Totaltravel",p7:"29,46 €",p14:"49,15 €",p10:"≈ 38 €",med:"300.000 € a 5 M€ según plan y fuente",dir:"Sin adelanto de dinero",badge:"La más rápida en siniestros",
+   pros:["Gastos médicos muy altos en el plan Totaltravel","Equipaje hasta 2.500 € y demoras mejor cubiertas","Trustpilot 4,6 sobre 5"],
+   cons:["Es la más cara de las tres","Quejas por reembolsos de equipaje y exceso de documentación"],
+   gente:"Una comparativa de 2026 la valora con 4,5, la nota más alta de las tres, por la rapidez al resolver incidencias; las opiniones negativas hablan de reembolsos de equipaje y de papeleo.",
+   src:[["Intermundial","https://www.intermundial.es/"],["Comiviajeros","https://comiviajeros.com/?p=82467"]],buy:["Pedir presupuesto en Intermundial","https://www.intermundial.es/"]},
+  {id:"chapka",n:"Chapka",plan:"Cap Trip Basic",p7:"—",p14:"—",p10:"≈ 71 € por 21 días",med:"250.000 €",dir:"Hay que pagar y reclamar después, según un blog",badge:"Para compararla",
+   pros:["Trustpilot 4,5","Descuento del 7 % por contratar online"],
+   cons:["Solo 250.000 € de gastos médicos, por debajo del mínimo recomendado","Equipaje a 1.000 € y sin pago directo claro"],
+   gente:"Un blog la cita como la que obliga a pagar la asistencia médica y reclamarla; por eso no la usamos para China.",
+   src:[["Comiviajeros","https://comiviajeros.com/?p=82467"]],buy:["Ver Chapka","https://www.chapkadirect.es/"]}
+ ],
+ precios:"Precios de siete y catorce días tomados de Viajeros Callejeros (sin fecha); el de diez días lo calculamos entre ambos. Los de 21 días vienen de Comiviajeros, revisado el 17 de agosto de 2026. Son orientativos: el presupuesto real depende de la edad y de las fechas.",
+ check:[
+  "Gastos médicos de al menos 300.000 €, y mejor 500.000 € o más.",
+  "Pago directo al hospital, para no adelantar entre 1.000 y 3.000 € al día de ingreso privado.",
+  "Repatriación sanitaria incluida y sin límite bajo.",
+  "Asistencia 24 h en español. Si os ingresan, avisad a la aseguradora antes: algunos contratos recortan la cobertura si no lo hacéis.",
+  "Franquicia: puede ser de 100 a 300 € por siniestro en la parte médica; algunas pólizas la tienen a cero.",
+  "Guarda facturas, informes médicos y el parte de la policía en caso de robo.",
+  "La tarjeta bancaria premium suele cubrir unos 150.000 € y solo los primeros 90 días: no basta."
+ ],
+ coste:"Una consulta básica en un hospital privado de Pekín o Shanghái ronda 100–150 €; una fractura simple con ingreso supera los 3.000 €; un ingreso en un hospital internacional puede pasar de 1.000 € al día. Son cifras de comparadores, orientativas.",
+ nota:"Casi todas las comparativas son de aseguradoras o comparadores con comisión. No hemos encontrado datos neutrales de siniestros reales ni una comparativa independiente de la OCU para 2026; contrasta el contrato antes de pagar."
+}
+};
 /* ---------- Imagen de satélite de cada ciudad: archivo y límites en grados [oeste, sur, este, norte] ---------- */
 var SAT={
  bj:{f:"img/sat-bj.jpg",b:[116.219988,39.829961,116.520052,40.040035]},
@@ -1973,6 +2259,7 @@ var cardEl=$("sightcard");
 function byId(id){
   for(var i=0;i<SIGHTS.length;i++){if(SIGHTS[i].id===id){return SIGHTS[i];}}
   for(var vid in HX){for(var j=0;j<HX[vid].length;j++){if(HX[vid][j].id===id){return HX[vid][j];}}}
+  for(var wid in AX){for(var q=0;q<AX[wid].length;q++){if(AX[wid][q].id===id){return AX[wid][q];}}}
   return null;
 }
 function sightsOf(v){return SIGHTS.filter(function(s){return s.v===v;});}
@@ -2018,15 +2305,44 @@ function initMap(d3){
 
   /* ----- capa «Hoteles»: todas las opciones de hotel de la ciudad, con los sitios del plan atenuados alrededor ----- */
   var HINT_H="Toca un hotel para ver qué hay cerca. Los círculos marcan 500 m y 1 km desde el hotel.";
-  function layerOn(v){return state.layer==="hotels"&&!!v.city&&hotelPts(v.id).length>0;}
+  function hotelsOn(v){return state.layer==="hotels"&&!!v.city&&hotelPts(v.id).length>0;}
+  function actsOn(v){return state.layer==="acts"&&!!v.city&&actPts(v.id).length>0;}
+  var HINT_A="Toca una actividad para ver su ficha y guardarla en tu lista. El color marca cuánto la recomendamos.";
+  function hintFor(v){return hotelsOn(v)?HINT_H:(actsOn(v)?HINT_A:INTRO[v.id].hint);}
   function itemsOf(v){
-    if(!layerOn(v)){return sightsOf(v.id);}
+    if(actsOn(v)){return actPts(v.id);}
+    if(!hotelsOn(v)){return sightsOf(v.id);}
     var hs=hotelPts(v.id),gh=[];
     sightsOf(v.id).forEach(function(s){
       if(s.k==="hotel"||s.off||s.far){return;}
       if(hs.some(function(h){return geoDist(h.ll,s.ll)<=3000;})){var c={ghost:true};for(var k in s){c[k]=s[k];}gh.push(c);}
     });
     return hs.concat(gh);
+  }
+  function markMine(){
+    if(!mks){return;}
+    mks.classed("mine",function(d){return !!(d.act&&window.ACTAPI&&ACTAPI.has(d.act.i));});
+  }
+  function actsIntro(v){
+    var pts=actPts(v.id),n=[0,0,0,0];
+    pts.forEach(function(p){n[p.act.v]++;});
+    var leg=[3,2,1,0].filter(function(k){return n[k];}).map(function(k){return '<span class="tg"><span class="kd k-act vd'+k+'"></span>'+ACT_VN[k]+' '+n[k]+'</span>';}).join("");
+    return '<div class="bd"><div class="tags">'+leg+'</div><h3>Actividades en '+esc(v.name)+'</h3>'
+      +'<p>'+pts.length+' actividades con sitio fijo sobre el mapa. Los puntos con aro verde son los de tu lista. Las excursiones, los tours y las comidas no salen aquí; están en la sección «Qué hacer».</p>'
+      +'<div class="macts"><a class="back mlink" href="#actividades">Ver todas las fichas</a></div></div>';
+  }
+  function actCardHtml(s){
+    var a=s.act,on=!!(window.ACTAPI&&ACTAPI.has(a.i));
+    var tags='<div class="tags"><span class="tg"><span class="kd k-act vd'+a.v+'"></span>'+ACT_VN[a.v]+'</span><span class="tg">'+esc(actCat(a.g))+'</span>'+(a.pl?'<span class="tg">En vuestro plan: '+esc(a.pl)+'</span>':'')+'</div>';
+    var prc='<dl class="prc"><div class="pn"><dt>Precio por persona'+(a.p!==0&&a.p!=null?(a.pv?' (comprobado)':' (orientativo)'):'')+'</dt><dd>'+esc(actPrice(a))+'</dd></div><div><dt>Tiempo</dt><dd>'+actRange(a.t)+'</dd></div><div><dt>Reserva</dt><dd>'+['No hace falta','Recomendable','Obligatoria'][a.r]+'</dd></div></dl>';
+    var links='<button type="button" class="back" data-act="fav" data-i="'+a.i+'">'+(on?'Quitar de mi lista':'Añadir a mi lista')+'</button> ';
+    if(a.u){links+='<a class="back mlink" href="'+esc(a.u)+'" target="_blank" rel="noopener">'+esc(a.ut||"Web oficial")+'</a> ';}
+    links+='<button type="button" class="back" data-act="ficha" data-i="'+a.i+'">Ver la ficha completa</button> <a class="back mlink" href="'+gmapsUrl(s)+'" target="_blank" rel="noopener">Ver en satélite (Google Maps)</a> ';
+    return '<div class="bd">'+tags+'<h3>'+esc(a.n)+'</h3>'+(a.zh?'<p class="zh"><span lang="zh-Hans">'+esc(a.zh)+'</span><small>Enséñaselo al taxista</small></p>':'')
+      +'<p>'+esc(a.d)+'</p>'+prc
+      +'<h4 class="nearh">Lo que dice la gente</h4><p>'+(a.ta?'★ '+String(a.ta[0]).replace(".",",")+' · '+fmt(a.ta[1])+' opiniones en TripAdvisor. ':'')+esc(a.s)+'</p>'
+      +'<ul><li>'+esc(a.k)+'</li><li>Cómo llegar: '+esc(a.m)+'</li><li>Horario: '+esc(a.h)+'</li><li>Reserva: '+esc(a.rn||ACT_RN[a.r])+'</li></ul>'
+      +'<div class="macts">'+links+'<button type="button" class="back" data-act="back">Volver a las actividades</button></div></div>';
   }
   function markNear(){
     if(!mks){return;}
@@ -2096,7 +2412,11 @@ function initMap(d3){
   /* ----- tarjeta de información ----- */
   function showCard(){
     var v=curView(),s=state.sel?byId(state.sel):null,html="";
-    if(!s&&layerOn(v)){
+    if(!s&&actsOn(v)){
+      html=actsIntro(v);
+    }else if(s&&s.act){
+      html=actCardHtml(s);
+    }else if(!s&&hotelsOn(v)){
       html=hotelsIntro(v);
     }else if(s&&s.hotel){
       html=hotelCardHtml(s);
@@ -2121,6 +2441,8 @@ function initMap(d3){
   cardEl.addEventListener("click",function(e){
     var b=e.target.closest("button[data-act]"); if(!b){return;}
     if(b.getAttribute("data-act")==="back"){select(null);}
+    if(b.getAttribute("data-act")==="fav"&&window.ACTAPI){ACTAPI.toggle(b.getAttribute("data-i"));showCard();}
+    if(b.getAttribute("data-act")==="ficha"&&window.ACTAPI){ACTAPI.reveal(b.getAttribute("data-i"));}
     if(b.getAttribute("data-act")==="go"){setView(b.getAttribute("data-v"));}
   });
 
@@ -2128,8 +2450,8 @@ function initMap(d3){
   function renderList(){
     listEl.innerHTML="";
     itemsOf(curView()).forEach(function(s){
-      if(s.ghost){return;}
-      var b=mk("button",null,s.hotel?'<span class="kd k-hotel t-'+s.tier+'"></span>'+esc(s.n)+' <small>'+fmtE(hprice(s.hotel,s.city).pn)+'</small>':'<span class="kd k-'+s.k+'"></span>'+esc(s.n)); b.type="button";
+      if(s.ghost||(s.act&&s.act.v<2)){return;}
+      var b=mk("button",null,s.act?'<span class="kd k-act vd'+s.act.v+'"></span>'+esc(s.n):s.hotel?'<span class="kd k-hotel t-'+s.tier+'"></span>'+esc(s.n)+' <small>'+fmtE(hprice(s.hotel,s.city).pn)+'</small>':'<span class="kd k-'+s.k+'"></span>'+esc(s.n)); b.type="button";
       b.setAttribute("aria-pressed",state.sel===s.id?"true":"false"); b.setAttribute("data-id",s.id);
       listEl.appendChild(b);
     });
@@ -2171,18 +2493,18 @@ function initMap(d3){
     state.view=id; state.sel=null; state.h=null; tr=d3.zoomIdentity;
     if(!curView().city){state.layer="sights";}
     tabsEl.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-selected",b.getAttribute("data-v")===id?"true":"false");});
-    hintEl.textContent=layerOn(curView())?HINT_H:INTRO[id].hint;
+    hintEl.textContent=hintFor(curView());
     syncLayer(); render(true); renderList(); showCard(); syncBase();
   }
   function syncLayer(){
     var v=curView();
-    layerEl.hidden=!(v.city&&hotelPts(v.id).length);
+    layerEl.hidden=!(v.city&&(hotelPts(v.id).length||actPts(v.id).length));
     layerEl.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-l")===state.layer?"true":"false");});
   }
   layerEl.addEventListener("click",function(e){
     var b=e.target.closest("button[data-l]"); if(!b||b.getAttribute("data-l")===state.layer){return;}
     state.layer=b.getAttribute("data-l"); state.sel=null; state.h=null; tr=d3.zoomIdentity;
-    hintEl.textContent=layerOn(curView())?HINT_H:INTRO[state.view].hint;
+    hintEl.textContent=hintFor(curView());
     syncLayer(); render(true); renderList(); showCard();
   });
 
@@ -2207,7 +2529,7 @@ function initMap(d3){
   /* ----- marcadores ----- */
   function makeMarkers(parent,items){
     var g=parent.selectAll("g.pt").data(items,function(d){return d.id;}).enter().append("g")
-      .attr("class",function(d){return "pt k-"+d.k+(d.tier?" t-"+d.tier:"")+(d.ghost?" ghost":"");}).attr("tabindex",0).attr("role","button").attr("aria-label",function(d){return d.n;})
+      .attr("class",function(d){return "pt k-"+d.k+(d.tier?" t-"+d.tier:"")+(d.ghost?" ghost":"")+(d.act?" vd"+d.act.v:"");}).attr("tabindex",0).attr("role","button").attr("aria-label",function(d){return d.n;})
       .on("click",function(ev,d){ev.stopPropagation();select(d.id,false);})
       .on("keydown",function(ev,d){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();select(d.id,false);}});
     g.append("title").text(function(d){return d.n;});
@@ -2485,7 +2807,7 @@ function initMap(d3){
     var pad=v.city?42:30,items=itemsOf(v),data=MAPDATA[v.data],fit=[];
     if(v.city){
       items.forEach(function(s){if(!s.off&&!s.far){fit.push(s.ll);}});
-      if(!layerOn(v)){data.features.forEach(function(f){if(f.properties.k==="wall"){fit=fit.concat(featCoords(f));}});}
+      if(!hotelsOn(v)&&!actsOn(v)){data.features.forEach(function(f){if(f.properties.k==="wall"){fit=fit.concat(featCoords(f));}});}
     }else{fit=sample(v.bbox);}
     proj=(v.proj==="conic")?d3.geoConicEqualArea().parallels([25,47]).rotate([-105,0]).center([0,36]):d3.geoMercator();
     proj.fitExtent([[pad,pad],[W-pad,H-pad]],{type:"MultiPoint",coordinates:fit});
@@ -2569,7 +2891,7 @@ function initMap(d3){
     if(v.type==="globe"){drawGlobe(first);}else{drawFlat(v,first);}
     if(keep&&zoomB&&v.type!=="globe"){svg.call(zoomB.transform,keep);}
     if(state.sel&&mks){mks.classed("sel",function(d){return d.id===state.sel;});}
-    markNear(); drawRings();
+    markNear(); markMine(); drawRings();
   }
 
   /* ----- botones de zoom ----- */
@@ -2595,7 +2917,21 @@ function initMap(d3){
     }).observe(box);
   }
   /* lo usan los botones «Ver en el mapa» de las fichas de hotel */
-  window.MAPAPI={showHotel:function(vid,name){
+  window.MAPAPI={refreshAct:function(){
+      markMine();
+      var s=state.sel?byId(state.sel):null;
+      if(s&&s.act){showCard();}
+    },
+    showActivity:function(aid){
+      var a=window.ACTAPI?ACTAPI.get(aid):null,p=null;
+      if(!a){return false;}
+      actPts(a.c).forEach(function(x){if(x.act.i===aid){p=x;}});
+      if(!p||!VIEWS.some(function(v){return v.id===a.c;})){return false;}
+      state.layer="acts"; setView(a.c); select(p.id,true);
+      var sec=$("mapa"); if(sec){sec.scrollIntoView({behavior:rm?"auto":"smooth",block:"start"});}
+      return true;
+    },
+    showHotel:function(vid,name){
     var p=null;
     hotelPts(vid).forEach(function(x){if(x.n===name){p=x;}});
     if(!p||!VIEWS.some(function(v){return v.id===vid;})){return false;}
@@ -2771,6 +3107,217 @@ function schedCompute(S){
   ribbon(); stats();
   var rw=rbEl.clientWidth,rt=null;
   window.addEventListener("resize",function(){clearTimeout(rt);rt=setTimeout(function(){if(Math.abs(rbEl.clientWidth-rw)>12){rw=rbEl.clientWidth;ribbon();}},150);});
+})();
+/* ---------- Qué hacer: actividades de Pekín y Shanghái ---------- */
+(function(){
+  if(typeof ACT==="undefined"||!$("actGrid")){return;}
+  var CITY={bj:"Pekín",sh:"Shanghái"},CATN={};
+  ACTCAT.forEach(function(c){CATN[c[0]]=c[1];});
+  var VN=ACT_VN,RN=ACT_RN;
+  var KEY="viajeChina2027.lista";
+  var sel={},st={city:"bj",cat:"all",f:{},sort:"top",q:""},byId={},openList=false;
+  try{var raw=window.localStorage.getItem(KEY);if(raw){JSON.parse(raw).forEach(function(i){sel[i]=1;});}}catch(e){}
+  function save(){try{window.localStorage.setItem(KEY,JSON.stringify(Object.keys(sel)));}catch(e){}}
+  ACT.forEach(function(a){byId[a.i]=a;});
+  window.ACTAPI={has:function(i){return !!sel[i];},toggle:function(i){toggle(i);},get:function(i){return byId[i];},
+    reveal:function(i){
+      var a=byId[i]; if(!a){return;}
+      st.city=a.c; st.cat="all"; st.f={}; st.q=""; $("actQ").value="";
+      $("actFlt").querySelectorAll("button").forEach(function(b){b.setAttribute("aria-pressed","false");});
+      drawTabs(); drawCats(); drawGrid();
+      var c=$("a-"+i); if(c){c.scrollIntoView({behavior:rm?"auto":"smooth",block:"center"}); c.classList.add("flash"); setTimeout(function(){c.classList.remove("flash");},1800);}
+    }};
+
+  var fmtH=actH,range=actRange,price=actPrice;
+  function norm(s){return String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g,"");}
+  function rate(a){return a.ta?String(a.ta[0]).replace(".",","):"";}
+  function tripSearch(a){return "https://www.tripadvisor.es/Search?q="+encodeURIComponent(a.n+" "+CITY[a.c]);}
+  function ticketSearch(a){return "https://www.getyourguide.es/s/?q="+encodeURIComponent(a.n+" "+CITY[a.c]);}
+
+  function pass(a){
+    if(a.c!==st.city){return false;}
+    if(st.cat!=="all"&&a.g!==st.cat){return false;}
+    var f=a.f||[];
+    if(st.f.free&&a.p!==0){return false;}
+    if(st.f.rain&&f.indexOf("lluvia")<0){return false;}
+    if(st.f.night&&f.indexOf("noche")<0){return false;}
+    if(st.f.noresv&&a.r!==0){return false;}
+    if(st.f.plan&&!a.pl){return false;}
+    if(st.q&&norm(a.n+" "+(a.zh||"")+" "+a.a+" "+CATN[a.g]).indexOf(st.q)<0){return false;}
+    return true;
+  }
+  var SORT={
+    top:function(a,b){return (b.v-a.v)||((b.ta?b.ta[1]:0)-(a.ta?a.ta[1]:0));},
+    rate:function(a,b){return ((b.ta?b.ta[0]:0)-(a.ta?a.ta[0]:0))||((b.ta?b.ta[1]:0)-(a.ta?a.ta[1]:0));},
+    price:function(a,b){return (a.p==null?9e9:a.p)-(b.p==null?9e9:b.p)||SORT.top(a,b);},
+    time:function(a,b){return (a.t[0]+a.t[1])-(b.t[0]+b.t[1])||SORT.top(a,b);}
+  };
+
+  function card(a){
+    var on=!!sel[a.i],tags="";
+    if(a.pl){tags+='<span class="aplan">En vuestro plan: '+esc(a.pl)+'</span>';}
+    var people=(a.ta?'<span class="ata"><b>★ '+rate(a)+'</b> '+fmt(a.ta[1])+' opiniones en TripAdvisor</span>':'<span class="ata none">Sin cifra de TripAdvisor</span>')
+      +'<p>'+esc(a.s)+'</p>';
+    var det='<dl class="adl"><div><dt>Dónde</dt><dd>'+esc(a.a)+'</dd></div><div><dt>Cómo llegar</dt><dd>'+esc(a.m)+'</dd></div>'
+      +'<div><dt>Horario</dt><dd>'+esc(a.h)+'</dd></div><div><dt>Reserva</dt><dd>'+esc(a.rn||RN[a.r])+'</dd></div>'
+      +'<div><dt>Precio</dt><dd>'+esc(a.pe||price(a))+(a.pn?'. '+esc(a.pn):'')+'</dd></div></dl>';
+    var links="";
+    if(a.u){links+='<a class="best" href="'+esc(a.u)+'" target="_blank" rel="noopener">'+esc(a.ut||"Web oficial")+'</a>';}
+    if(a.p!==0){links+='<a href="'+esc(ticketSearch(a))+'" target="_blank" rel="noopener">Entradas y tours</a>';}
+    links+='<a href="'+esc(tripSearch(a))+'" target="_blank" rel="noopener">Opiniones</a>';
+    if(a.ll&&window.MAPAPI&&MAPAPI.showActivity){links+='<button type="button" class="amap" data-id="'+a.i+'">Ver en el mapa</button>';}
+    return '<article class="acard v'+a.v+(on?' on':'')+'" id="a-'+a.i+'">'
+      +'<div class="atop"><span class="av v'+a.v+'">'+VN[a.v]+'</span><span class="acat">'+esc(CATN[a.g])+'</span>'
+      +'<button type="button" class="afav" data-id="'+a.i+'" aria-pressed="'+on+'" aria-label="'+(on?'Quitar de mi lista':'Añadir a mi lista')+': '+esc(a.n)+'"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5 4.6 13.4a4.6 4.6 0 0 1 6.5-6.5l.9.9.9-.9a4.6 4.6 0 0 1 6.5 6.5z"/></svg></button></div>'
+      +'<h4>'+esc(a.n)+'</h4>'+(a.zh?'<p class="azh" lang="zh-Hans">'+esc(a.zh)+'</p>':'')
+      +'<p class="aarea">'+esc(a.a)+'</p>'+tags
+      +'<dl class="afacts"><div><dt>Precio'+(a.p!==0&&a.p!=null?(a.pv?' · comprobado':' · orientativo'):'')+'</dt><dd>'+esc(price(a))+'</dd></div>'
+      +'<div><dt>Tiempo</dt><dd>'+range(a.t)+'</dd></div><div><dt>Reserva</dt><dd class="r'+a.r+'">'+['No hace falta','Recomendable','Obligatoria'][a.r]+'</dd></div></dl>'
+      +'<p class="adesc">'+esc(a.d)+'</p>'
+      +'<div class="apeople"><h5>Lo que dice la gente</h5>'+people+'</div>'
+      +'<p class="atip"><b>Consejo.</b> '+esc(a.k)+'</p>'
+      +'<details><summary>Cómo llegar, horario y reserva</summary>'+det+'</details>'
+      +'<div class="alinks">'+links+'</div></article>';
+  }
+
+  function drawTabs(){
+    var t=$("actTabs"); t.innerHTML="";
+    ["bj","sh"].forEach(function(c){
+      var n=ACT.filter(function(a){return a.c===c;}).length;
+      var b=mk("button",null,CITY[c]+' <small>'+n+'</small>'); b.type="button"; b.setAttribute("role","tab"); b.setAttribute("data-c",c);
+      b.setAttribute("aria-selected",st.city===c?"true":"false"); t.appendChild(b);
+    });
+  }
+  function drawCats(){
+    var box=$("actCats"),cnt={},tot=0;
+    ACT.forEach(function(a){if(a.c===st.city){cnt[a.g]=(cnt[a.g]||0)+1;tot++;}});
+    var h='<button type="button" data-g="all" aria-pressed="'+(st.cat==="all")+'">Todas <small>'+tot+'</small></button>';
+    ACTCAT.forEach(function(c){if(cnt[c[0]]){h+='<button type="button" data-g="'+c[0]+'" aria-pressed="'+(st.cat===c[0])+'">'+esc(c[1])+' <small>'+cnt[c[0]]+'</small></button>';}});
+    box.innerHTML=h;
+  }
+  function drawGrid(){
+    var L=ACT.filter(pass).sort(SORT[st.sort]);
+    $("actGrid").innerHTML=L.length?L.map(card).join(""):'<p class="actempty glass">No hay nada con esos filtros. Quita alguno o cambia de categoría.</p>';
+    $("actCount").textContent=L.length+(L.length===1?" actividad":" actividades")+" en "+CITY[st.city]+(st.cat!=="all"?", en «"+CATN[st.cat]+"»":"");
+  }
+  function sumUp(){
+    var ids=Object.keys(sel).filter(function(i){return byId[i];}),h=0,e=0,no=0;
+    ids.forEach(function(i){var a=byId[i];h+=(a.t[0]+a.t[1])/2;if(a.p==null){no++;}else{e+=a.p/7.5;}});
+    return {ids:ids,h:h,e:e,no:no};
+  }
+  function drawSum(){
+    var s=sumUp(),box=$("actSum");
+    if(!s.ids.length){
+      box.classList.add("empty");
+      box.innerHTML='<p class="sumempty">Tu lista está vacía. Toca el corazón de una actividad para guardarla aquí: se suman el tiempo y el coste por persona.</p>';
+      return;
+    }
+    box.classList.remove("empty");
+    var h='<div class="sumrow"><b>Mi lista</b><span>'+s.ids.length+(s.ids.length===1?' actividad':' actividades')+'</span><span>≈ '+String(Math.round(s.h*2)/2).replace(".",",")+' h</span><span>≈ '+Math.round(s.e)+' € por persona'+(s.no?' más '+s.no+' sin precio fijo':'')+'</span>'
+      +'<span class="sumbtns"><button type="button" data-s="ver" aria-expanded="'+openList+'">'+(openList?'Ocultar':'Ver lista')+'</button><button type="button" data-s="copiar">Copiar</button><button type="button" data-s="vaciar">Vaciar</button></span></div>';
+    if(openList){
+      ["bj","sh"].forEach(function(c){
+        var L=s.ids.map(function(i){return byId[i];}).filter(function(a){return a.c===c;}).sort(function(a,b){return a.n<b.n?-1:1;});
+        if(!L.length){return;}
+        h+='<h5>'+CITY[c]+'</h5><ul class="sumlist">'+L.map(function(a){
+          return '<li><span><b>'+esc(a.n)+'</b> <small>'+esc(price(a))+' · '+range(a.t)+(a.pl?' · '+esc(a.pl):'')+'</small></span><button type="button" data-rm="'+a.i+'" aria-label="Quitar '+esc(a.n)+'">Quitar</button></li>';
+        }).join("")+'</ul>';
+      });
+    }
+    box.innerHTML=h;
+  }
+  function toggle(i){
+    if(sel[i]){delete sel[i];}else{sel[i]=1;}
+    save(); drawSum();
+    var c=$("a-"+i); if(c){
+      c.classList.toggle("on",!!sel[i]);
+      var b=c.querySelector(".afav"); b.setAttribute("aria-pressed",String(!!sel[i]));
+      b.setAttribute("aria-label",(sel[i]?"Quitar de mi lista":"Añadir a mi lista")+": "+byId[i].n);
+    }
+    if(window.MAPAPI&&MAPAPI.refreshAct){MAPAPI.refreshAct();}
+  }
+  function copyText(){
+    var s=sumUp(),out=["Mi lista de actividades en China (Semana Santa 2027)",""];
+    ["bj","sh"].forEach(function(c){
+      var L=s.ids.map(function(i){return byId[i];}).filter(function(a){return a.c===c;});
+      if(!L.length){return;}
+      out.push(CITY[c]+":");
+      L.forEach(function(a){out.push("- "+a.n+" ("+price(a)+", "+range(a.t)+(a.r===2?", reserva obligatoria":"")+")");});
+      out.push("");
+    });
+    out.push("Total aproximado: "+String(Math.round(s.h*2)/2).replace(".",",")+" h y "+Math.round(s.e)+" € por persona"+(s.no?", más "+s.no+" sin precio fijo":""));
+    var txt=out.join("\n"),btn=$("actSum").querySelector('[data-s="copiar"]');
+    function done(ok){if(btn){btn.textContent=ok?"Copiada":"No se pudo copiar";setTimeout(function(){if(btn){btn.textContent="Copiar";}},1800);}}
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(function(){done(true);},function(){done(false);});}else{done(false);}
+  }
+
+  $("actTabs").addEventListener("click",function(e){var b=e.target.closest("button[data-c]");if(!b){return;}st.city=b.getAttribute("data-c");st.cat="all";drawTabs();drawCats();drawGrid();});
+  $("actCats").addEventListener("click",function(e){var b=e.target.closest("button[data-g]");if(!b){return;}st.cat=b.getAttribute("data-g");drawCats();drawGrid();});
+  $("actFlt").addEventListener("click",function(e){var b=e.target.closest("button[data-f]");if(!b){return;}var k=b.getAttribute("data-f");st.f[k]=!st.f[k];b.setAttribute("aria-pressed",String(!!st.f[k]));drawGrid();});
+  $("actSort").addEventListener("change",function(){st.sort=this.value;drawGrid();});
+  $("actQ").addEventListener("input",function(){st.q=norm(this.value.trim());drawGrid();});
+  $("actGrid").addEventListener("click",function(e){
+    var f=e.target.closest("button.afav");if(f){toggle(f.getAttribute("data-id"));return;}
+    var m=e.target.closest("button.amap");if(m&&window.MAPAPI&&MAPAPI.showActivity){MAPAPI.showActivity(m.getAttribute("data-id"));}
+  });
+  $("actSum").addEventListener("click",function(e){
+    var b=e.target.closest("button");if(!b){return;}
+    var s=b.getAttribute("data-s"),r=b.getAttribute("data-rm");
+    if(r){toggle(r);return;}
+    if(s==="ver"){openList=!openList;drawSum();}
+    if(s==="copiar"){copyText();}
+    if(s==="vaciar"){sel={};save();openList=false;drawSum();drawGrid();if(window.MAPAPI&&MAPAPI.refreshAct){MAPAPI.refreshAct();}}
+  });
+  $("actNote").innerHTML="Las notas y el número de opiniones son de TripAdvisor del 23 de octubre de 2026; el resumen de lo que dice la gente es nuestro, a partir de esas reseñas, de guías y de blogs. Los precios están en yuanes y se convierten a ¥7,50 por euro; los marcados como «comprobados» se cotejaron con varias fuentes ese día y el resto es orientativo, así que confírmalos al reservar. Los horarios cambian en festivos y en el puente de Qingming (3 al 5 de abril).";
+  drawTabs();drawCats();drawGrid();drawSum();
+})();
+
+/* ---------- Móvil y seguro ---------- */
+(function(){
+  var tabs=$("cxTabs"),panel=$("cxPanel");
+  if(!tabs||!panel||typeof CONX==="undefined"){return;}
+  var T=[["esim","Móvil: eSIM"],["seg","Seguro de viaje"]],cur="esim";
+  T.forEach(function(t,i){
+    var b=mk("button",null,esc(t[1])); b.type="button"; b.setAttribute("role","tab"); b.setAttribute("data-k",t[0]); b.setAttribute("aria-selected",i===0?"true":"false"); tabs.appendChild(b);
+  });
+  function srcs(a){return a.map(function(s){return '<a href="'+esc(s[1])+'" target="_blank" rel="noopener">'+esc(s[0])+'</a>';}).join(", ");}
+  function pc(p){
+    return '<ul class="cxpc">'+p.pros.map(function(x){return '<li class="pro">'+esc(x)+'</li>';}).join("")+p.cons.map(function(x){return '<li class="con">'+esc(x)+'</li>';}).join("")+'</ul>';
+  }
+  function head(p){return '<div class="cxtop"><h4>'+esc(p.n)+'</h4><span class="cxbadge">'+esc(p.badge)+'</span></div>';}
+  function foot(p){
+    return '<blockquote class="cxsay"><b>Lo que dice la gente</b><p>'+esc(p.gente)+'</p><small>Fuentes: '+srcs(p.src)+'</small></blockquote>'
+      +'<div class="cxlinks"><a class="best" href="'+esc(p.buy[1])+'" target="_blank" rel="noopener">'+esc(p.buy[0])+'</a></div>';
+  }
+  function esimCard(p){
+    return '<article class="cxcard">'+head(p)
+      +'<dl class="cxfacts"><div><dt>Red en China</dt><dd>'+esc(p.red)+'</dd></div><div><dt>'+esc(p.plan)+'</dt><dd class="big">'+esc(p.precio)+'</dd></div><div class="w"><dt>Compartir datos</dt><dd>'+esc(p.hot)+'</dd></div></dl>'
+      +'<p class="cxother">'+esc(p.otros)+'</p>'+pc(p)+foot(p)+'</article>';
+  }
+  function segCard(p){
+    return '<article class="cxcard">'+head(p)
+      +'<dl class="cxfacts"><div class="w"><dt>Plan</dt><dd>'+esc(p.plan)+'</dd></div><div><dt>7 días</dt><dd>'+esc(p.p7)+'</dd></div><div><dt>14 días</dt><dd>'+esc(p.p14)+'</dd></div><div><dt>10 días, por persona</dt><dd class="big">'+esc(p.p10)+'</dd></div>'
+      +'<div class="w"><dt>Gastos médicos</dt><dd>'+esc(p.med)+'</dd></div><div class="w"><dt>Pago al hospital</dt><dd>'+esc(p.dir)+'</dd></div></dl>'+pc(p)+foot(p)+'</article>';
+  }
+  function show(k){
+    cur=k; var d=CONX[k],h='';
+    h+='<p class="sub cxlead">'+esc(d.lead)+'</p>';
+    h+='<aside class="cxpick glass"><svg class="ic" aria-hidden="true"><use href="#i-ticket"/></svg><div><h3>'+esc(d.pick.t)+'</h3><p>'+esc(d.pick.x)+'</p></div></aside>';
+    h+='<div class="cxgrid">'+d.list.map(k==="esim"?esimCard:segCard).join("")+'</div>';
+    if(k==="esim"){
+      h+='<div class="cxcols"><div class="cxbox glass"><h3>Otras opciones</h3><ul>'+d.otras.map(function(o){return '<li><b>'+esc(o.n)+'.</b> '+esc(o.x)+'</li>';}).join("")+'</ul></div>'
+        +'<div class="cxbox glass"><h3>Cómo montarlo</h3><ol class="howsteps">'+d.pasos.map(li).join("")+'</ol></div></div>';
+    }else{
+      h+='<p class="ck">'+esc(d.precios)+'</p>';
+      h+='<div class="cxcols"><div class="cxbox glass"><h3>Qué mirar en la póliza</h3><ul>'+d.check.map(li).join("")+'</ul></div>'
+        +'<div class="cxbox glass"><h3>Cuánto puede costar una urgencia</h3><p>'+esc(d.coste)+'</p></div></div>';
+    }
+    h+='<p class="ck">'+esc(d.nota)+'</p>';
+    panel.innerHTML=h;
+    tabs.querySelectorAll("button").forEach(function(b){b.setAttribute("aria-selected",b.getAttribute("data-k")===k?"true":"false");});
+  }
+  tabs.addEventListener("click",function(e){var b=e.target.closest("button[data-k]");if(b){show(b.getAttribute("data-k"));}});
+  show("esim");
 })();
 /* ---------- Hoteles ---------- */
 function esc2(s){return esc(s);}
