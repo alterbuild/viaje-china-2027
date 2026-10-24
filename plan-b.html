@@ -3393,12 +3393,12 @@ function schedCompute(S){
       +row("Viajando, con esperas",fn(CA.g.move),fn(CB.g.move))
       +row("En tren",fn(CA.byType.train),fn(CB.byType.train))
       +row("Día con más visitas",fn(va.h)+" ("+esc(va.l)+")",fn(vb.h)+" ("+esc(vb.l)+")")
-      +row("Total por persona, con colchón",BUDGET.a+" €",'<b>'+BUDGET.b+" €</b>")
+      +row("Total por persona, con lo más barato",BUDGET.a+" €",'<b>'+BUDGET.b+" €</b>")
       +'</tbody></table></div>'
       +'<p class="ck">Las horas son reales, con el cambio de huso horario entre España y China. Visitar incluye entradas y paseos de cada lugar; comer y descansar, comidas, siestas y tiempo libre; viajar, vuelos, trenes, coches, traslados y esperas.</p>';
     el.innerHTML=h;
   }
-  var BUDGET={a:"1.860",b:"1.801"};
+  var BUDGET={a:"1.505",b:"1.420"};
   draw();
   var w0=el.clientWidth,t=null;
   window.addEventListener("resize",function(){clearTimeout(t);t=setTimeout(function(){if(Math.abs(el.clientWidth-w0)>12){w0=el.clientWidth;draw();}},150);});
